@@ -1,0 +1,35 @@
+% XCircuit output "linear_z_model.tex" for LaTeX input from linear_z_model.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=linear_z_model.ps}\\
+% translate x=211 y=1123 scale 0.38
+\putbox{0.85in}{13.16in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{2.21in}{13.16in}{\centbox{\midbox{ADC}}}%
+\putbox{3.25in}{13.14in}{\centbox{\midbox{DAC}}}%
+\putbox{6.12in}{13.35in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{4.96in}{13.33in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{9.94in}{13.35in}{\centbox{\midbox{ADC}}}%
+\putbox{9.94in}{11.58in}{\centbox{\midbox{DAC}}}%
+\putbox{7.37in}{13.33in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{8.62in}{13.35in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{4.96in}{12.29in}{\centbox{\midbox{$a_1$}}}%
+\putbox{7.37in}{12.29in}{\centbox{\midbox{$a_2$}}}%
+\putbox{3.79in}{13.29in}{$x(t)$}%
+\putbox{11.12in}{13.29in}{$y(n)$}%
+\putbox{5.39in}{3.58in}{\centbox{\midbox{$b_{1}$}}}%
+\putbox{6.44in}{3.43in}{\centbox{\midbox{$a_{Parameter(indice}$}}}%
+\putbox{2.49in}{2.21in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{1.32in}{2.19in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{6.30in}{2.21in}{\centbox{\midbox{ADC}}}%
+\putbox{6.30in}{0.44in}{\centbox{\midbox{DAC}}}%
+\putbox{3.74in}{2.19in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{4.99in}{2.21in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{1.32in}{1.15in}{\centbox{\midbox{$a_1$}}}%
+\putbox{3.74in}{1.15in}{\centbox{\midbox{$a_2$}}}%
+\putbox{0.15in}{2.15in}{$x(t)$}%
+\putbox{7.49in}{2.15in}{$y(n)$}%
+\end{flushleft}

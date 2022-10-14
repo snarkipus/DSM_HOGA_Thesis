@@ -1,0 +1,38 @@
+\documentclass[11pt,letterpaper]{report}
+\usepackage{UNLV_ECE}
+\usepackage{array}
+\usepackage{multirow}
+% \usepackage{ctable}
+\usepackage{booktabs}
+
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+\newcommand{\mr}[2]{\multirow{#1}*{#2}}
+
+\begin{document}
+\begin{table}\label{tbl:my_funky_table}
+\begin{center}
+ \caption{My Funky Little Table}
+ \begin{tabular}{ccccccccc}\toprule
+\mr{2}{Trial ($n$)} &
+\mc{7}{c}{Experimental Factors} & 
+\mr{2}{$J_{n}(\textbf{x})$} \\ 
+&
+$\textbf{x}_1$ &
+$\textbf{x}_2$ &
+$\textbf{x}_3$ &
+$\textbf{x}_4$ &
+$\textbf{x}_5$ &
+$\textbf{x}_6$ &
+$\textbf{x}_7$ & \\ \midrule 
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 4 \\ 
+2 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & 6 \\ 
+3 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 4 \\ 
+4 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 2 \\ 
+5 & 0 & 1 & 0 & 1 & 0 & 0 & 1 & 4 \\ 
+6 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 2 \\ 
+7 & 0 & 0 & 1 & 1 & 0 & 1 & 0 & 4 \\ 
+8 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 2 \\ \bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}

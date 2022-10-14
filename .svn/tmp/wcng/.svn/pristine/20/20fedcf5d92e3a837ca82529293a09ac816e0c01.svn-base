@@ -1,0 +1,100 @@
+\subsection{Linear-Ranking Selection}
+As mentioned previously, 'more fit' individuals have a higher likelyhood of reproducing
+than 'less fit' individuals. The mechanism which affects this fitness-based
+genetic discrimination is referred to as selection. The operating principle for
+selection is that a chromosome's probability for mating eligibility is a function of its
+fitness with respect to the greater population.
+
+Pure random selection methods suffer from stochastic variability in that there is no
+guarantee that all members will be considered for selection. Thus, the possibility exists
+that good chromosomes may be inadvertently discarded. Additionally, being application
+agnostic, the algorithm assumes that the qualitative 'good vs. bad' indicated by a
+particular range of fitness values is sufficient. In practice, however, population
+dynamics exist such that the difference between 'good' and 'bad' is poorly reflected in
+the observed fitness even for well formed objective functions
+\cite{blickle_comparison_1996}.
+
+One method of countering this phenomenon is to implement an 'elitist'
+algorithm. By definition, the best chromosome(s) are placed into the next
+generation and as well as selected for mating eligibility. This technique has
+been shown to greatly increase convergence speeds, especially when steady-state
+misadjustment is significant\cite{reeves_genetic_2002}.
+
+Another means of improving selection efficacy is to implement a ranking scheme by
+which the population is ordered with respect to its fitness. This ordering removes any
+unintended statistical bias from an ill formed objective function. The HOES is a
+minimization based evolutionary strategy, and thus the term 'best' corresponds with the
+smallest cost. As such, the individuals of a population are sorted according to their
+fitness values and the rank 1 is assigned to the worst (highest cost). Similarly, the
+rank $N$ is assigned to the best individual (lowest cost) for a population of size $N$.
+The probability of selection for mating eligibility is then linearly assigned according
+to the individual's rank within the greater population. This is given by the following
+equation where $\alpha$ and $\beta$ are positive scalars.
+%---------------------
+\begin{equation}\label{eq:linear_ranking}
+%p_{i}=\frac{1}{N}\left(\eta^{-}+\bigl(\eta^{+}-\eta^{-}\bigr)\frac{i-1}{N-1}\right);
+%\quad i\in\{1,\dotsc,N\}
+p_{i} = \alpha + \beta i
+\end{equation}
+%---------------------
+Note that $p_{i}$ is a probability and therefore subject to its distribution. Thus,
+we can show the following.
+%---------------------
+\begin{equation}\label{eq:linear_ranking_pdf}
+\sum_{i=1}^{N}\bigl(\alpha+\beta i\bigr) = 1
+\end{equation}
+%---------------------
+Solving the summation, we arrive at the following expression.
+%---------------------
+\begin{equation}\label{eq:linear_ranking_pdf2}
+N\left(\alpha + \beta \frac{N+1}{2}\right)=1
+\end{equation}
+%---------------------
+
+Generally, selection pressure can be defined as the degree of emphasis that is placed on
+selecting better suited individuals over worse ones within a given population. As done
+here \cite{reeves_genetic_2002}, the selection pressure will be denoted as
+$\phi_{x}$ and is described by the following equation.
+%---------------------
+\begin{equation}\label{eq:linear_ranking_selection}
+\phi_{\text{max}} = \frac{p_{\text{max}}}{p_{\text{median}}}
+\end{equation}
+%---------------------
+Substituting \eqref{eq:linear_ranking_pdf2} into \eqref{eq:linear_ranking_selection} we
+arrive at the following equation.
+%---------------------
+\begin{equation}\label{eq:linear_ranking_selection_2}
+\phi_{\text{max}} = \frac{\alpha+\beta N}{\alpha+\beta(N+1)/2}
+\end{equation}
+%---------------------
+Finally, solving \eqref{eq:linear_ranking_selection_2} for $\alpha$ and $\beta$ yields
+the following expressions.
+%---------------------
+\begin{subequations}\label{eq:linear_ranking_selection_3}
+\begin{align}
+\alpha &= \frac{2N-\phi_{\text{max}}\bigl(N+1\bigr)}{N\bigl(N-1\bigr)} \\
+\beta  &= \frac{2(\phi_{\text{max}}-1)}{N\bigl(N-1\bigr)}
+\end{align}
+\end{subequations}
+%---------------------
+Because $\alpha$ and $\beta$ are positive scalars, it is clear from
+\eqref{eq:linear_ranking_selection_3} that $1\leq\phi_{\text{max}}\leq2$. Note that
+regardless of individual fitness, the 'most fit' individual is no more than twice as
+likely than average to be selected for mating eligibility. A similar analysis can be made
+for the relative probability for selection of the 'least fit' individual, denoted as
+$\phi_{\text{min}}$.In summary, we can show the following
+regarding selection pressure.
+%---------------------
+\begin{subequations}\label{eq:linear_ranking_phi}
+\begin{align}
+\phi_{\text{max}} &= 2 - \phi_{\text{min}} \\
+\phi_{\text{min}} \geq 0 &\qquad 1\leq\phi_{\text{max}}\leq2
+\end{align}
+\end{subequations}
+%---------------------
+
+In practice, the selection pressure will be fixed such that $\phi_{\text{max}}$
+is 1.1\cite{back_optimization_1991}. This provides an adequate balance between exploration
+and exploitation of the performance surface. Subsequent to selection, all eligible
+chromosomes participate in a stochastic exchange of alleles referred to as crossover.
+This will be addressed in the following section.

@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%	MSEE THESIS MASTER DOCUMENT
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PREAMBLE
+
+\documentclass[12pt,letterpaper]{report}
+\usepackage{indentfirst}
+\usepackage{sectsty,titlesec}
+\usepackage[titles]{tocloft}
+\usepackage{MEJ_MSEE}
+\usepackage{setspace}
+\usepackage{psfrag,graphicx,epsfig,array}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,amsxtra}
+\usepackage{bm}
+\usepackage{multirow,booktabs}
+\usepackage{caption}
+\usepackage{checkend}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{rotating}
+\usepackage{float}
+% \usepackage{layout}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FUNCTIONS
+
+\newcommand{\CTDSM}		{Continuous-Time $\Delta\Sigma$ Modulator }
+\newcommand{\DTDSM}		{Discrete-Time $\Delta\Sigma$ Modulator }
+\newcommand{\CTDSMs}	{Continuous-Time $\Delta\Sigma$ Modulators }
+\newcommand{\DTDSMs}	{Discrete-Time $\Delta\Sigma$ Modulators }
+\newcommand{\DSM}		{$\Delta\Sigma$ Modulator }
+\newcommand{\DSMs}		{$\Delta\Sigma$ Modulators }
+\newcommand{\DSm}		{$\Delta\Sigma$ modulator }
+\newcommand{\DSms}		{$\Delta\Sigma$ modulators }
+\newcommand{\DS}		{$\Delta\Sigma$\space}
+\newcommand{\CT}		{Continuous-Time }
+\newcommand{\DT}		{Discrete-Time }
+\newcommand{\ct}		{continuous-time }
+\newcommand{\dt}		{discrete-time }
+\newcommand{\ntf}		{noise transfer function }
+\newcommand{\stf}		{signal transfer function }
+\newcommand{\wrt}		{with respect to }
+\newcommand{\nth}		{$n$th}
+\newcommand{\ith}		{$i$th}
+\newcommand{\mc}[3]		{\multicolumn{#1}{#2}{#3}}
+\newcommand{\mr}[2]		{\multirow{#1}*{#2}}
+\newcommand{\norm}[1]	{\lVert#1\rVert}
+\newcommand{\abs}[1]	{\lvert#1\rvert}
+\newcommand{\fix}[1] 	{\texorpdfstring{#1}}
+\newcommand{\NTF}		{\mathop\text{NTF}}
+\newcommand{\STF}		{\mathop\text{STF}}
+
+\makeatletter
+\newcommand*\dashline{\rotatebox[origin=c]{90}{$\dabar@\dabar@\dabar@$}}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DOCUMENT BODY
+\begin{document}
+
+\mastersthesis
+\renewcommand{\thesisauthor}		{Matthew Edward Jackson}
+\renewcommand{\thesismonth}			{August}
+\renewcommand{\thesisdefensemonth}	{June}
+\renewcommand{\thesisyear}			{2009}
+\renewcommand{\thesistitle}
+{Optimal Design of Discrete-Time \\ Delta Sigma Modulators}
+\renewcommand{\thesissupervisor}	{Peter Allen Stubberud}
+\renewcommand{\thesistype}			{thesis}
+\renewcommand{\thesisdegree}		{Master of Science}
+\renewcommand{\thesisdedication}	{To my dog.}
+\renewcommand{\thesisfrontheadsize}	{\normalsize}
+
+% FRONT MATTER
+\thesistitlepage
+\thesiscopyrightpage
+% \thesissignaturepage
+
+% ABSTRACT
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{ABSTRACT}
+\begin{thesisabstract}
+\pagenumbering{roman}
+\setcounter{page}{3}
+\par
+In this thesis, optimal signal transfer functions (STFs) and noise transfer functions
+(NTFs) for discrete time delta sigma ($\Delta\Sigma$) modulators are determined.  For a
+given oversampling rate (OSR), these STFs and NTFs are optimized with respect to a
+weighted
+combination of the \DS modulator's signal-to-noise ratio (SNR) and dynamic range (DR).
+This optimization problem is solved using a novel hybrid orthogonal genetic (HOG)
+algorithm that uses customized genetic operators to improve algorithm performance and
+accuracy when applied to multimodal, non-differentiable performance surfaces. To
+generate optimal system functions, the HOG algorithm is implemented as a constrained
+global optimizer to minimize cost functions which represent approximations of the system
+functions.
+\end{thesisabstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% ACKNOWLEDGMENTS
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
+\begin{thesisacknowledgements}
+ \par
+I would like to thank my advisor, Dr. Peter Stubberud, for the countless hours he invested
+in this work. Moreover, I would like to thank his wife, Laura, for her patience and wisdom
+which always prevailed when cooler heads did not. Without her compassion this effort would
+have fallen well short of its mark. Secondly, I would like to thank my wife, Alicia, and
+all of my wonderful daughters for being supportive and understanding despite all the long
+weekends, late nights, and missed soccer games.
+
+From a young age my family instilled in me a deep value for education built upon
+respect for the educated and an appreciation for the hard work and perseverance
+required to attain it. Thus, this work is dedicated to the educated men who inspired me:
+ my grandfathers, Dr. Clyde T. Stoner and Dr. Raymond Van Pelt, and my father, Dr.
+Fredrick L. Jackson.
+\end{thesisacknowledgements}
+
+\doublespacing
+
+% CHAPTER 1: INTRODUCTION
+\chapter{INTRODUCTION}
+\label{ch:Introduction}
+\pagenumbering{arabic}
+\input{Introduction}
+
+% CHAPTER 2: BACKGROUND
+\chapter{ANALOG-TO-DIGITAL CONVERTERS}
+\label{ch:ADCs and DSMs}
+\input{ADCs_DSMs}
+
+% CHAPTER 3: HOG ALGORITHM
+\chapter{OPTIMIZATION AND GENETIC ALGORITHMS}
+\label{ch:Optimization and Genetic Algorithms}
+\input{optimization_hoga}
+
+% CHAPTER 4: DSM DESIGN IMPLEMENTAION AND RESULTS
+\chapter{IMPLEMENTATION AND RESULTS}
+\label{ch:Implementation and Results}
+\input{implementation_results}
+
+% CHAPTER 5: CONCLUSION
+\chapter{CONCLUSION}
+\label{ch:Conclusion}
+\input{conclusion}
+
+% BIBLIOGRAPHY
+\titlespacing*{\chapter}{0pt}{50pt}{\baselineskip}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{REFERENCES}
+\begin{spacing}{1}
+	\bibliography{new_bib}
+	\bibliographystyle{plain}
+\end{spacing}
+
+% VITA
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{VITA} 
+\thesisauthorvita
+
+\end{document}

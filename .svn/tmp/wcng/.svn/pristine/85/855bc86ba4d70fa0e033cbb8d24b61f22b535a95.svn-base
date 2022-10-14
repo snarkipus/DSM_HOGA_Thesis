@@ -1,0 +1,66 @@
+\subsection{Chromosome Representation}
+For every generation, each member of the population is fully characterized by its
+chromosome. Specifically, the formulation of this chromosome contains the genetic
+information available for reproduction. During reproduction, both traditional and hybrid,
+the genetic information contained in the chromosome is exchanged between the progenitors.
+This exchange is discussed at length in the following sections.
+
+Structurally, chromosomes are implemented as linear arrays of length $m$. These arrays are
+populated with $m$ traits, or alleles, that are iteratively evolved during the
+evolutionary process. For this application, the alleles correspond with the coefficients
+of the IIR filters which govern the \DSm functionality. Recall that the NTF (and STF) are
+designed as IIR filters of the form given in the following equation.
+%---------------------
+\begin{equation}\label{eq:chromosome_NTF_1}
+\textrm{NTF}(z)=\frac{\displaystyle\sum_{i=0}^{M}{a_i
+z^{-i}}}{\displaystyle\sum_{i=0}^{M}{b_i z^{-i}}}				
+=\frac{\displaystyle\prod_{j=0}^{N}{\bigl(1-c_j z^{-1}\bigr)}}				
+		{\displaystyle\prod_{j=0}^{N}{\bigl(1-d_j z^{-1}\bigr)}} 		
+\end{equation}
+%--------------------- 
+Either the polynomial or pole-zero representations shown in \eqref{eq:chromosome_NTF_1}
+could be directly implemented in chromosomes where the alleles represent the coefficients.
+However, storing the unfactored polynomial coefficients yields chromosomes which are
+overly sensitive to perturbation during the evolutionary process. Secondly, implementing
+only first order poles and zeros forces the algorithm to directly account for pole-zero
+conjugation which significantly lengthens run times. Thus, to reduce coefficient
+sensitivity and foster implied conjugation, the chromosomes will be of the following form
+\cite{kit-sang_tang_design_1998}.
+%---------------------
+\begin{equation}\label{eq:chromosome_NTF_2}
+\textrm{NTF}(z)=k\displaystyle\prod_{i=0}^{N}\frac{\bigl(1-a_i z^{-1}\bigr)}{\bigl(1-b_i
+z^{-1}\bigr)}							
+\displaystyle\prod_{j=0}^{M}\frac{\bigl(1+c_{1j}z^{-1}+c_{2j}z^{-2}\bigr)}{\bigl(1+d_{1j}
+z^{-1}+d_{2j}z^{-2}\bigr)}	   
+\end{equation}
+%--------------------- 
+Note that one zero-pole pair will exist singularly on the real axis for odd ordered
+systems. Thus, $N$ in \eqref{eq:chromosome_NTF_2} is either 1 or 0 for odd or even system
+order respectively. Subsequently, the order of the system is then given by the following
+equation.
+%---------------------
+\begin{equation}\label{eq:filter_order}
+\text{ORDER}=2M+N	   
+\end{equation}
+%--------------------- 
+
+The ones are omitted and only the coefficients are stored in the chromosome. As such,
+the encoding for even and odd order functions is given by the following expressions where
+$\mathcal{C}$ denotes the chromosome.
+%---------------------
+\begin{subequations}	
+\begin{align}
+%---------------------
+\mathcal{C}_\text{even}&=\bigl[c_{11},c_{12},d_{11},d_{12},c_{21},c_{22},d_{21},d_{22},
+\dotsc,c_{M1},c_{M2},d_{M1},d_{M2},k\bigr]\\
+\mathcal{C}_\text{odd}&=\bigl[a_1,b_1,c_{11},c_{12},d_{11},d_{12},c_{21},c_{22},d_{21},
+d_{22},\dotsc,c_{M1},c_{M2},d_{M1},d_{M2},k\bigr]
+%---------------------
+\end{align}
+\end{subequations}
+%---------------------
+
+Note that the length, $m$, of the chromosomes corresponds to the dimension of the
+problem space. The system order will be restricted to 8 or less. Thus, the dimension of
+the problem space is limited to 33 or less. The proposed algorithm has been tested on
+problem dimensions up to 100 and is thus well suited for this application.

@@ -1,0 +1,28 @@
+\documentclass[11pt,letterpaper]{report}
+% \usepackage{UNLV_ECE}
+\usepackage{psfrag,graphicx,color}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% \usepackage{setspace}
+\usepackage{checkend}
+% \usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{cite}
+% \notocheads 
+% \usepackage{layout}
+\numberwithin{equation}{chapter}
+
+\begin{document}
+\pagestyle{empty}
+We'll start with this text. Then we'll throw in a figure like this!
+%  \input{myfirstfig.tex}
+Some more text goes here. Then we'll include some graphics like this!
+\begin{figure}[htbp]
+ \includegraphics{sample_fig_final.eps} 
+ \caption{Sample Frequency Response}
+ \label{fig:sample_figure}
+\end{figure}
+
+\end{document}

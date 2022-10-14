@@ -1,0 +1,14 @@
+% XCircuit output "Page 1.tex" for LaTeX input from Page 1.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=Page 1.ps}\\
+% translate x=336 y=222 scale 0.38
+\putbox{0.89in}{0.55in}{\midbox{$\min\left\{\alpha\lVert H_{\text{SB}}(e^{j\omega})\rVert_2+\beta\lVert H_{\text{SB}}(e^{j\omega})\rVert_\infty\right\}$}}%
+\putbox{3.72in}{2.05in}{\midbox{$\min\bigl\{(1-\alpha-\beta)\left(\lVert 1-H_{\text{PB}}(e^{j\omega})\rVert_\infty\right)\bigr\}$}}%
+\putbox{6.31in}{0.13in}{\midbox{$\omega$}}%
+\putbox{0.06in}{2.21in}{\midbox{$\left\lvert \text{NTF}(e^{j\omega})\right\rvert$}}%
+\end{flushleft}

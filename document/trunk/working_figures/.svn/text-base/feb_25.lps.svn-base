@@ -1,0 +1,73 @@
+%! PostScript set of library objects for XCircuit
+%  Version: 3.4
+%  Library name is: feb_25
+%  Author: Matthew Jackson <matthew@snarky>
+%
+
+% Depend basic_DSP_block ADC_box DAC_box conv_box arrowhead
+% Depend basic_DSP_system basic_DSP_block
+
+% XCircuitLib library objects
+/ADC_box {
+begingate
+1 1.00 -64 0 -40 32 64 32 64 -32 -40 -32 -64 0 6 polygon
+(ADC) {/Helvetica cf} 2 21 0 1.00 8 0 label
+endgate
+} def
+
+/DAC_box {
+begingate
+(DAC) {/Helvetica cf} 2 21 0 1.00 -8 0 label
+1 1.00 64 0 40 32 -64 32 -64 -32 40 -32 64 0 6 polygon
+endgate
+} def
+
+/conv_box {
+begingate
+(x\(n\)) {/Helvetica 0.800 cf} (*) {/Symbol 0.800 cf} (h\(n\)) 
+{/Helvetica 0.800 cf} {/Helvetica cf} 7 21 0 1.00 0 0 label
+0 1.00 80 32 80 -32 -80 -32 -80 32 4 polygon
+endgate
+} def
+
+/arrowhead {
+% trivial
+begingate
+8 -28 beginpath
+3 -18 3 -15 0 0 curveto
+-3 -15 -3 -18 -8 -28 curveto
+-2 -26 2 -26 8 -28 curveto
+249 1.00 endpath
+endgate
+} def
+
+/basic_DSP_block {
+begingate
+1.00 0 -240 0 ADC_box
+1.00 0 240 0 DAC_box
+(x\(t\)) {/Helvetica cf} 2 21 0 1.00 -408 8 label
+(y\(t\)) {/Helvetica cf} 2 21 0 1.00 416 8 label
+1.00 0 0 0 conv_box
+(x\(n\)) {/Helvetica cf} 2 21 0 1.00 -16 104 label
+1.00 90 -80 0 arrowhead
+3 1.00 -56 96 -112 96 -152 0 3 polygon
+3 1.00 24 -96 80 -96 120 0 3 polygon
+(y\(n\)) {/Helvetica cf} 2 21 0 1.00 -24 -96 label
+1 1.00 -96 0 -176 0 2 polygon
+1 1.00 160 0 80 0 2 polygon
+1.00 90 176 0 arrowhead
+1.00 90 -304 0 arrowhead
+1.00 90 384 0 arrowhead
+1 1.00 368 0 304 0 2 polygon
+1 1.00 -304 0 -368 0 2 polygon
+endgate
+} def
+
+/basic_DSP_system {
+begingate
+1.00 0 0 0 basic_DSP_block
+endgate
+} def
+
+
+% EndLib

@@ -1,0 +1,581 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/64/code/matlab/tags/DelSig
+END
+partitionABCD.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64/code/matlab/tags/DelSig/partitionABCD.m
+END
+hann.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/hann.m
+END
+dsdemo4fig.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo4fig.m
+END
+clans5.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/clans5.m
+END
+simulateESL.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/simulateESL.m
+END
+DSToolbox.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/DSToolbox.pdf
+END
+nabsH.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/nabsH.m
+END
+ai2mif.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/ai2mif.c
+END
+rmsGain.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/rmsGain.m
+END
+designLCBP6.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/designLCBP6.m
+END
+scaleABCD.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/scaleABCD.m
+END
+dbm.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dbm.m
+END
+zinc.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/zinc.m
+END
+realizeNTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/realizeNTF.m
+END
+simulateHBF.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/simulateHBF.m
+END
+plotUsage.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/plotUsage.m
+END
+evalMixedTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/evalMixedTF.m
+END
+LCObj1.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/LCObj1.m
+END
+synthesizeNTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64/code/matlab/tags/DelSig/synthesizeNTF.m
+END
+dsdemo4.mat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo4.mat
+END
+calculateTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/calculateTF.m
+END
+sinc_decimate.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64/code/matlab/tags/DelSig/sinc_decimate.m
+END
+LCObj.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/LCObj.m
+END
+LCparam2tf.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/LCparam2tf.m
+END
+dsdemo1.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo1.m
+END
+bplogsmooth.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/bplogsmooth.m
+END
+Readme.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/Readme.m
+END
+delay.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/delay.m
+END
+dsdemo3.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo3.m
+END
+frespHBF.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64/code/matlab/tags/DelSig/frespHBF.m
+END
+dsdemo5.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo5.m
+END
+clans.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/clans.m
+END
+evalTFP.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/evalTFP.m
+END
+mod2.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/mod2.m
+END
+bquantize.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/bquantize.m
+END
+dsdemo7.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo7.m
+END
+peakSNR.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/peakSNR.m
+END
+dsexample1.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsexample1.m
+END
+addPIS.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/addPIS.m
+END
+simulateSNR.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/simulateSNR.m
+END
+padb.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/padb.m
+END
+undbp.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/undbp.m
+END
+designLCBP.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/designLCBP.m
+END
+exampleHBF.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/exampleHBF.m
+END
+evalRPoly.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/evalRPoly.m
+END
+simulateDSM.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/simulateDSM.c
+END
+undbv.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/undbv.m
+END
+evalF1.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/evalF1.m
+END
+padl.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/padl.m
+END
+calculateSNR.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64/code/matlab/tags/DelSig/calculateSNR.m
+END
+impL1.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/impL1.m
+END
+dsclansObj.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsclansObj.m
+END
+padr.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/padr.m
+END
+clans6.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/clans6.m
+END
+simulateDSM.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/simulateDSM.m
+END
+mapABCD.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/mapABCD.m
+END
+printmif.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64/code/matlab/tags/DelSig/printmif.m
+END
+padt.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/padt.m
+END
+lollipop.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64/code/matlab/tags/DelSig/lollipop.m
+END
+bilogplot.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/bilogplot.m
+END
+SIunits.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/SIunits.m
+END
+dsclansNTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsclansNTF.m
+END
+stuffABCD.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/stuffABCD.m
+END
+rms.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64/code/matlab/tags/DelSig/rms.m
+END
+dbp.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dbp.m
+END
+frespF1.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/frespF1.m
+END
+infnorm.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/infnorm.m
+END
+dbv.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dbv.m
+END
+ds_optzeros.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/ds_optzeros.m
+END
+changeFig.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/changeFig.m
+END
+logsmooth.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/logsmooth.m
+END
+LCoptparam2tf.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64/code/matlab/tags/DelSig/LCoptparam2tf.m
+END
+evalTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/evalTF.m
+END
+figureMagic.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/figureMagic.m
+END
+ESLselect.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/ESLselect.m
+END
+ds_quantize.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/ds_quantize.m
+END
+axisLabels.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/axisLabels.m
+END
+LCplotTF.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64/code/matlab/tags/DelSig/LCplotTF.m
+END
+mapCtoD.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/mapCtoD.m
+END
+plotPZ.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/plotPZ.m
+END
+designHBF.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/64/code/matlab/tags/DelSig/designHBF.m
+END
+thermometer.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/thermometer.m
+END
+Contents.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64/code/matlab/tags/DelSig/Contents.m
+END
+dsdemo2.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo2.m
+END
+dsdemo4.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo4.m
+END
+mod1.m
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/code/matlab/tags/DelSig/mod1.m
+END
+plotSpectrum.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/64/code/matlab/tags/DelSig/plotSpectrum.m
+END
+dsdemo6.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo6.m
+END
+dsdemo8.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsdemo8.m
+END
+dsexample2.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/dsexample2.m
+END
+undbm.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/code/matlab/tags/DelSig/undbm.m
+END
+bunquantize.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/bunquantize.m
+END
+l1norm.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/l1norm.m
+END
+predictSNR.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/64/code/matlab/tags/DelSig/predictSNR.m
+END
+evalF0.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/64/code/matlab/tags/DelSig/evalF0.m
+END
+simulateESL.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/64/code/matlab/tags/DelSig/simulateESL.c
+END

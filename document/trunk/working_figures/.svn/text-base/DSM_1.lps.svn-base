@@ -1,0 +1,43 @@
+%! PostScript set of library objects for XCircuit
+%  Version: 3.4
+%  Library name is: DSM_1
+%  Author: Matthew Jackson <matthew@snarky>
+%
+
+
+% XCircuitLib library objects
+/unit_delay {
+begingate
+0 1.00 -32 32 -32 -32 32 -32 32 32 4 polygon
+{ns} (-1) {Ss} (z) {/Helvetica cf} 5 17 0 1.00 0 -16 label
+endgate
+} def
+
+/_sum {
+begingate
+1 1.00 0 0 32 0.00 360.00 xcarc
+(S) {/Symbol cf} 2 21 0 1.25 0 0 label
+endgate
+} def
+
+/quant {
+begingate
+({\267}) {/Helvetica cf} (Q ) {/Helvetica-Oblique cf} 4 21 0 1.00 0 0 label
+0 1.00 -48 32 -48 -32 48 -32 48 32 4 polygon
+endgate
+} def
+
+/fd_op_amp {
+begingate
+225 1.00 -48 96 -48 -96 160 0 -48 96 4 polygon
+1 1.00 96 -32 128 -64 160 -64 160 -64 4 polygon
+1 1.00 96 32 128 64 160 64 3 polygon
+(+) {/Helvetica cf} 2 21 0 1.00 -16 48 label
+(-) {/Helvetica cf} 2 21 0 1.00 -16 -64 label
+1 1.00 -48 -64 -96 -64 2 polygon
+1 1.00 -48 64 -96 64 2 polygon
+endgate
+} def
+
+
+% EndLib

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/75/code/matlab/branches/HOGA_DSM/DTDSM
+END
+Setup_Obj_Fcn.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/42/code/matlab/branches/HOGA_DSM/DTDSM/Setup_Obj_Fcn.m
+END
+HP_obj.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/75/code/matlab/branches/HOGA_DSM/DTDSM/HP_obj.m
+END
+testing_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/42/code/matlab/branches/HOGA_DSM/DTDSM/testing_script.m
+END
+comp_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/75/code/matlab/branches/HOGA_DSM/DTDSM/comp_script.m
+END
+LPSTF_obj.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/75/code/matlab/branches/HOGA_DSM/DTDSM/LPSTF_obj.m
+END
+delsigLP.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/42/code/matlab/branches/HOGA_DSM/DTDSM/delsigLP.m
+END
+chebyLP.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/chebyLP.m
+END
+growLP_STF.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/growLP_STF.m
+END
+gamma2poly.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/gamma2poly.m
+END
+HP_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/HP_init.m
+END
+growLP.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/growLP.m
+END
+theta2poly.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/42/code/matlab/branches/HOGA_DSM/DTDSM/theta2poly.m
+END
+LPSTF_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/LPSTF_init.m
+END
+DTsimulation.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/45/code/matlab/branches/HOGA_DSM/DTDSM/DTsimulation.m
+END

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM
+END
+delsigLP.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/delsigLP.m
+END
+grow_HP.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/grow_HP.m
+END
+gamma2poly.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/gamma2poly.m
+END
+growLP.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/growLP.m
+END
+LPSTF_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/LPSTF_init.m
+END
+DTsimulation.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/DTsimulation.m
+END
+LP_OSR_128_AA.mat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/LP_OSR_128_AA.mat
+END
+comp_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/comp_script.m
+END
+LPSTF_obj.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/LPSTF_obj.m
+END
+chebyLP.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/chebyLP.m
+END
+growLP_STF.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/growLP_STF.m
+END
+compare_HPv3.m
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/compare_HPv3.m
+END
+LP_OSR_32_AA.mat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/LP_OSR_32_AA.mat
+END
+HP_init.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/HP_init.m
+END
+theta2poly.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/theta2poly.m
+END
+LP_OSR_64_AA.mat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/LP_OSR_64_AA.mat
+END
+loop_script.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/loop_script.m
+END
+HP_obj.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/DTDSM/HP_obj.m
+END

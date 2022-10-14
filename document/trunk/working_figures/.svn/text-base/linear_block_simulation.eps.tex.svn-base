@@ -1,0 +1,30 @@
+% XCircuit output "linear_block_simulation.eps.tex" for LaTeX input from linear_block_simulation.eps.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=linear_block_simulation.eps}\\
+% translate x=1742 y=400 scale 0.38
+\putbox{6.67in}{1.18in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{9.55in}{1.35in}{\centbox{\midbox{$Y(z)$}}}%
+\putbox{5.34in}{1.35in}{\centbox{\midbox{$X(z)$}}}%
+\putbox{5.84in}{1.18in}{\centbox{\midbox{$F(z)$}}}%
+\putbox{7.67in}{1.18in}{\centbox{\midbox{$G(z)$}}}%
+\putbox{7.67in}{0.35in}{\centbox{\midbox{$H(z)$}}}%
+\putbox{8.59in}{0.33in}{\centbox{\midbox{\begin{large}$z^{-1}$\end{large}}}}%
+\putbox{6.55in}{0.85in}{\centbox{\midbox{$-$}}}%
+\putbox{8.59in}{2.10in}{\centbox{\midbox{$E(z)$}}}%
+\putbox{8.59in}{1.18in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{1.50in}{1.18in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{0.17in}{1.35in}{\centbox{\midbox{$x(n)$}}}%
+\putbox{0.67in}{1.18in}{\centbox{\midbox{$F(z)$}}}%
+\putbox{2.50in}{1.18in}{\centbox{\midbox{$G(z)$}}}%
+\putbox{2.50in}{0.35in}{\centbox{\midbox{$H(z)$}}}%
+\putbox{1.38in}{0.85in}{\centbox{\midbox{$-$}}}%
+\putbox{3.56in}{0.36in}{\centbox{\midbox{DAC}}}%
+\putbox{3.56in}{1.19in}{\centbox{\midbox{ADC}}}%
+\putbox{4.55in}{1.35in}{\centbox{\midbox{$y(n)$}}}%
+\putbox{3.05in}{0.85in}{\centbox{\midbox{$f_s$}}}%
+\end{flushleft}

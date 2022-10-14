@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code
+END
+Crossover.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/Crossover.m
+END
+generateOA.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/generateOA.m
+END
+theta2poly.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/theta2poly.m
+END
+Mutate.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/Mutate.m
+END
+LR_Selection.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/LR_Selection.m
+END
+Eval_Fitness.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/Eval_Fitness.m
+END
+HTGA.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/HTGA.m
+END
+taguchi_method.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/29/code/matlab/tags/HTGA_DSM/HTGA/code/taguchi_method.m
+END

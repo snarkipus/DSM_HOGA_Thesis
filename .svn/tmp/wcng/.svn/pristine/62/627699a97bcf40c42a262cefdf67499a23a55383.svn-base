@@ -1,0 +1,18 @@
+% XCircuit output "Page 4.tex" for LaTeX input from Page 4.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=Page 4.ps}\\
+% translate x=198 y=624 scale 0.38
+\putbox{0.17in}{2.33in}{\centbox{\midbox{$x(n)$}}}%
+\putbox{1.11in}{2.35in}{\centbox{\midbox{ADC}}}%
+\putbox{2.09in}{2.33in}{\centbox{\midbox{$H_d(z)$}}}%
+\putbox{1.11in}{2.35in}{\centbox{\midbox{ADC}}}%
+\putbox{3.07in}{2.35in}{\centbox{\midbox{$\frac{M}{2}$}}}%
+\putbox{2.05in}{1.91in}{\centbox{\midbox{$y_\text{filt}(n)$}}}%
+\putbox{2.13in}{2.79in}{\centbox{\midbox{$y(n)$}}}%
+\putbox{3.92in}{2.39in}{\centbox{\midbox{$y_\text{dec}(n)$}}}%
+\end{flushleft}

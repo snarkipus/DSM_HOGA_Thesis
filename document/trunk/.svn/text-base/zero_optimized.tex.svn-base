@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 2.2.2: Zero-Optimized Design (aka Schreier's method)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Zero Optimized Design}
+As illustrated in the preceding section, classical design methodologies are iterative 
+processes requiring significant general knowledge in \DSm design practices. The 
+designer is challenged with trying to balance maximal suppression of the inband noise 
+with the finite limitations of greater system stability. Thankfully, countless design
+ examples exist in literature and are continually updated as new process 
+technologies are exploited.
+
+While classical methods are sufficient for practical purposes, they only produce 
+systems which meet or exceed some arbitrary set of design requirements. They do not 
+provide an ideal system for any particular set of requirements. As such, Richard 
+Schreier developed a design methodology  \cite{schreier_understanding_2004} and 
+supporting MATLAB toolset which greatly reduces the academic overhead for \DSm 
+system designers.
+
+It is Schreier's belief that NTF performance is largely dictated by its out-of-band gain 
+(OOBG) and its zero locations with the pole distribution making only a secondary 
+contribution. Thus, his algorithm iterates the pole locations according to fixed, 
+optimized zero locations and out-of-band gain constraints as illustrated in the 
+following sections.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Optimal Zeros and Noise Distribution}
+When compared against NTFs of the form given in \eqref{eq:schreier_NTF_form}, a 
+significant improvement in SQNR can be achieved by redistributing the zeros uniformly 
+across the operational region of the modulator. 
+%-------------------
+\begin{equation}\label{eq:schreier_NTF_form}
+ \text{NTF}_{\text{simple}}=\frac{\bigl(1-z^{-1}\bigr)^N}{A(z)}
+\end{equation}
+%-------------------
+Specifically, placing the zeros at $m$ equidistant points on the unit circle allows 
+for uniform attenuation of the noise within the operational region.
+
+For NTFs of the form given in \eqref{eq:schreier_NTF_form}, we can say the following 
+regarding magnitude.
+%-------------------
+\begin{equation}\label{eq:schreier_zero_opt}
+\mag{\text{NTF}}\approx\frac{\omega^{n}}{\mag{A(1)}}
+\end{equation}
+%-------------------
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Stability Criterion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{DelSig Toolbox (MATLAB)}

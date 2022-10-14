@@ -1,0 +1,31 @@
+% XCircuit output "derivation.tex" for LaTeX input from derivation.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=derivation.ps}\\
+% translate x=1302 y=674 scale 0.25
+\putbox{0.78in}{0.55in}{\centbox{\midbox{\begin{small}$a_0$\end{small}}}}%
+\putbox{0.78in}{1.38in}{\centbox{\midbox{\begin{LARGE}$\Sigma$\end{LARGE}}}}%
+\putbox{1.95in}{1.43in}{\centbox{\midbox{\begin{small}$c_0$\end{small}}}}%
+\putbox{3.82in}{1.43in}{\centbox{\midbox{\begin{small}$c_1$\end{small}}}}%
+\putbox{2.04in}{0.88in}{\centbox{\midbox{\begin{small}$g_0$\end{small}}}}%
+\putbox{4.53in}{1.38in}{\centbox{\midbox{\begin{LARGE}$\Sigma$\end{LARGE}}}}%
+\putbox{4.53in}{2.30in}{\centbox{\midbox{\begin{small}$b_2$\end{small}}}}%
+\putbox{2.66in}{2.30in}{\centbox{\midbox{\begin{small}$b_1$\end{small}}}}%
+\putbox{0.78in}{2.30in}{\centbox{\midbox{\begin{small}$b_0$\end{small}}}}%
+\putbox{5.12in}{1.43in}{\centbox{\midbox{\begin{small}$k$\end{small}}}}%
+\putbox{6.76in}{1.43in}{\centbox{\midbox{\begin{small}$Y(s)$\end{small}}}}%
+\putbox{0.43in}{2.64in}{\centbox{\midbox{\begin{small}$X(s)$\end{small}}}}%
+\putbox{3.26in}{1.42in}{\centbox{\midbox{$\frac{1}{s}$}}}%
+\putbox{1.39in}{1.42in}{\centbox{\midbox{$\frac{1}{s}$}}}%
+\putbox{2.66in}{0.55in}{\centbox{\midbox{\begin{small}$a_1$\end{small}}}}%
+\putbox{5.95in}{0.20in}{\centbox{\midbox{DAC}}}%
+\putbox{5.94in}{1.41in}{\centbox{\midbox{ADC}}}%
+\putbox{0.73in}{1.21in}{\centbox{\midbox{-}}}%
+\putbox{0.90in}{1.25in}{\centbox{\midbox{-}}}%
+\putbox{2.66in}{1.38in}{\centbox{\midbox{\begin{LARGE}$\Sigma$\end{LARGE}}}}%
+\putbox{2.60in}{1.21in}{\centbox{\midbox{-}}}%
+\end{flushleft}

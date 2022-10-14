@@ -1,0 +1,76 @@
+%! PostScript set of library objects for XCircuit
+%  Version: 3.4
+%  Library name is: CRFB_simple
+%  Author: Matthew Jackson <matthew@snarky>
+%
+
+
+% XCircuitLib library objects
+/_sum_LaTeX {
+begingate
+1 1.00 0 0 48 0.00 360.00 xcarc
+(\\begin{LARGE}$\\Sigma$\\end{LARGE}) {/Helvetica cf} 2 149 0 0.40 0 0 label
+endgate
+} def
+
+/accum_block_Z {
+begingate
+0 1.00 -48 48 -48 -64 64 -64 64 48 4 polygon
+(\\begin{small}$\\frac{1}{1-z^{-1}}$\\end{small}) {/Helvetica cf} 2 149 0 0.40 
+8 4 label
+endgate
+} def
+
+/_unit_delay_LaTeX {
+begingate
+(\\begin{large}$z^{-1}$\\end{large}) {/Helvetica cf} 2 149 0 0.40 0 4 label
+0 1.00 -48 48 -48 -48 48 -48 48 48 4 polygon
+endgate
+} def
+
+/ADC_box {
+begingate
+1 1.00 -64 0 -40 32 64 32 64 -32 -40 -32 -64 0 6 polygon
+(ADC) {/Helvetica cf} 2 21 0 1.00 8 0 label
+endgate
+} def
+
+/_DAC_box {
+begingate
+(DAC) {/Helvetica cf} 2 21 0 1.00 -8 0 label
+1 1.00 64 0 40 32 -64 32 -64 -32 40 -32 64 0 6 polygon
+endgate
+} def
+
+/sum_LaTeX {
+begingate
+1 1.00 0 0 48 0.00 360.00 xcarc
+($\\displaystyle\\sum$) {/Helvetica cf} 2 149 0 0.40 0 8 label
+endgate
+} def
+
+/int_box_LaTeX {
+begingate
+0 1.00 -48 48 -48 -48 48 -48 48 48 4 polygon
+($\\displaystyle\\int$) {/Helvetica cf} 2 149 0 0.40 0 8 label
+endgate
+} def
+
+/delayed_integrator_z {
+begingate
+0 1.00 -56 56 -56 -56 56 -56 56 56 4 polygon
+(\\begin{small}$\\frac{z^{-1}}{1-z^{-1}}$\\end{small}) {/Helvetica cf} 2 149 0 
+0.40 0 12 label
+endgate
+} def
+
+/delay_free_integrator_z {
+begingate
+0 1.00 -56 56 -56 -56 56 -56 56 56 4 polygon
+(\\begin{small}$\\frac{1}{1-z^{-1}}$\\end{small}) {/Helvetica cf} 2 149 0 0.40 
+0 12 label
+endgate
+} def
+
+
+% EndLib

@@ -1,0 +1,262 @@
+%! PostScript set of library objects for XCircuit
+%  Version: 3.4
+%  Library name is: thesis_derivation
+%  Author: Matthew Jackson <matthew@snarky>
+%
+
+% Depend first_order_generic arrowhead int_LaTeX sum_LaTeX ADC_LaTeX DAC_LaTeX_r2l circle dot
+% Depend linear_first_order_coef sum_LaTeX arrowhead dot unit_delay_LaTeX circle
+% Depend first_order_lin sum_LaTeX arrowhead dot unit_delay_LaTeX circle
+% Depend 2nd_linear_simple_model sum_LaTeX arrowhead dot unit_delay_LaTeX circle
+
+% XCircuitLib library objects
+/sum_LaTeX {
+begingate
+1 1.00 0 0 48 0.00 360.00 xcarc
+(\\begin{huge}$\\Sigma$\\end{huge}) {/Helvetica cf} 2 149 0 0.40 0 0 label
+endgate
+} def
+
+/unit_delay_LaTeX {
+begingate
+(\\begin{Large}$z^{-1}$\\end{Large}) {/Helvetica cf} 2 149 0 0.40 0 4 label
+0 1.00 -48 48 -48 -48 48 -48 48 48 4 polygon
+endgate
+} def
+
+/int_LaTeX {
+begingate
+(\\begin{Large}$\\frac{1}{s}$\\end{Large}) {/Helvetica cf} 2 149 0 0.40 0 12 
+label
+0 1.00 -48 48 -48 -48 48 -48 48 48 4 polygon
+endgate
+} def
+
+/ADC_LaTeX {
+begingate
+1 1.00 -64 0 -32 32 64 32 64 -32 -32 -32 -64 0 6 polygon
+(ADC) {/Helvetica cf} 2 149 0 0.40 12 12 label
+endgate
+} def
+
+/DAC_LaTeX_r2l {
+begingate
+1 1.00 -64 0 -32 32 64 32 64 -32 -32 -32 -64 0 6 polygon
+(DAC) {/Helvetica cf} 2 149 0 0.40 12 8 label
+endgate
+} def
+
+/arrowhead {
+% trivial
+begingate
+8 -28 beginpath
+3 -18 3 -15 0 0 curveto
+-3 -15 -3 -18 -8 -28 curveto
+-2 -26 2 -26 8 -28 curveto
+249 1.00 endpath
+endgate
+} def
+
+/circle {
+% trivial
+begingate
+1 1.00 16 0 6 0.00 360.00 xcarc
+1 1.00 0 0 10 0 2 polygon
+1.000 0.000 0.000 scb
+(out) {/Times-Roman cf} 2 4 0 1.00 16 0 pinlabel
+(out) {/Times-Roman cf} 2 7 0 1.00 0 0 pinlabel
+endgate
+} def
+
+/dot {
+% trivial
+begingate
+248 1.00 0 0 6 0.00 360.00 xcarc
+1.000 0.000 0.000 scb
+(x) {/Times-Roman cf} 2 29 0 1.00 0 0 pinlabel
+endgate
+} def
+
+/first_order_generic {
+begingate
+1 1.00 -288 48 -184 48 2 polygon
+1 1.00 -336 -96 -336 -24 2 polygon
+1 1.00 -64 48 56 48 2 polygon
+1.00 90 80 48 arrowhead
+1.00 90 -160 48 arrowhead
+-1.00 0 -336 -192 arrowhead
+-1.00 0 -336 0 arrowhead
+1.00 0 -112 48 int_LaTeX
+1.00 0 -336 48 sum_LaTeX
+1.00 0 608 48 ADC_LaTeX
+1.00 0 608 -288 DAC_LaTeX_r2l
+1.00 0 128 48 sum_LaTeX
+1 1.00 176 48 296 48 2 polygon
+1.00 90 320 48 arrowhead
+1.00 0 368 48 int_LaTeX
+-1.00 0 128 -192 arrowhead
+-1.00 0 128 0 arrowhead
+1 1.00 128 -96 128 -24 2 polygon
+1 1.00 416 48 536 48 2 polygon
+1.00 90 544 48 arrowhead
+1 1.00 672 48 736 48 736 -288 672 -288 4 polygon
+1 1.00 544 -288 128 -288 128 -216 3 polygon
+1 1.00 128 -288 -336 -288 -336 -216 3 polygon
+1 1.00 736 48 824 48 2 polygon
+1.00 0 816 48 circle
+1.00 180 -464 48 circle
+1 1.00 -464 48 -408 48 2 polygon
+1.00 90 -384 48 arrowhead
+1 1.00 -384 -192 -336 -96 -288 -192 -384 -192 4 polygon
+($a_1$) {/Helvetica cf} 2 149 0 0.40 -336 -144 label
+1 1.00 80 -192 128 -96 176 -192 80 -192 4 polygon
+($a_2$) {/Helvetica cf} 2 149 0 0.40 128 -144 label
+1.00 0 128 -288 dot
+1.00 0 736 48 dot
+($x\(t\)$) {/Helvetica cf} 2 144 0 0.40 -560 48 label
+($y\(n\)$) {/Helvetica cf} 2 144 0 0.40 848 48 label
+endgate
+} def
+
+/linear_first_order_coef {
+begingate
+1.00 0 -368 96 sum_LaTeX
+1 1.00 -368 -40 -368 32 2 polygon
+-1.00 0 -368 -136 arrowhead
+1 1.00 224 -232 -368 -232 -368 -160 3 polygon
+1 1.00 -416 -136 -368 -40 -320 -136 -416 -136 4 polygon
+($\\beta_0$) {/Helvetica cf} 2 149 0 0.40 -368 -88 label
+1 1.00 112 -136 160 -40 208 -136 112 -136 4 polygon
+1.00 0 -176 96 sum_LaTeX
+1.00 0 160 96 sum_LaTeX
+-1.00 90 -416 96 arrowhead
+-1.00 90 -224 96 arrowhead
+-1.00 90 112 96 arrowhead
+-1.00 0 160 48 arrowhead
+1 1.00 -320 96 -248 96 2 polygon
+-1.00 0 -368 48 arrowhead
+1 1.00 160 -40 160 32 2 polygon
+1 1.00 -128 96 96 96 2 polygon
+-1.00 270 -16 -48 arrowhead
+1 1.00 0 -48 56 -48 56 96 3 polygon
+1 1.00 -112 -48 -176 -48 -176 32 3 polygon
+-1.00 0 -176 48 arrowhead
+1.00 0 56 96 dot
+1.00 0 -64 -48 unit_delay_LaTeX
+($\\beta_1$) {/Helvetica cf} 2 149 0 0.40 160 -88 label
+-1.00 0 160 -136 arrowhead
+1.00 0 272 -232 unit_delay_LaTeX
+1 1.00 160 -232 160 -152 2 polygon
+1 1.00 208 96 496 96 2 polygon
+1 1.00 336 -232 416 -232 416 96 3 polygon
+1.00 0 416 96 dot
+1.00 0 160 -232 dot
+1.00 0 496 96 circle
+1.00 180 -496 96 circle
+-1.00 270 320 -232 arrowhead
+1 1.00 -496 96 -440 96 2 polygon
+($X\(z\)$) {/Helvetica cf} 2 149 0 0.40 -512 144 label
+($Y\(z\)$) {/Helvetica cf} 2 149 0 0.40 512 144 label
+($\\Alpha\(z\)$) {/Helvetica cf} 2 149 0 0.40 56 144 label
+-1.00 90 160 224 circle
+1 1.00 160 224 160 168 2 polygon
+($E\(z\)$) {/Helvetica cf} 2 149 0 0.40 160 280 label
+1.00 180 160 144 arrowhead
+($-$) {/Helvetica cf} 2 149 0 0.40 128 32 label
+($-$) {/Helvetica cf} 2 149 0 0.40 -400 32 label
+endgate
+} def
+
+/first_order_lin {
+begingate
+1.00 0 -368 96 sum_LaTeX
+1 1.00 -112 -232 -368 -232 -368 24 3 polygon
+1.00 0 -176 96 sum_LaTeX
+1.00 0 160 96 sum_LaTeX
+-1.00 90 -416 96 arrowhead
+-1.00 90 -224 96 arrowhead
+-1.00 90 112 96 arrowhead
+1 1.00 -320 96 -248 96 2 polygon
+-1.00 0 -368 48 arrowhead
+1 1.00 -128 96 96 96 2 polygon
+-1.00 270 -16 -48 arrowhead
+1 1.00 0 -48 56 -48 56 96 3 polygon
+1 1.00 -112 -48 -176 -48 -176 32 3 polygon
+-1.00 0 -176 48 arrowhead
+1.00 0 56 96 dot
+1.00 0 -64 -48 unit_delay_LaTeX
+1.00 0 -64 -232 unit_delay_LaTeX
+1 1.00 208 96 496 96 2 polygon
+1 1.00 8 -232 416 -232 416 96 3 polygon
+1.00 0 416 96 dot
+1.00 0 496 96 circle
+1.00 180 -496 96 circle
+-1.00 270 -16 -232 arrowhead
+1 1.00 -496 96 -440 96 2 polygon
+($X\(z\)$) {/Helvetica cf} 2 149 0 0.40 -512 144 label
+($Y\(z\)$) {/Helvetica cf} 2 149 0 0.40 512 144 label
+($A\(z\)$) {/Helvetica cf} 2 149 0 0.40 56 144 label
+-1.00 90 160 224 circle
+1 1.00 160 224 160 168 2 polygon
+($E\(z\)$) {/Helvetica cf} 2 149 0 0.40 160 280 label
+1.00 180 160 144 arrowhead
+($-$) {/Helvetica cf} 2 149 0 0.40 -400 32 label
+endgate
+} def
+
+/2nd_linear_simple_model {
+begingate
+1.00 0 -536 64 sum_LaTeX
+1 1.00 -8 -208 -536 -208 -536 -8 3 polygon
+1.00 0 -344 64 sum_LaTeX
+1.00 0 -8 64 sum_LaTeX
+-1.00 90 -584 64 arrowhead
+-1.00 90 -392 64 arrowhead
+-1.00 90 -56 64 arrowhead
+1 1.00 -488 64 -416 64 2 polygon
+-1.00 0 -536 16 arrowhead
+1 1.00 -296 64 -72 64 2 polygon
+-1.00 270 -184 -80 arrowhead
+1 1.00 -168 -80 -120 -80 -120 64 3 polygon
+1 1.00 -280 -80 -344 -80 -344 0 3 polygon
+-1.00 0 -344 16 arrowhead
+1.00 0 -120 64 dot
+1.00 0 -232 -80 unit_delay_LaTeX
+1.00 0 296 -208 unit_delay_LaTeX
+1 1.00 568 64 664 64 2 polygon
+1 1.00 344 -208 616 -208 616 64 3 polygon
+1.00 0 616 64 dot
+1.00 0 664 64 circle
+1.00 180 -664 64 circle
+-1.00 270 344 -208 arrowhead
+1 1.00 -664 64 -608 64 2 polygon
+($X\(z\)$) {/Helvetica cf} 2 149 0 0.40 -680 112 label
+($Y\(z\)$) {/Helvetica cf} 2 149 0 0.40 680 112 label
+($A_{0}\(z\)$) {/Helvetica cf} 2 149 0 0.40 -120 112 label
+-1.00 90 520 192 circle
+1 1.00 520 192 520 136 2 polygon
+($E\(z\)$) {/Helvetica cf} 2 149 0 0.40 520 248 label
+1.00 180 520 112 arrowhead
+($-$) {/Helvetica cf} 2 149 0 0.40 -568 0 label
+1 1.00 248 -208 -8 -208 -8 -8 3 polygon
+-1.00 0 -8 16 arrowhead
+1.00 0 -8 -208 dot
+($-$) {/Helvetica cf} 2 149 0 0.40 -40 0 label
+1.00 0 184 64 sum_LaTeX
+-1.00 90 136 64 arrowhead
+-1.00 90 472 64 arrowhead
+1 1.00 40 64 112 64 2 polygon
+1 1.00 232 64 456 64 2 polygon
+-1.00 270 344 -80 arrowhead
+1 1.00 360 -80 408 -80 408 64 3 polygon
+1 1.00 248 -80 184 -80 184 0 3 polygon
+-1.00 0 184 16 arrowhead
+1.00 0 408 64 dot
+1.00 0 296 -80 unit_delay_LaTeX
+($A_{1}\(z\)$) {/Helvetica cf} 2 149 0 0.40 408 112 label
+1.00 0 520 64 sum_LaTeX
+endgate
+} def
+
+
+% EndLib

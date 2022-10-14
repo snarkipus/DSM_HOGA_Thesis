@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  CHAPTER 1: Introduction
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Mixed-signal systems are systems that possess both analog and digital subsystems. Such
+systems are prevalent in test and measurement platforms, data acquisition systems, and
+communications devices. Thus, these mixed-signal systems are often central to hardware
+applications ranging from common consumer products such as cellular telephones to highly
+specialized real-time data collection systems used in mission critical applications such
+as space flight.
+
+In mixed-signal systems, the conversion from analog to digital is performed by
+an analog-to-digital converter (ADC). Conversely, the conversion from
+digital to analog is performed by a digital-to-analog converter (DAC).
+These devices are mixed-signal devices that allow for the
+ebb and flow of information between the analog world and digital or discrete-time systems
+which are now prevalent throughout electrical applications. Because the performance of
+digital systems can usually be improved by simple hardware or software changes, the
+performance of a mixed-signal system is often limited by the performance of its data
+converters.  As a result, the performance of many mixed-signal systems can be improved by
+improving the system's data converter performance.
+
+Many different ADC architectures exist and each architecture has its own benefits and
+limitations. \DS modulators are an ADC architecture that uses relatively simple analog
+circuitry including a low order quantizer and a feedback loop to sample analog signals
+with high signal to noise ratios (SNRs) and large dynamic ranges (DRs).  
+Because of the simplicity of the architecture, \DS modulators lend themselves to being
+implemented in CMOS process technologies which offer mixed-signal electronics, low-power
+performance and high levels of integration \cite{kester_analog_2006}.
+
+\DS modulators achieve high SNRs and large DRs by using a feedback loop
+filter to attenuate the quantizer's noise in the frequency bands of interest while passing
+the input signal to the output. The transfer function describing the loop filter that
+attenuates the quantizer's noise is referred to as the $\Delta\Sigma$'s noise transfer
+function (NTF). Similarly, the transfer function describing the loop filter that passes
+the input signal to the output is called the signal transfer function (STF).  For lowpass
+\DS modulators, the NTF is designed as a high-pass filter so that the noise energy is
+attenuated within the low-frequency signal band. Conversely, the STF is designed as a
+lowpass filter so that the input signals within the low-frequency signal band are not
+attenuated. The STF can also act as an anti-aliasing filter. Thus, the output of a \DS
+modulator can be modeled as the sum of an input signal filtered by a STF and a noise
+source filtered by a NTF.
+
+In this thesis, optimal signal transfer functions (STFs) and noise transfer functions
+(NTFs) for \DS modulators are determined using a novel hybrid orthogonal genetic (HOG)
+algorithm. For a given oversampling rate (OSR), which is loosely defined as the
+ratio of the $\Delta\Sigma$'s sampling frequency to the input signal's Nyquist frequency,
+the $\Delta\Sigma$'s STF and NTF are optimized with respect to a weighted combination of
+the \DS modulator's signal-to-noise ratio (SNR) and dynamic range (DR).

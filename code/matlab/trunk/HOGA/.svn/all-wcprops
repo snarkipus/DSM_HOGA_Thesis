@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/63/code/matlab/trunk/HOGA
+END
+HOGA.m
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/63/code/matlab/trunk/HOGA/HOGA.m
+END
+Mutate.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/44/code/matlab/trunk/HOGA/Mutate.m
+END
+LR_Selection.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/44/code/matlab/trunk/HOGA/LR_Selection.m
+END
+Eval_Fitness.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/44/code/matlab/trunk/HOGA/Eval_Fitness.m
+END
+taguchi_method.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/47/code/matlab/trunk/HOGA/taguchi_method.m
+END
+Crossover.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/44/code/matlab/trunk/HOGA/Crossover.m
+END
+generateOA.m
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/44/code/matlab/trunk/HOGA/generateOA.m
+END

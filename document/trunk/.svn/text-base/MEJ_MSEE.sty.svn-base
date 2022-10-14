@@ -1,0 +1,276 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% RAW PAGE LAYOUT
+
+\newcommand{\norm@ltextheight} {8.54in} 
+\newcommand{\extr@textheight}  {8.61in}  
+\setlength{\textheight}	       {\extr@textheight}
+\setlength{\oddsidemargin}     {0.50in}
+\setlength{\evensidemargin}    {0.50in}
+\setlength{\textwidth}	       {6.00in}
+\setlength{\topmargin}	       {0.00in}
+\setlength{\parindent}	       {0.25in}
+\setlength{\headheight}	       {0.00in}
+\setlength{\headsep}	       {0.00in}
+\setlength{\footskip}	       {42pt}
+
+%%% -- Default entries --
+\newcommand{\@universityname}		{University of Nevada, Las Vegas}
+\newcommand{\thesisauthor}			{Ima Student}
+\newcommand{\thesismonth}			{Frumptober}
+\newcommand{\thesisdefensemonth}	{Frumptober}
+\newcommand{\thesisyear}			{2099}
+\newcommand{\thesistitle}			{Snorkling and Obesity}
+\newcommand{\thesissupervisor}		{Edgar Bootlicker}
+\newcommand{\thesistype}			{Dissertation}
+\newcommand{\thesisdegree}			{Doctor of Philosophy}
+\newcommand{\thesisdedication}		{To my dog.}
+\newcommand{\thesisfrontheadsize}	{\normalsize}
+
+%%% -- Define the headings --
+\renewcommand{\bibname}					{REFERENCES}
+\newcommand{\thesisvitahead}			{VITA}
+\newcommand{\thesisacknowledgmenthead}	{ACKNOWLEDGMENTS}
+\renewcommand{\chaptername}				{CHAPTER}
+\renewcommand{\listfigurename}			{LIST OF FIGURES}
+\renewcommand{\listtablename}			{LIST OF TABLES}
+\def\contentsname						{TABLE OF CONTENTS}
+\def\appendixname						{APPENDIX}
+
+%%% -- Masters theses -- (\phdthesis is provided for symmetry)
+\newcommand{\mastersthesis}{
+    \renewcommand{\thesistype}		{Thesis}
+    \renewcommand{\thesisdegree}	{Master of Science}}
+\newcommand{\phdthesis}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% OPTIONS
+
+\newif\if@mixedtitle
+\@mixedtitlefalse
+
+\newcommand{\dontforcetitlecaps}	{\@mixedtitletrue}
+
+\titleformat{\chapter}[display]
+{\normalfont\normalsize\centering}
+{\chaptertitlename\ \thechapter}
+{\baselineskip}
+{\normalfont\normalsize\uppercase}
+
+\titleformat{\section}
+{\normalfont\normalsize}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize}{\thesubsubsection}{1em}{}
+
+\titleformat{\paragraph}[hang]
+{\normalfont\normalsize}{\theparagraph}{1em}{}
+
+\titleformat{\subparagraph}[hang]
+{\normalfont\normalsize}{\thesubparagraph}{1em}{}
+
+\titlespacing*{\chapter} 		{0pt}{50pt}{0pt}
+\titlespacing*{\section} 		{0pt}{1.1\baselineskip}{0pt}
+\titlespacing*{\subsection} 	{0pt}{0pt}{0pt}
+\titlespacing*{\subsubsection}	{0pt}{0pt}{0pt}
+\titlespacing*{\paragraph} 		{0pt}{0pt}{0pt}
+\titlespacing*{\subparagraph} 	{0pt}{0pt}{0pt}
+
+\renewcommand{\floatsep}		{1.9\baselineskip}
+\renewcommand{\textfloatsep}	{1.9\baselineskip}
+\renewcommand{\intextsep}		{1.9\baselineskip}
+% \abovecaptionskip
+% \belowcaptionskip
+
+
+\renewcommand{\cftchapfont}		{\normalfont\normalsize}
+\renewcommand{\cftchappagefont}	{\normalfont\normalsize}
+\renewcommand{\cftchapleader}	{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchappresnum}	{CHAPTER }
+\addtolength{\cftchapnumwidth}	{5.0em}
+
+\cftsetindents{figure}{0em}{5.5em}
+\renewcommand{\cftfigpresnum} 	{Figure }
+\renewcommand{\cftfigaftersnum}	{:}
+
+\cftsetindents{table}{0em}{4.7em}
+\renewcommand{\cfttabpresnum} 	{Table }
+\renewcommand{\cfttabaftersnum}	{:}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% STATIC CONTENT (FRONT MATTER, ETC.)
+
+\newcommand{\@thesistitle}{{\if@mixedtitle\thesistitle %
+    \else \uppercase\expandafter{\thesistitle\expandafter}\fi }}
+    
+\newcommand{\thesistitlepage}{
+   \global\headheight=0in 
+   \global\headsep=0in
+   \thispagestyle{empty}
+   \strut\par\noindent
+   \vskip -\baselineskip\noindent
+	
+	{
+    	\centering
+    	\doublespacing{\@thesistitle}\\
+    	\vfill
+    	by \\
+    	\vfill
+    	\thesisauthor \\
+		\vskip 1.1em
+		\singlespacing{
+			Bachelor of Science in Electrical Engineering   \\
+      		University of Wyoming \\
+      		2003
+		} 
+    	\vfill
+    	\singlespacing{
+    		A \thesistype{} presented in partial fulfillment \\
+    		of the requirements for the
+		}
+		\vfill
+		\singlespacing{
+       		\textbf{\thesisdegree \space Degree in Electrical Engineering}\\
+       		\textbf{Department of Electrical and Computer Engineering}\\
+       		\textbf{Howard R. Hughes College of Engineering}
+		}
+		\vfill
+		\singlespacing{
+    		\hbox to \hsize{\hfill \textbf{Graduate College} \hfill}
+     		\hbox to \hsize{\hfill \textbf{\@universityname}\hfill}
+    		\hbox to \hsize{\hfill \textbf{\thesismonth \ \thesisyear} \hfill}
+		}
+	}
+	\newpage
+}
+
+%%% -- Copyright Page --
+\newcommand{\thesiscopyrightpage}{
+    \thispagestyle{empty}
+    \strut \vfill
+    \begin{center}
+      \begin{spacing}{1}
+      \copyright\ \thesisyear \ \thesisauthor \\ 
+      All Rights Reserved
+      \end{spacing}     
+    \end{center}
+    \vfill \strut
+    \newpage} 
+    
+%%% -- Signature Page Placeholder
+\def\signrule{\vskip 0.75in\hbox{\vrule width 3.5in height 0.4pt}\vskip 0.05in}
+
+\newcommand{\thesissignaturepage}{
+\pagenumbering{roman}
+\setcounter{page}{2}
+\begin{spacing}{1}
+\vbox{
+	\hbox to \hsize{
+	\includegraphics[scale=0.6]{redlogo.eps}
+	\hfill
+	\begin{tabular}{l}
+		\textbf{Thesis Approval}\\
+		The Graduate College\\
+		University of Nevada, Las Vegas\\
+		\\
+		May 1, 2009
+	\end{tabular}
+}
+    \vskip 0.75in
+    \begin{spacing}{1.9}
+		\centering
+		This thesis prepared by\\
+    	\textbf{Matthew Edward Jackson}\\
+		\vskip 0.5in
+		Entitled\\
+     	\textbf{Optimal Design of Discrete-Time Delta Sigma Modulators}\\
+		\vskip 0.5in
+		is approved in partial fulfillment of the requirements for the degree of\\
+		\textbf{Master of Science in Electrical Engineering}\\
+	\end{spacing}
+	\vskip 1in
+	\hbox to \hsize{{\vrule width 2.7in height 0.4pt}\hfill 
+{\vrule width 2.7in height 0.4pt}}
+    \hbox to \hsize{\textit{Examination Committee Member}\hfill
+					\textit{Examination Committee Chair}\hspace{0.5in}}\par
+	\vskip 0.6in
+	\hbox to \hsize{{\vrule width 2.7in height 0.4pt}\hfill 
+{\vrule width 2.7in height 0.4pt}}
+    \hbox to \hsize{\textit{Examination Committee Member}\hfill
+					\textit{Dean of the Graduate College}\hspace{0.6in}}\par
+	\vskip 0.6in
+	\hbox to \hsize{{\vrule width 2.7in height 0.4pt}\hfill}
+    \hbox to \hsize{\textit{Graduate College Faculty Representative}\hfill}\par
+} 
+\end{spacing}    }
+% \newpage}
+
+%%% -- Abstract Page(s) --
+\newenvironment{thesisabstract}{
+	\vspace*{50pt}
+	\doublespacing{	
+		\hbox to \hsize{\hfill {\thesisfrontheadsize  ABSTRACT} \hfill}
+		\begin{center}
+			{\bfseries Optimal Design of Discrete-Time \DS Modulators} \\
+			by \\
+			\thesisauthor \\
+			\singlespacing{
+				Dr. Peter A. Stubberud, Examination Committee Chair \\
+				Professor of Electrical Engineering \\
+				University of Nevada, Las Vegas\\
+			}
+		\end{center}
+	}	
+	\doublespacing{}}{\newpage}
+
+
+%%% -- Dedication Page.--
+\newcommand{\thesisdedicationpage}{
+    \strut \vfill
+    \begin{spacing}{\@defaultbaselinestretch}
+    \begin{center}
+      \thesisdedication
+    \end{center}
+    \end{spacing}
+    \vfill \strut
+    \newpage}
+
+%%% -- Acknowledgments Page.--
+\newenvironment{thesisacknowledgements}{
+	\vspace*{50pt}
+		\hbox to \hsize{\hfill {\thesisfrontheadsize  ACKNOWLEDGMENTS} \hfill}
+	\doublespacing{}}{\newpage}
+
+%%% -- Vita Page.--
+\newcommand{\thesisauthorvita}{
+%     \strut \vfill
+    \vspace*{50pt}
+    \hbox to \hsize{\hfill {\thesisfrontheadsize  \thesisvitahead} \hfill}
+    \bigskip
+    \singlespacing{
+    \begin{center} 
+	Graduate College \\
+     University of Nevada, Las Vegas\\
+     \vskip \baselineskip
+     Matthew Edward Jackson\\
+     \end{center}
+Home Address: \\
+     \hspace*\parindent 540 Truffles Street \\
+     \hspace*\parindent Henderson, Nevada 89015\\
+     \space \\
+Degrees:\\
+     \hspace*\parindent Bachelor of Science, Electrical Engineering, 2003 \\
+     \hspace*\parindent University of Wyoming \\
+     \space \\
+Thesis Title: Optimal Design of Discrete-Time \DS Modulators \\
+	\space \\
+Thesis Examination Committee: \\
+\hspace*\parindent Chairperson, Professor, Dr. Peter Stubberud, Ph.D. \\
+\hspace*\parindent Committee Member, Professor, Dr. Yahia Bagzous, Ph.D. \\
+\hspace*\parindent Committee Member, Professor, Dr. Sahjendra Singh, Ph.D. \\
+\hspace*\parindent Committee Member, Professor, Dr. Brendan O'Toole, Ph.D. \\
+}
+}
+
+\setcounter{secnumdepth}{7}

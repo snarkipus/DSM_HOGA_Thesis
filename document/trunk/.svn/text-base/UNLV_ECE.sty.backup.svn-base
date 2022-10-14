@@ -1,0 +1,950 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% File: UNLV_ECE.sty
+%%% 
+%%% Changelog:
+%%% - Originally adapted from asthesis.sty 2007.07.05
+%%%
+%%% File: asthesis.sty, version 1.11, April 2001
+%%% =============================================
+%%% Copyright (c) 1998 by John Jones.  All rights reserved.
+%%% This file is free and can be modified or distributed as long as
+%%% you meet the following conditions:
+%%%
+%%% (1) This copyright notice is kept intact on all modified copies.
+%%% (2) If you modify this file, you MUST NOT use the original file name.
+%%%
+%%% Usage:
+%%% ======
+%%%
+%%% To use this file with LaTeX2e, keep it with the rest of your thesis
+%%% files or make sure your TEXINPUTS environment variable contains the
+%%% directory in which this file is located. Include this file as a
+%%% package in the preamble:
+%%%
+%%% \documentclass[...]{report}
+%%% \usepackage{asuthsis}
+%%%
+%%% On non-UNIX systems, there might be different environment variables
+%%% that might need to be set.
+%%%
+%%% A template for a thesis is provided in the file "asthesis.tex", available
+%%% from the same place where you obtained this file.
+%%%
+%%% Command Names:
+%%% ==============
+%%%
+%%% ALL command names used in this file that are used to format the
+%%% thesis begin with "thesis" (e.g., \thesisauthor).  All of these
+%%% commands can be changed by the user using \renewcommand, e.g.,
+%%%
+%%% \renewcommand{\thesisauthor}{First M. Last}
+%%%
+%%% after loading the package in LaTeX2e.
+%%%
+%%% The following is a list of all thesis-related variables used together
+%%% with their default values:
+%%%
+%%% \thesisauthor    %% Name of the author; defaults to "Ima Student".
+%%% \thesismonth     %% Month of graduation; defaults to "May".
+%%% \thesisdefensemonth
+%%%                  %% Month of defense; defaults to "May".
+%%% \thesisyear      %% Year of graduation; defaults to "1994".
+%%% \thesistitle     %% Full title of dissertation; defaults to "Title".
+%%% \thesissupervisor
+%%%                  %% Name of thesis supervisor; defaults to "Isaac Newton"
+%%% \thesistype      %% Type of thesis; defaults to "Dissertation".
+%%% \thesisdegree    %% Degree for which thesis is submitted; defaults to
+%%%                  %% "Doctor of Philosophy".
+%%% \thesiscommitteesize
+%%%                  %% Number of members in thesis committee; defaults to 5.
+%%% \chairnumber     %% Number of (co)-chairs; defaults to 1.
+%%% \thesisfrontheadsize
+%%%                  %% The size of words like ABSTRACT, etc.
+%%% \thesisvitahead  %% Title of the vita page; defaults to "BIOGRAPHICAL SKETCH".
+%%% \thesisacknowledgmenthead
+%%%                  %% Title of the acknowledgments page; defaults to
+%%%                  %% "ACKNOWLEDGMENTS".
+%%% \thesisdedication
+%%%                  %% Person or thing dedicated to; defaults to
+%%%                  %% "To my dog." :-)
+%%%
+%%% Most of the default values will satisfy the Graduate School's
+%%% requirements; however, at a minimum, the user SHOULD redefine the
+%%% following commands:
+%%%
+%%% \thesisauthor
+%%% \thesismonth
+%%% \thesisyear
+%%% \thesistitle
+%%% \thesissupervisor
+%%%
+%%% In addition to the above variables, the following commands are
+%%% provided to generate the optional sections of the thesis:
+%%%
+%%% \thesiscopyrightpage
+%%%                  %% Generates the copyright page  (not fully implimented yet.)
+%%% \thesistitlepage %% Generates the title page.
+%%% \thesissignaturepage
+%%%                  %% Generates the signature page.
+%%% \thesisdedicationpage
+%%%                  %% Generates the dedication page.
+%%%
+%%% There are also a few environments to generate paragraph-like text:
+%%%
+%%% thesisacknowledgments
+%%%                  %% Text of acknowledgments.
+%%% thesisabstract   %% Text of abstract.
+%%% thesisauthorvita %% Text of author's vita.
+%%%
+%%% Bells and Whistles:
+%%% ===================
+%%%
+%%% The following commands are provided purely for playing around with.
+%%% They should be used in the document preamble (before \begin{document}).
+%%%
+%%% \thesisdraft     %% Prints a timestamp at the top of each page.  This
+%%%                  %% must be invoked in the document preamble (before
+%%%                  %% \begin{document}).
+%%% \singlespace, \oneandhalfspace, \doublespace
+%%%                  %% These define the line spacing to single-space,
+%%%                  %% one-and-one-half space, and double-space
+%%%                  %% respectively.  Note that the Graduate School
+%%%                  %% requires \doublespace, but the others save
+%%%                  %% paper on earlier drafts, e.g., when using
+%%%                  %% \thesisdraft.
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{***********************************************************************}
+\typeout{** Filename:	UNLV_ECE.sty						}
+\typeout{**									}
+\typeout{** Date:	2007.07.05						}
+\typeout{** 									}
+\typeout{** Author:	Matthew Jackson						}
+\typeout{**									}
+\typeout{** Info:	A LaTeX style file for writing a thesis in accordance	}
+\typeout{**		with the requirements stated by the UNLV Graduate	}
+\typeout{**		College. Adapted from Arizona State University.		}
+\typeout{***********************************************************************}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% RAW PAGE LAYOUT
+
+\newcommand{\norm@ltextheight} {8.54in} 
+\newcommand{\extr@textheight}  {8.61in}  
+\setlength{\textheight}	       {\extr@textheight}
+\setlength{\oddsidemargin}     {0.50in}
+\setlength{\evensidemargin}    {0.50in}
+\setlength{\textwidth}	       {6.00in}
+\setlength{\topmargin}	       {0.00in}
+\setlength{\parindent}	       {0.25in}
+\setlength{\headheight}	       {0.00in}
+\setlength{\headsep}	       {0.00in}
+\setlength{\footskip}	       {42pt}
+
+%%% -- Frontmatter --
+\newdimen\norlhdht
+\newdimen\norlhdsp
+\norlhdht=\headheight
+\norlhdsp=\headsep
+
+\def\resetnorm@l{%
+  \global\headheight=\norlhdht
+  \global\headsep=\norlhdsp
+  \global\textheight\norm@ltextheight
+  \global\@colht\textheight
+  \global\@colroom\textheight
+  \global\vsize\textheight
+}
+
+%%%  Special for the title and/or signature pages
+\newcommand{\fudgef@ctor}{-0.12in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DEFAULT INFORMATION (auto-content)
+
+%%% -- Default entries --
+\newcommand{\@universityname}		{University of Nevada, Las Vegas}
+\newcommand{\thesisauthor}			{Ima Student}
+\newcommand{\thesismonth}			{Frumptober}
+\newcommand{\thesisdefensemonth}	{Frumptober}
+\newcommand{\thesisyear}			{2099}
+\newcommand{\thesistitle}			{Snorkling and Obesity}
+\newcommand{\thesissupervisor}		{Edgar Bootlicker}
+\newcommand{\thesistype}			{Dissertation}
+\newcommand{\thesisdegree}			{Doctor of Philosophy}
+\newcommand{\thesisdedication}		{To my dog.}
+\newcommand{\thesisfrontheadsize}	{\normalsize}
+
+%%% -- Define the headings --
+\renewcommand{\bibname}					{REFERENCES}
+\newcommand{\thesisvitahead}			{VITA}
+\newcommand{\thesisacknowledgmenthead}	{ACKNOWLEDGMENTS}
+\newcommand{\@capchapapp}				{CHAPTER}
+\renewcommand{\listfigurename}			{LIST OF FIGURES}
+\renewcommand{\listtablename}			{LIST OF TABLES}
+\def\contentsname						{TABLE OF CONTENTS}
+\def\appendixname						{APPENDIX}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% COMMANDS
+
+%%% -- Masters theses -- (\phdthesis is provided for symmetry)
+\newcommand{\mastersthesis}{
+    \renewcommand{\thesistype}		{Thesis}
+    \renewcommand{\thesisdegree}	{Master of Science}}
+\newcommand{\phdthesis}{}
+
+%%% -- Spacing --
+\newcommand{\@defaultbaselinestretch}{1.9}
+\newcommand{\@base}[1]{\renewcommand{\baselinestretch}{#1}}
+\newcommand{\singlespace}{\renewcommand{\@defaultbaselinestretch}{1.1}}
+\newcommand{\oneandhalfspace}{\renewcommand{\@defaultbaselinestretch}{1.5}}
+\newcommand{\doublespace}{\renewcommand{\@defaultbaselinestretch}{1.9}}
+
+%%% -- Title --
+\newcommand{\@thesistitle}{{\if@mixedtitle\thesistitle %
+    \else \uppercase\expandafter{\thesistitle\expandafter}\fi }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% OPTIONS
+
+\newif\if@singlespacebib
+\newif\if@toclotlofthing
+\newif\if@mixedtitle
+\@singlespacebibfalse
+\@mixedtitlefalse
+\@toclotlofthingtrue
+
+\newcommand{\dontforcetitlecaps}	{\@mixedtitletrue}
+\newcommand{\singlespacebib}		{\@singlespacebibtrue}
+\newcommand{\notocheads}		{\@toclotlofthingfalse}
+\newcommand{\reasonableheads}		{\@toclotlofthingfalse}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PAGE NUMBERING AND LINE SPACING (SECTION SPECIFIC)
+
+\newcommand{\@textpagenumbering}	{arabic}
+\newcommand{\@preamblepagenumbering}	{roman}
+\newcommand{\@textpagestyle}		{plain}
+\newcommand{\@preamblepagestyle}	{plain}
+\pagenumbering{\@preamblepagenumbering}
+\@base{\@defaultbaselinestretch}
+
+%%%  -- Set up chapter/appendix stuff --
+\newcommand{\@chaptertype}{\chaptername}
+\newcommand{\@appendix}{0}
+
+%%% -- Counter Magic --
+\def\@removefromreset#1#2{\let\@tempb\@elt
+   \expandafter\let\expandafter\@tempa\csname c@#1\endcsname
+   \def\@elt##1{\expandafter\ifx\csname c@##1\endcsname\@tempa\else
+         \noexpand\@elt{##1}\fi}%
+   \expandafter\edef\csname cl@#2\endcsname{\csname cl@#2\endcsname}%
+   \let\@elt\@tempb}
+
+\@removefromreset{table}{chapter}
+\renewcommand{\thetable}{\arabic{table}}
+\@removefromreset{figure}{chapter}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+%%% -- Caption Spacing --
+\setlength\belowcaptionskip{1 ex}
+\long\def\@caption#1[#2]#3{\par\addcontentsline{\csname
+  ext@#1\endcsname}{#1}{\protect\numberline{\csname
+  the#1\endcsname.}{\ignorespaces #2}}\begingroup
+    \@parboxrestore
+    \normalsize
+    \@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
+  \endgroup}
+
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1. #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    #1. #2\par
+  \else
+    \global \@minipagefalse
+    \hbox to\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% GENERATED CONENT
+
+%%% -- Title Page --
+\newcommand{\thesistitlepage}{
+   \global\headheight=0in 
+   \global\headsep=0in
+   \thispagestyle{empty}
+   \strut\par\noindent
+   \vskip -\baselineskip\noindent
+{
+    \centering
+    \@thesistitle \\
+    \vfill
+    by \\
+    \vfill
+    \thesisauthor \\
+	\vskip 1.1em
+	\begin{spacing}{1}      
+		Bachelor of Science in Electrical Engineering   \\
+      	University of Wyoming \\
+      	2003 
+    \end{spacing}
+    \vfill
+    \begin{spacing}{1}
+    	A \thesistype{} presented in partial fulfillment \\
+    	of the requirements for the
+    \end{spacing}
+    \vfill
+    \begin{spacing}{1}
+       \textbf{\thesisdegree \space Degree in Electrical Engineering}\\
+       \textbf{Department of Electrical and Computer Engineering}\\
+       \textbf{Howard Hughes College of Engineering}
+    \end{spacing}
+	\vfill
+    \begin{spacing}{1}
+    	\hbox to \hsize{\hfill \textbf{Graduate College} \hfill}
+    	\hbox to \hsize{\hfill \expandafter{\textbf{\@universityname}\expandafter} \hfill}
+    	\hbox to \hsize{\hfill \textbf{\thesismonth \ \thesisyear} \hfill}      
+    \end{spacing}
+}
+\newpage}
+
+%%% -- Copyright Page --
+\newcommand{\thesiscopyrightpage}{
+    \thispagestyle{empty}
+    \strut \vfill
+    \begin{center}
+      \begin{spacing}{1}
+      \copyright\ \thesisyear \ \thesisauthor \\ 
+      All Rights Reserved
+      \end{spacing}     
+    \end{center}
+    \vfill \strut
+    \newpage} 
+    
+%%% -- Signature Page Placeholder
+\def\signrule{\vskip 0.75in\hbox{\vrule width 3.5in height 0.4pt}\vskip 0.05in}
+
+\newcommand{\thesissignaturepage}{
+    \setcounter{page}{2}
+    
+\begin{spacing}{1}
+\vbox{
+	\hbox to \hsize{
+	\includegraphics[scale=0.6]{redlogo.eps}
+	\hfill
+	\begin{tabular}{l}
+		\textbf{Thesis Approval}\\
+		The Graduate College\\
+		University of Nevada, Las Vegas\\
+		\\
+		May 1, 2009
+	\end{tabular}
+	}
+    \vskip 1in
+    \begin{spacing}{1.9}
+		\centering
+		This thesis prepared by\\
+    	\textbf{Matthew Edward Jackson}\\
+		\vfill
+		Entitled\\
+     	\textbf{Optimal Design of Discrete-Time Delta Sigma Modulators}\\
+		\vfill
+		is approved in partial fulfillment of the requirements for the degree of\\
+		\textbf{Master of Science in Electrical Engineering}\\
+	\end{spacing}
+	\vskip 1in
+	\hbox to \hsize{{\vrule width 2.5in height 0.4pt}\hfill {\vrule width 2.5in height
+0.4pt}}
+    \signrule
+      \raggedright\begin{tabular}{l}Peter C. Jurs\\Professor of
+          Chemistry\\Thesis Adviser\\Chair of Committee\end{tabular}\par
+	\vskip -0.2in
+    \signrule
+    \raggedright\begin{tabular}{l}Kenneth M. Merz, Jr.\\Professor of
+        Chemistry\end{tabular}\par
+	\vskip -0.2in
+    \signrule
+    \raggedright\begin{tabular}{l}Juliette T.J. Lecomte\\Associate
+        Professor of Chemistry\end{tabular}\par
+	\vskip -0.2in
+    \signrule
+    \raggedright\begin{tabular}{l}Costas Maranas\\Professor of Chemical
+    Engineering\end{tabular}\par
+	\vskip -0.2in
+    \signrule
+      \raggedright\begin{tabular}{l}Ayusman Sen\\Professor of
+          Chemistry\\Head of the Department of Chemistry\end{tabular}\par
+	\vskip -0.2in
+} 
+\end{spacing}
+% }}
+%  \newpage }
+
+
+
+    \newpage}
+    
+    %%%  Counters for signature lines
+\newcount\jjc@unt
+\newcount\commlinec@unt
+
+% \newcommand{\thesissignaturepage}{
+%    \global\headheight=0in 
+%    \global\headsep=0in
+%     \thispagestyle{empty}
+%     \strut\par\noindent
+%     \vskip \fudgef@ctor
+%     \vskip -\baselineskip\noindent
+%     \smash{\vtop to 8.9in{
+%       \centering
+%       \@thesistitle \\
+%       by \\
+%       \thesisauthor \\
+%       \ \\
+%       has been approved \\
+%       \thesisdefensemonth \ \thesisyear
+%     \vfill
+% \vskip -\parskip
+%    \begin{spacing}{1}
+%     \hbox to \hsize{APPROVED:\hfil}
+% \commlinec@unt=0
+% \ifnum\chairnumber=1       \ \\
+%     \underline{\hbox to \hsize{}}\llap{, Chair} \\
+%     \advance\commlinec@unt by1
+% \else
+% \jjc@unt=0 \loop\ifnum\jjc@unt<\chairnumber
+%      \ \\
+%     \underline{\hbox to \hsize{}}\llap{, Co-Chair} \\
+% \advance\commlinec@unt by1
+% \advance\jjc@unt by1 \repeat
+% \fi
+% \loop\ifnum\commlinec@unt<\thesiscommitteesize
+%       \ \\
+%     \underline{\hbox to \hsize{}} \\
+%    \advance\commlinec@unt by1
+% \repeat
+%     \hbox to \hsize{\hfill Supervisory Committee \hfill}
+%     \vfill
+% \strut\hfill\leavevmode\vbox{\hsize=3in
+% \raggedright
+%          ACCEPTED: \\
+%          \ \\
+%          \ \\
+%          \ \\
+%          \underline{\hbox to \hsize{}}\\
+%          Department Chair \\
+%          \ \\
+%          \ \\
+%          \ \\
+%          \underline{\hbox to \hsize{}}\\
+%          Dean, Graduate College\\ }
+% \end{spacing}
+% }} \newpage }
+
+%%% -- Abstract Page(s) --
+\newenvironment{thesisabstract}
+    {%
+     \if@toclotlofthing \gradcollhe@dings \fi
+	\vspace*{4.3pc}  
+	\hbox to \hsize{\hfill {\thesisfrontheadsize  ABSTRACT} \hfill}
+     \vskip \baselineskip
+     \begin{center} Optimal Design of Discrete-Time \DS Modulators \\
+     by \\
+     \thesisauthor
+     \vskip \baselineskip
+     \begin{spacing}{1}
+     Dr. Peter A. Stubberud, Examination Committee Chair \\
+     Professor of Electrical Engineering \\
+     University of Nevada, Las Vegas
+     \end{spacing}
+     \end{center}
+     \begin{spacing}{\@defaultbaselinestretch} }
+    {\end{spacing} \newpage}
+
+%%% -- Dedication Page.--
+\newcommand{\thesisdedicationpage}{
+    \strut \vfill
+    \begin{spacing}{\@defaultbaselinestretch}
+    \begin{center}
+      \thesisdedication
+    \end{center}
+    \end{spacing}
+    \vfill \strut
+    \newpage}
+
+%%% -- Acknowledgments Page.--
+\newenvironment{thesisacknowledgments}
+{\if@toclotlofthing \gradcollhe@dings \fi
+\vspace*{3.9pc}
+\centerline{\thesisfrontheadsize \thesisacknowledgmenthead}
+     \begin{spacing}{\@defaultbaselinestretch}}
+    {\end{spacing} \vfill \strut \newpage}
+
+%%% -- Vita Page.--
+\newcommand{\thesisauthorvita}{
+%     \strut \vfill
+    \vspace*{3.9pc}
+    \hbox to \hsize{\hfill {\thesisfrontheadsize  \thesisvitahead} \hfill}
+    \bigskip
+    \begin{spacing}{1}
+    \begin{center} 
+	Graduate College \\
+     University of Nevada, Las Vegas\\
+     \vskip \baselineskip
+     Matthew Edward Jackson\\
+     \end{center}
+Home Address: \\
+     \hspace*\parindent 540 Truffles Street \\
+     \hspace*\parindent Henderson, Nevada 89015\\
+     \space \\
+Degrees:\\
+     \hspace*\parindent Bachelor of Science, Electrical Engineering, 2003 \\
+     \hspace*\parindent University of Wyoming \\
+     \space \\
+Thesis Title: Optimal Design of Discrete-Time \DS Modulators \\
+	\space \\
+Thesis Examination Committee: \\
+\hspace*\parindent Chairperson, Professor, Dr. Peter Stubberud, Ph.D. \\
+\hspace*\parindent Committee Member, Professor, Dr. Yahia Bagzous, Ph.D. \\
+\hspace*\parindent Committee Member, Professor, Dr. Sahjendra Singh, Ph.D. \\
+\hspace*\parindent Committee Member, Professor, Dr. Brendan O'Toole, Ph.D. \\
+    \end{spacing}
+}
+
+\newcommand{\@chapteralignment}{\centering}
+
+%%% -- Chapter/Appendix/Sectioning --
+\renewcommand{\chapter}{\clearpage
+   \ifnum\@appendix=1
+     \renewcommand{\@chaptertype}{\appendixname}
+   \else
+     \renewcommand{\@chaptertype}{\chaptername}
+   \fi
+   \thispagestyle{plain}
+   \global\textheight\norm@ltextheight
+   \global\@topnum\z@
+   \@afterindenttrue
+   \secdef\@chapter\@schapter
+   }
+
+\renewcommand\appendix{\par
+  \setcounter{chapter}{0}%
+  \setcounter{section}{0}%
+  \renewcommand{\@chapapp}{\appendixname}%
+  \renewcommand{\@capchapapp}{\if@mixedtitle\appendixname\else
+    \uppercase\expandafter{\appendixname\expandafter}\fi}%
+  \renewcommand{\thechapter}{\Alph{chapter}}
+  \renewcommand{\@appendix}{1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Pure Insanity
+%%%
+%%% What follows has been maintained almost verbatim as what it _actually_ does is
+%%% above my LaTeX paygrade.
+
+%%% Command from report.cls, (c) LaTeX3 Project. 
+
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
+                      \refstepcounter{chapter}%
+                      \typeout{\@chapapp\space\thechapter.}%
+                      \ifnum\@appendix=1
+                      \addcontentsline{toc}{chapter}%
+                  {\@chaptertype{} \protect\numberline{\thechapter}%
+                  {{\if@mixedtitle{#1}\else%
+                      \uppercase\expandafter{#1\expandafter}\fi}}}%
+                          \else
+                      \addcontentsline{toc}{chapter}%
+                          {\@capchapapp{} \protect\numberline{\thechapter}#1}%
+                      \fi
+                    \else
+                      \addcontentsline{toc}{chapter}{\@capchapapp{} #1}%
+                    \fi
+                    \ifnum\value{chapter}=1
+                      \ifnum\@appendix=0
+                        \pagestyle{\@textpagestyle}
+                        \pagenumbering{\@textpagenumbering}
+                        \resetnorm@l
+                      \fi
+                    \fi
+                    \chaptermark{#1}%
+                    \if@twocolumn
+                      \@topnewpage[\@makechapterhead{#2}]%
+                    \else
+                      \@makechapterhead{#2}%
+                      \@afterheading
+                    \fi
+                    }
+
+
+%%% Command from report.cls, (c) LaTeX3 Project.
+%%% 	- Modifications include appendix modifications
+
+\def\@makechapterhead#1{%
+ \ifnum \@appendix=1
+   \begingroup
+%          \centering
+%          \large
+           \appendixname\space\thechapter \\
+           \if@mixedtitle #1 \else
+           \uppercase\expandafter{#1\expandafter}\fi \\
+           \endgroup
+           \par
+           \newpage
+ \else
+  \vspace*{3.5pc}%
+  {\parindent \z@ \@chapteralignment \reset@font
+      \begingroup
+      \fontsize{\@xivpt}{18} \centering 
+    \ifnum \c@secnumdepth >\m@ne
+      \@capchapapp{} \thechapter
+      \par
+      \vskip 20\p@ 
+    \fi
+    \if@mixedtitle #1 \else
+    \uppercase\expandafter{#1\expandafter}\fi 
+    \endgroup
+    \nobreak
+    \vskip 20\p@ % changed from 40\p@
+  }
+  \fi
+  }
+
+\def\@makeschapterhead#1{%
+  \vspace*{50\p@}%
+  {\parindent \z@ \@chapteralignment
+    \reset@font
+ %   \Large \bfseries  #1\par
+    #1\par
+    \nobreak
+    \vskip 40\p@
+  }}
+
+%%% More craziness from amsbook.sty and amsgen.sty 
+
+\let\@xp=\expandafter
+\let\@nx=\noexpand
+\newdimen\normalparindent
+\normalparindent=\parindent
+\def\@addpunct#1{\ifnum\spacefactor>\@m \else#1\fi}
+\let\indentlabel\@empty
+\def\@tochangmeasure#1{\sbox\z@{#1}%
+  \ifdim\wd\z@>\csname r@tocindent\@toclevel\endcsname\relax
+    \expandafter\xdef\csname r@tocindent\@toclevel\endcsname{\the\wd\z@}%
+  \fi
+}
+\long\def\@ifempty#1{\@xifempty#1@@..\@nil}
+\long\def\@xifempty#1#2@#3#4#5\@nil{%
+  \ifx#3#4\expandafter\@firstoftwo\else\expandafter\@secondoftwo\fi}
+\long\def\@ifnotempty#1{\@ifempty{#1}{}}
+\AtBeginDocument{%
+  \@for\@tempa:=-1,0,1,2,3\do{%
+    \@ifundefined{r@tocindent\@tempa}{%
+      \expandafter\gdef\csname r@tocindent\@tempa\endcsname{0pt}}{}%
+  }%
+}
+\let\sectionname\@empty
+\let\subsectionname\@empty
+\let\subsubsectionname\@empty
+\let\paragraphname\@empty
+\def\thesection{\arabic{section}}
+% \def\thesection{\thechapter.\arabic{section}}
+\newcommand{\logicalnumbering}{\gdef\thesection{\thechapter.\arabic{section}}}
+\setcounter{secnumdepth}{7}
+
+\def\section{\@startsection{section}{1}%
+ \z@{.7\baselineskip\@plus\baselineskip}{.5\baselineskip}%
+  {\normalfont}}
+\def\subsection{\@startsection{subsection}{2}%
+  \z@{.7\baselineskip\@plus\baselineskip}{.5\baselineskip}%
+  {\normalfont}}
+\def\subsubsection{\@startsection{subsubsection}{3}%
+  \z@{.7\baselineskip\@plus\baselineskip}{.5\baselineskip}%
+  {\normalfont}}
+\def\paragraph{\@startsection{paragraph}{4}%
+%   \normalparindent\z@{-\fontdimen2\font}%
+%   \normalfont}
+  \z@{.7\baselineskip\@plus\baselineskip}{.5\baselineskip}%
+  {\normalfont}}
+\def\subparagraph{\@startsection{subparagraph}{5}%
+  \z@\z@{-\fontdimen2\font}%
+  \normalfont}
+
+\def\@startsection#1#2#3#4#5#6{%
+ \if@noskipsec \leavevmode \fi
+ \par \@tempskipa #4\relax
+ \@afterindenttrue
+ \ifdim \@tempskipa <\z@ \@tempskipa -\@tempskipa \@afterindentfalse\fi
+ \if@nobreak \everypar{}\else
+     \addpenalty\@secpenalty\addvspace\@tempskipa\fi
+ \@ifstar{\@dblarg{\@sect{#1}{\@m}{#3}{#4}{#5}{#6}}}%
+         {\@dblarg{\@sect{#1}{#2}{#3}{#4}{#5}{#6}}}%
+}
+\def\@sect#1#2#3#4#5#6[#7]#8{%
+  \edef\@toclevel{\ifnum#2=\@m 0\else\number#2\fi}%
+  \ifnum #2>\c@secnumdepth \let\@secnumber\@empty
+  \else \@xp\let\@xp\@secnumber\csname the#1\endcsname\fi
+ \ifnum #2>\c@secnumdepth
+   \let\@svsec\@empty
+ \else
+    \refstepcounter{#1}%
+    \edef\@svsec{\ifnum#2<\@m
+       \@ifundefined{#1name}{}{%
+         \ignorespaces\csname #1name\endcsname\space}\fi
+       \@nx\textup{%
+         \csname the#1\endcsname.}\enspace
+    }%
+  \fi
+  \@tempskipa #5\relax
+  \ifdim \@tempskipa>\z@ % then this is not a run-in section heading
+    \begingroup #6\relax
+    \@hangfrom{\hskip #3\relax\@svsec}{\interlinepenalty\@M #8\par}%
+    \endgroup
+  \csname #1mark\endcsname{#7}%
+    \ifnum#2>\@m \else \@tocwrite{#1}{#8}\fi
+  \else
+  \def\@svsechd{#6\hskip #3\@svsec
+    \@ifnotempty{#8}{\ignorespaces#8\unskip
+       \@addpunct.}%
+    \ifnum#2>\@m \else \@tocwrite{#1}{#8}\fi
+  }%
+  \fi
+  \global\@nobreaktrue
+  \@xsect{#5}}
+\let\@ssect\relax
+
+\def\@tocpagenum#1{\hss{\mdseries #1}}
+\def\@tocwrite#1{\expandafter\@tocwriteb\csname toc#1\endcsname{#1}}
+\def\@tocwriteb#1#2#3{%
+  \addcontentsline{toc}{#2}{\protect\numberline{\@secnumber.}{#3}}}
+
+\def\bysame{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+
+
+%%% Command from report.cls, (c) LaTeX3 Project.
+
+\newif\if@openbib
+\renewenvironment{thebibliography}[1]
+     {\chapter*{\bibname
+         \@mkboth{\uppercase{\bibname}}{\uppercase{\bibname}}}%
+      \addcontentsline{toc}{chapter}{\bibname}
+ \if@singlespacebib \begin{spacing}{1} \fi
+      \list{\@biblabel{\arabic{enumiv}}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+      \if@singlespacebib\advance\itemsep .7\baselineskip\fi
+            \if@openbib
+              \advance\leftmargin\bibindent
+              \itemindent -\bibindent
+              \listparindent \itemindent
+              \parsep \z@
+            \fi
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\arabic{enumiv}}}%
+      \if@openbib
+        \renewcommand\newblock{\par}
+      \else
+        \renewcommand\newblock{\hskip .11em \@plus.33em \@minus.07em}%
+      \fi
+      \sloppy\clubpenalty4000\widowpenalty4000%
+      \sfcode`\.=\@m}
+     {\def\@noitemerr{\@warning{Empty `thebibliography' environment}}%
+      \endlist%
+ \if@singlespacebib \end{spacing} \fi}
+
+%%% Command from report.cls, (c) LaTeX3 Project.
+
+\renewcommand\listoftables{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \if@toclotlofthing
+      \withheaderson{\listtablename}{Table}{Page}
+    \else
+      \clearpage
+      \thispagestyle{plain}
+      \vspace*{3.5pc}%
+	  \centerline{\listtablename}
+    \fi
+    \addcontentsline{toc}{chapter}{\listtablename}
+    \@starttoc{lot}%
+    \if@restonecol\twocolumn\fi
+    }
+\renewcommand\listoffigures{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \if@toclotlofthing
+      \withheaderson{\listfigurename}{Figure}{Page}
+    \else
+      \clearpage
+      \thispagestyle{plain}
+      \vspace*{3.5pc}%
+      \centerline{\listfigurename}
+    \fi
+    \addcontentsline{toc}{chapter}{\listfigurename}
+    \@starttoc{lof}%
+    \if@restonecol\twocolumn\fi
+    }
+
+%%  Trivially modified from report.cls
+
+\renewcommand*{\l@chapter}[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \normalfont
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep
+       mu$}\hfill \nobreak\hbox to\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+
+\newcommand*{\l@subhuman}[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil \nobreak\hbox to\@pnumwidth{\hss Page}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+
+\renewcommand\tableofcontents{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+%
+    \if@toclotlofthing
+      \withheaderson{\contentsname}{}{Page}
+    \else
+      \clearpage
+      \thispagestyle{plain}
+      \vspace*{3.5pc}%
+      \centerline{\contentsname}
+      \vskip \parskip
+    \fi
+    \@starttoc{toc}
+    \if@restonecol\twocolumn\fi
+    }
+
+
+%%% Commands for spacing.  Some parts from spacing.sty by Stephen Page.
+
+\ifx\undefined\selectfont
+\def\@setsize#1#2#3#4{\@nomath#1
+   \let\@currsize#1\baselineskip
+   #2\baselineskip\baselinestretch\baselineskip
+   \parskip\baselinestretch\parskip
+   \setbox\strutbox\hbox{\vrule height.7\baselineskip
+      depth.3\baselineskip width\z@}
+   \normalbaselineskip\baselineskip#3#4}
+\else
+\def\@newbaseline{%
+    \ifx\undefined\setnew@baselineskip
+      \baselineskip\f@baselineskip\relax
+    \else
+      \setnew@baselineskip
+    \fi
+    \baselineskip\baselinestretch\baselineskip
+    \setbox\strutbox\hbox{\vrule\@height.7\baselineskip
+    \@depth.3\baselineskip \@width\z@}%
+    \normalbaselineskip\baselineskip}
+\fi
+
+
+%%% Reset baselinestretch within footnotes and floats. Originally stolen
+%%% from Stanford thesis style.
+
+\def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
+   \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
+      \@parmoderr\@floatpenalty\z@
+    \else\@next\@currbox\@freelist{\@tempcnta\csname ftype@#1\endcsname
+       \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
+       \@tfor \@tempa :=#2\do
+                        {\if\@tempa h\advance\@tempcnta \@ne\fi
+                         \if\@tempa t\advance\@tempcnta \tw@\fi
+                         \if\@tempa b\advance\@tempcnta 4\relax\fi
+                         \if\@tempa p\advance\@tempcnta 8\relax\fi
+         }\global\count\@currbox\@tempcnta}\@fltovf\fi
+    \global\setbox\@currbox\vbox\bgroup 
+    \def\baselinestretch{1}
+    \ifx\undefined\selectfont
+    \small\normalsize
+    \else
+    \@newbaseline
+    \fi
+    \boxmaxdepth\z@
+    \hsize\columnwidth \@parboxrestore}
+\long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
+    \interlinepenalty\interfootnotelinepenalty 
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+
+%%% -- Stolen from MIT.--
+
+\def\spacing#1{\par%
+ \begingroup
+ \vskip -\parskip
+ \def\baselinestretch{#1}
+ \ifx\undefined\selectfont
+ \ifx\@currsize\normalsize\@normalsize\else\@currsize\fi
+ \else
+ \@newbaseline
+ \fi}
+\def\endspacing{\par
+ \vskip \parskip
+ \vskip \baselineskip
+ \endgroup
+ \vskip -\parskip
+ \vskip -\baselineskip}
+
+\def\singspace{\par%
+ \begingroup
+ \vskip \baselineskip
+ %\vskip -\parskip
+ \def\baselinestretch{1}
+ \ifx\undefined\selectfont
+ \ifx\@currsize\normalsize\@normalsize\else\@currsize\fi
+ \else
+ \@newbaseline
+ \fi\vskip -\baselineskip}
+\def\endsingspace{\par
+ \vskip \parskip
+ %\vskip \baselineskip
+ \endgroup
+ \vskip -\parskip
+ %\vskip -\baselineskip
+ }
+

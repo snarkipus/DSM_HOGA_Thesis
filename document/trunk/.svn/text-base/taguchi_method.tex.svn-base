@@ -1,0 +1,21 @@
+\subsection{Hybrid Orthogonal Crossover}
+The previous sections introduced the traditional operations of selection and crossover.
+Typically, the introduction of novel genetic diversity through a mutation operation would
+immediatly follow crossover. However, this algorithm will employ an additional hybrid
+crossover technique in an effort to intelligently create offspring. Techniques from
+biological science and process engineering will be implemented to produce the 'most fit'
+individual given the available genotype. Specifically, the Taguchi method of orthogonal
+array based design of experiments will be shown to radically improve both solution
+accuracy and overall convergence speed.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Design of Experiments: The Taguchi Method}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Orthogonal Array Generation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{SNR Calculations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Optimal Progeny Generation}

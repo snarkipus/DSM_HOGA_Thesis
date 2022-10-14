@@ -1,0 +1,10 @@
+\documentclass[a4paper]{article}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{amsmath,amsfonts,amssymb}
+
+
+\begin{document}
+\pagestyle{empty}
+\input{derivation2}
+\end{document}

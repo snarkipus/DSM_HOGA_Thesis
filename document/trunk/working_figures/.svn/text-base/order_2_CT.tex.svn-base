@@ -1,0 +1,20 @@
+% XCircuit output "order_2_CT.tex" for LaTeX input from order_2_CT.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=order_2_CT.ps}\\
+% translate x=1072 y=544 scale 0.19
+\putbox{1.22in}{1.05in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{0.64in}{1.01in}{\centbox{\midbox{\begin{huge}$\Sigma$\end{huge}}}}%
+\putbox{3.13in}{1.05in}{\centbox{\midbox{ADC}}}%
+\putbox{3.13in}{0.16in}{\centbox{\midbox{DAC}}}%
+\putbox{1.85in}{1.01in}{\centbox{\midbox{\begin{huge}$\Sigma$\end{huge}}}}%
+\putbox{2.47in}{1.05in}{\centbox{\midbox{\begin{Large}$\frac{1}{s}$\end{Large}}}}%
+\putbox{0.64in}{0.51in}{\centbox{\midbox{$a_1$}}}%
+\putbox{1.85in}{0.51in}{\centbox{\midbox{$a_2$}}}%
+\putbox{0.06in}{1.01in}{$x(t)$}%
+\putbox{3.72in}{1.01in}{$y(n)$}%
+\end{flushleft}

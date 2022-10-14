@@ -1,0 +1,431 @@
+%! PostScript set of library objects for XCircuit
+%  Version: 3.4
+%  Library name is: thesis_again
+%  Author: Matthew Jackson <matthew@snarky>
+%
+
+% Depend first_order_generic arrowhead int_LaTeX sum_LaTeX ADC_LaTeX DAC_LaTeX_r2l circle dot
+% Depend basic_DAC_block_diagram sum arrowhead low_pass_block
+% Depend _basic_DSP_block _ADC_box _DAC_box _conv_box arrowhead
+% Depend _basic_DSP_system _basic_DSP_block
+% Depend __basic_DSP_block ADC_box DAC_box __conv_box arrowhead
+% Depend __basic_DSP_system __basic_DSP_block
+% Depend ideal_ADC arrowhead encoder sample_hold quantizer
+% Depend basic_DSP_block ADC_box DAC_box conv_box arrowhead circle
+% Depend basic_DSP_system basic_DSP_block
+% Depend second_order_generic first_order_generic
+
+% XCircuitLib library objects
+/arrowhead {
+% trivial
+begingate
+8 -28 beginpath
+3 -18 3 -15 0 0 curveto
+-3 -15 -3 -18 -8 -28 curveto
+-2 -26 2 -26 8 -28 curveto
+249 1.00 endpath
+endgate
+} def
+
+/int_LaTeX {
+begingate
+(\\begin{Large}$\\frac{1}{s}$\\end{Large}) {/Helvetica cf} 2 149 0 0.40 0 12 
+label
+0 1.00 -48 48 -48 -48 48 -48 48 48 4 polygon
+endgate
+} def
+
+/sum_LaTeX {
+begingate
+1 1.00 0 0 48 0.00 360.00 xcarc
+(\\begin{huge}$\\Sigma$\\end{huge}) {/Helvetica cf} 2 149 0 0.40 0 0 label
+endgate
+} def
+
+/ADC_LaTeX {
+begingate
+1 1.00 -64 0 -32 32 64 32 64 -32 -32 -32 -64 0 6 polygon
+(ADC) {/Helvetica cf} 2 149 0 0.40 12 12 label
+endgate
+} def
+
+/DAC_LaTeX_r2l {
+begingate
+1 1.00 -64 0 -32 32 64 32 64 -32 -32 -32 -64 0 6 polygon
+(DAC) {/Helvetica cf} 2 149 0 0.40 12 8 label
+endgate
+} def
+
+/circle {
+% trivial
+begingate
+1 1.00 16 0 6 0.00 360.00 xcarc
+1 1.00 0 0 10 0 2 polygon
+1.000 0.000 0.000 scb
+(out) {/Times-Roman cf} 2 4 0 1.00 16 0 pinlabel
+(out) {/Times-Roman cf} 2 7 0 1.00 0 0 pinlabel
+endgate
+} def
+
+/dot {
+% trivial
+begingate
+248 1.00 0 0 6 0.00 360.00 xcarc
+1.000 0.000 0.000 scb
+(x) {/Times-Roman cf} 2 29 0 1.00 0 0 pinlabel
+endgate
+} def
+
+/first_order_generic {
+begingate
+1 1.00 -288 48 -184 48 2 polygon
+1 1.00 -336 -96 -336 -24 2 polygon
+1 1.00 -64 48 56 48 2 polygon
+1.00 90 80 48 arrowhead
+1.00 90 -160 48 arrowhead
+-1.00 0 -336 -192 arrowhead
+-1.00 0 -336 0 arrowhead
+1.00 0 -112 48 int_LaTeX
+1.00 0 -336 48 sum_LaTeX
+1.00 0 608 48 ADC_LaTeX
+1.00 0 608 -288 DAC_LaTeX_r2l
+1.00 0 128 48 sum_LaTeX
+1 1.00 176 48 296 48 2 polygon
+1.00 90 320 48 arrowhead
+1.00 0 368 48 int_LaTeX
+-1.00 0 128 -192 arrowhead
+-1.00 0 128 0 arrowhead
+1 1.00 128 -96 128 -24 2 polygon
+1 1.00 416 48 536 48 2 polygon
+1.00 90 544 48 arrowhead
+1 1.00 672 48 736 48 736 -288 672 -288 4 polygon
+1 1.00 544 -288 128 -288 128 -216 3 polygon
+1 1.00 128 -288 -336 -288 -336 -216 3 polygon
+1 1.00 736 48 824 48 2 polygon
+1.00 0 816 48 circle
+1.00 180 -464 48 circle
+1 1.00 -464 48 -408 48 2 polygon
+1.00 90 -384 48 arrowhead
+1 1.00 -384 -192 -336 -96 -288 -192 -384 -192 4 polygon
+($a_1$) {/Helvetica cf} 2 149 0 0.40 -336 -144 label
+1 1.00 80 -192 128 -96 176 -192 80 -192 4 polygon
+($a_2$) {/Helvetica cf} 2 149 0 0.40 128 -144 label
+1.00 0 128 -288 dot
+1.00 0 736 48 dot
+($x\(t\)$) {/Helvetica cf} 2 144 0 0.40 -560 48 label
+($y\(n\)$) {/Helvetica cf} 2 144 0 0.40 848 48 label
+endgate
+} def
+
+/unit_delay {
+begingate
+0 1.00 -32 32 -32 -32 32 -32 32 32 4 polygon
+{ns} (-1) {Ss} (z) {/Helvetica cf} 5 17 0 1.00 0 -16 label
+endgate
+} def
+
+/_sum {
+begingate
+1 1.00 0 0 32 0.00 360.00 xcarc
+(S) {/Symbol cf} 2 21 0 1.25 0 0 label
+endgate
+} def
+
+/fd_op_amp {
+begingate
+225 1.00 -48 96 -48 -96 160 0 -48 96 4 polygon
+1 1.00 96 -32 128 -64 160 -64 160 -64 4 polygon
+1 1.00 96 32 128 64 160 64 3 polygon
+(+) {/Helvetica cf} 2 21 0 1.00 -16 48 label
+(-) {/Helvetica cf} 2 21 0 1.00 -16 -64 label
+1 1.00 -48 -64 -96 -64 2 polygon
+1 1.00 -48 64 -96 64 2 polygon
+endgate
+} def
+
+/quant {
+begingate
+({\267}) {/Helvetica cf} (Q ) {/Helvetica-Oblique cf} 4 21 0 1.00 0 0 label
+0 1.00 -48 32 -48 -32 48 -32 48 32 4 polygon
+endgate
+} def
+
+/sum {
+begingate
+1 1.00 0 0 31 0.00 360.00 xcarc
+(S) {/Symbol cf} 2 21 0 1.00 -2 0 label
+endgate
+} def
+
+/low_pass_block {
+begingate
+1 1.00 -64 32 32 32 64 -32 3 polygon
+0 1.00 -80 48 -80 -48 80 -48 80 48 4 polygon
+(LPF) {/Times-Roman cf} 2 21 0 0.75 -40 -24 label
+endgate
+} def
+
+/basic_DAC_block_diagram {
+begingate
+1.00 0 16 24 sum
+1 2.00 -464 184 -272 184 -264 176 -264 16 4 polygon
+(b) {ss} (x) {/Times-Bold cf} 4 21 0 1.00 -376 216 label
+1.00 90 -16 24 arrowhead
+1.00 135 -8 48 arrowhead
+1.00 45 -8 0 arrowhead
+1 1.00 -256 -136 -264 -144 2 polygon
+1 1.00 -32 24 -256 24 -264 32 3 polygon
+1 1.00 -256 24 -264 16 2 polygon
+1.00 360 16 -8 arrowhead
+1 1.00 16 -24 16 -200 -256 -200 -264 -192 4 polygon
+1 1.00 -256 -200 -264 -208 2 polygon
+1 1.00 -16 56 -48 88 -256 88 -264 96 4 polygon
+1 1.00 -256 88 -264 80 2 polygon
+1.00 90 144 24 arrowhead
+1 1.00 144 24 48 24 2 polygon
+-1.00 180 16 56 arrowhead
+1 1.00 16 72 16 152 -256 152 -264 160 4 polygon
+1 1.00 -256 152 -264 144 2 polygon
+(0) {ss} (x) {/Times-Italic cf} 4 21 0 0.75 -240 168 label
+(1) {ss} (x) {/Times-Italic cf} 4 21 0 0.75 -240 104 label
+(n-1) {ss} (x) {/Times-Italic cf} 4 21 0 0.75 -232 -184 label
+(2) {ss} (x) {/Times-Italic cf} 4 21 0 0.75 -240 40 label
+(n-2) {ss} (x) {/Times-Italic cf} 4 21 0 0.75 -232 -120 label
+1 1.00 -256 -136 -264 -128 2 polygon
+1 1.00 -16 -8 -144 -136 -256 -136 3 polygon
+1 2.00 -264 -128 -264 -128 -264 -144 -264 -208 4 polygon
+5 2.00 -264 -128 -264 16 2 polygon
+1.000 0.000 0.000 scb
+2 1.00 88 -48 88 96 -56 96 -56 -48 4 polygon
+sce
+1.00 90 -352 184 arrowhead
+1.00 360 64 -56 arrowhead
+(s) {ss} (T) {/Times-Italic cf} 4 21 0 1.00 200 -200 label
+(y\(t\)) {/Times-Italic cf} 2 21 0 1.00 440 32 label
+1.00 0 224 24 low_pass_block
+1 1.00 400 24 304 24 2 polygon
+1.00 90 408 24 arrowhead
+1 1.00 64 -72 64 -200 176 -200 3 polygon
+endgate
+} def
+
+/_ADC_box {
+begingate
+1 1.00 -64 0 -40 32 64 32 64 -32 -40 -32 -64 0 6 polygon
+(ADC) {/Times-Roman cf} 2 21 0 1.00 8 0 label
+endgate
+} def
+
+/_DAC_box {
+begingate
+(DAC) {/Times-Roman cf} 2 21 0 1.00 -8 0 label
+1 1.00 64 0 40 32 -64 32 -64 -32 40 -32 64 0 6 polygon
+endgate
+} def
+
+/_conv_box {
+begingate
+(x\(n\)) {/Times-Italic 0.800 cf} {/Times-Italic 0.800 cf} {qS} (*) 
+{/Symbol 0.800 cf} {/Symbol 0.800 cf} {qS} (h\(n\)) {/Times-Italic 0.800 cf} 
+{/Times-Italic cf} 11 21 0 1.00 0 0 label
+0 1.00 80 32 80 -32 -80 -32 -80 32 4 polygon
+endgate
+} def
+
+/_basic_DSP_block {
+begingate
+1.00 0 -240 0 _ADC_box
+1.00 0 240 0 _DAC_box
+(x\(t\)) {/Times-Italic cf} 2 21 0 1.00 -408 8 label
+(y\(t\)) {/Times-Italic cf} 2 21 0 1.00 416 8 label
+1.00 0 0 0 _conv_box
+(x\(n\)) {/Times-Italic cf} 2 21 0 1.00 -16 104 label
+1.00 90 -80 0 arrowhead
+3 1.00 -56 96 -112 96 -152 0 3 polygon
+3 1.00 24 -96 80 -96 120 0 3 polygon
+(y\(n\)) {/Times-Italic cf} 2 21 0 1.00 -24 -96 label
+1 1.00 -96 0 -176 0 2 polygon
+1 1.00 160 0 80 0 2 polygon
+1.00 90 176 0 arrowhead
+1.00 90 -304 0 arrowhead
+1.00 90 384 0 arrowhead
+1 1.00 368 0 304 0 2 polygon
+1 1.00 -304 0 -368 0 2 polygon
+endgate
+} def
+
+/_basic_DSP_system {
+begingate
+1.00 0 0 0 _basic_DSP_block
+endgate
+} def
+
+/ADC_box {
+begingate
+1 1.00 -64 0 -40 32 64 32 64 -32 -40 -32 -64 0 6 polygon
+(ADC) {/Helvetica cf} 2 21 0 1.00 8 0 label
+endgate
+} def
+
+/DAC_box {
+begingate
+(DAC) {/Helvetica cf} 2 21 0 1.00 -8 0 label
+1 1.00 64 0 40 32 -64 32 -64 -32 40 -32 64 0 6 polygon
+endgate
+} def
+
+/__conv_box {
+begingate
+(x\(n\)) {/Helvetica 0.800 cf} {/Helvetica 0.800 cf} (*) {/Symbol 0.800 cf} 
+{/Symbol 0.800 cf} (h\(n\)) {/Helvetica 0.800 cf} {/Helvetica cf} 9 21 0 1.00 0 
+0 label
+0 1.00 80 32 80 -32 -80 -32 -80 32 4 polygon
+endgate
+} def
+
+/__basic_DSP_block {
+begingate
+1.00 0 -240 0 ADC_box
+1.00 0 240 0 DAC_box
+(x\(t\)) {/Helvetica cf} 2 21 0 1.00 -472 8 label
+(y\(t\)) {/Helvetica cf} 2 21 0 1.00 480 8 label
+1.00 0 0 0 __conv_box
+(x\(n\)) {/Helvetica cf} 2 21 0 1.00 -16 104 label
+1.00 90 -80 0 arrowhead
+3 1.00 -56 96 -112 96 -152 0 3 polygon
+3 1.00 24 -96 80 -96 120 0 3 polygon
+(y\(n\)) {/Helvetica cf} 2 21 0 1.00 -24 -96 label
+1 1.00 -96 0 -176 0 2 polygon
+1 1.00 160 0 80 0 2 polygon
+1.00 90 176 0 arrowhead
+1.00 90 -304 0 arrowhead
+1.00 90 440 0 arrowhead
+1 1.00 -312 0 -432 0 2 polygon
+1 1.00 424 0 304 0 2 polygon
+endgate
+} def
+
+/__basic_DSP_system {
+begingate
+1.00 0 0 0 __basic_DSP_block
+endgate
+} def
+
+/encoder {
+begingate
+(Binary) {/Times-Roman cf} 2 21 0 1.00 0 24 label
+(Encoder) {/Times-Roman cf} 2 21 0 1.00 0 -24 label
+0 1.00 80 48 80 -48 -80 -48 -80 48 4 polygon
+endgate
+} def
+
+/sample_hold {
+begingate
+(S/H) {/Times-Roman cf} 2 21 0 1.00 0 0 label
+0 1.00 48 48 48 -48 -48 -48 -48 48 4 polygon
+endgate
+} def
+
+/quantizer {
+begingate
+1 1.00 -32 -32 0 -32 0 32 32 32 4 polygon
+1 1.00 -16 0 16 0 2 polygon
+0 1.00 48 48 48 -48 -48 -48 -48 48 4 polygon
+endgate
+} def
+
+/ideal_ADC {
+begingate
+1.00 180 -224 72 arrowhead
+1.00 90 -304 -8 arrowhead
+1.00 0 192 -8 encoder
+1.00 0 -224 -8 sample_hold
+1.00 0 -32 -8 quantizer
+1 1.00 -176 -8 -80 -8 2 polygon
+1 1.00 16 -8 112 -8 2 polygon
+1 1.00 -368 -8 -272 -8 2 polygon
+1 1.00 272 -8 368 -8 2 polygon
+1.00 90 -112 -8 arrowhead
+1.00 90 80 -8 arrowhead
+1.00 90 336 -8 arrowhead
+1 1.00 -224 137 -224 40 2 polygon
+1 1.00 -32 137 -32 40 2 polygon
+1.00 180 -32 72 arrowhead
+(s) {ss} (T) {/Times-Italic cf} 4 16 0 1.00 -208 88 label
+(\(t\)) {ns} {Ss} (x) {/Times-Italic cf} 5 16 0 1.00 -440 -16 label
+(D) {/Symbol cf} 2 16 0 1.00 -8 88 label
+3 1.00 -224 -120 -168 -120 -128 -24 3 polygon
+3 1.00 -32 -120 24 -120 64 -24 3 polygon
+(\(n\)) {ns} (s) {ss} {ns} {Ss} (x) {/Times-Italic cf} 8 16 0 1.00 -312 -128 
+label
+(\(n\)) {ns} (q) {ss} (x) {/Times-Italic cf} 6 16 0 1.00 -120 -128 label
+(\(n\)) {ns} {Ss} (c) {/Times-Italic cf} 5 16 0 1.00 376 -16 label
+endgate
+} def
+
+/transform_box {
+begingate
+1 1.00 -64 32 -64 -32 64 -32 64 32 -64 32 5 polygon
+({x[n]}) {ns} (n) {ss} (T) {/Helvetica cf} 6 21 0 1.00 0 0 label
+endgate
+} def
+
+/conv_box {
+begingate
+(x\(n\)) {/Helvetica cf} (*) {/Symbol cf} (h\(n\)) {/Helvetica cf} 6 21 0 1.00 
+0 0 label
+0 1.00 80 32 80 -32 -80 -32 -80 32 4 polygon
+endgate
+} def
+
+/basic_DSP_block {
+begingate
+1.00 0 -240 0 ADC_box
+1.00 0 240 0 DAC_box
+(x\(t\)) {/Helvetica cf} 2 21 0 1.00 -416 8 label
+(y\(t\)) {/Helvetica cf} 2 21 0 1.00 416 8 label
+1.00 0 0 0 conv_box
+(x\(n\)) {/Helvetica cf} 2 21 0 1.00 -16 104 label
+1.00 90 -80 0 arrowhead
+1 1.00 -56 96 -112 96 -144 16 3 polygon
+1 1.00 24 -96 80 -96 112 -16 3 polygon
+(y\(n\)) {/Helvetica cf} 2 21 0 1.00 -24 -96 label
+1 1.00 -96 0 -176 0 2 polygon
+1 1.00 160 0 80 0 2 polygon
+1.00 90 176 0 arrowhead
+-1.00 0 -352 0 circle
+1 1.00 -352 0 -304 0 2 polygon
+1.00 0 352 0 circle
+1 1.00 352 0 304 0 2 polygon
+0 1.00 -320 64 -320 -64 320 -64 320 64 4 polygon
+endgate
+} def
+
+/basic_DSP_system {
+begingate
+1.00 0 0 0 basic_DSP_block
+endgate
+} def
+
+/gain_b_LaTeX {
+begingate
+1 1.00 -48 48 0 -48 48 48 -48 48 4 polygon
+($b_{1}$) {/Helvetica cf} 2 149 0 0.40 0 28 label
+endgate
+} def
+
+/gain_a_LaTeX {
+<</_index {(indice: 2) {/Helvetica cf} } /indice (=) >> begingate
+1 1.00 -48 -48 0 48 48 -48 -48 -48 4 polygon
+($a_{Parameter\(indice}$) {/Helvetica cf} 2 149 0 0.40 0 0 label
+endgate
+} def
+
+/second_order_generic {
+begingate
+1.00 0 -168 112 first_order_generic
+endgate
+} def
+
+
+% EndLib

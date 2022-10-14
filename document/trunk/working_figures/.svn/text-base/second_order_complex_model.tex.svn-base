@@ -1,0 +1,27 @@
+% XCircuit output "second_order_complex_model.tex" for LaTeX input from second_order_complex_model.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=second_order_complex_model.ps}\\
+% translate x=896 y=512 scale 0.38
+\putbox{6.89in}{2.01in}{\centbox{\midbox{$Y(z)$}}}%
+\putbox{2.89in}{1.39in}{\centbox{\midbox{\begin{small}$-$\end{small}}}}%
+\putbox{4.64in}{2.01in}{\centbox{\midbox{$A_{1}(z)$}}}%
+\putbox{0.97in}{0.89in}{\centbox{\midbox{$\beta_0$}}}%
+\putbox{3.06in}{0.89in}{\centbox{\midbox{$\beta_1$}}}%
+\putbox{5.14in}{0.89in}{\centbox{\midbox{$\beta_2$}}}%
+\putbox{5.81in}{0.33in}{\centbox{\midbox{\begin{large}$z^{-1}$\end{large}}}}%
+\putbox{4.97in}{1.39in}{\centbox{\midbox{\begin{small}$-$\end{small}}}}%
+\putbox{2.56in}{2.01in}{\centbox{\midbox{$A_{0}(z)$}}}%
+\putbox{5.14in}{1.76in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{3.06in}{1.76in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{0.97in}{1.76in}{\centbox{\midbox{$\displaystyle\sum$}}}%
+\putbox{0.18in}{2.01in}{\centbox{\midbox{$X(z)$}}}%
+\putbox{5.14in}{2.68in}{\centbox{\midbox{$E(z)$}}}%
+\putbox{2.01in}{1.79in}{\centbox{\midbox{\begin{Large}$\frac{1}{1-z^{-1}}$\end{Large}}}}%
+\putbox{4.10in}{1.79in}{\centbox{\midbox{\begin{Large}$\frac{1}{1-z^{-1}}$\end{Large}}}}%
+\putbox{0.81in}{1.39in}{\centbox{\midbox{\begin{small}$-$\end{small}}}}%
+\end{flushleft}

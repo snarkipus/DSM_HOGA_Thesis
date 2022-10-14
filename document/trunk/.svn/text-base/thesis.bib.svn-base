@@ -1,0 +1,1753 @@
+@article{jantzi_bandpass_1991,
+	title = {Bandpass sigma-delta analog-to-digital conversion},
+	volume = {38},
+	issn = {0098-4094},
+	url = {http://ieeexplore.ieee.org/iel5/31/3131/00099179.pdf},
+	abstract = {The traditional low-pass sigma-delta (\&Sigma;\&Delta;)
+analog-to-digital converter is extended to the bandpass case. For input
+signals with small relative bandwidths, bandpass \&Sigma;\&Delta;
+converters offer high signal-to-noise ratios at significantly lower
+sampling rates than are required for low-pass \&Sigma;\&Delta; converters.
+A sixth-order single-ended switched-capacitor circuit, clocked at 3 MHz,
+is designed to convert bandpass signals centered at 455 kHz with 20-kHz
+bandwidth. Time-domain circuit simulations show that this modulator
+realizes a 94-dB signal-to-noise ratio for a half-scale input, giving
+roughly 16-b performance},
+	journal = {Circuits and Systems, IEEE Transactions on},
+	author = {S. Jantzi and R. Schreier and M. Snelgrove},
+	year = {1991},
+	keywords = {20 kHz,455 kHz,analogue-digital conversion,bandpass case,half-scale input,input signals,modulators,relative bandwidths,sampling rates,sigma-delta analog-to-digital conversion,signal-to-noise ratio,signal-to-noise ratios,single-ended switched-capacitor circuit,switched capacitor networks,time-domain circuit simulations},
+	pages = {1406-1409}
+},
+
+@inproceedings{song_low_2006,
+	title = {A low power 1.1 MHz CMOS continuous-time delta-sigma modulator with active-passive loop filters},
+	url = {http://ieeexplore.ieee.org/iel5/11145/35661/01693610.pdf},
+	abstract = { A low power, high bandwidth continuous-time delta-sigma modulator is proposed in this paper. In contrast to traditional continuous-time delta-sigma modulators, this design utilizes passive networks, consisting of only resistors and capacitors, to perform part of the functions of loop filters. Passive networks do not consume power, introduce no distortions. For similar performance, considerable power can be saved. Based on the proposed technique, a 1.1 MHz delta-sigma modulator is designed for 0.25/spl mu/m CMOS technology. Simulation results show that this modulator can reach 14b performance with only about 15mWpower consumptions.},
+	booktitle = {Circuits and Systems, 2006. ISCAS 2006. Proceedings. 2006 IEEE International Symposium on},
+	journal = {Circuits and Systems, 2006. ISCAS 2006. Proceedings. 2006 IEEE International Symposium on},
+	author = {T. Song and S. Yan},
+	year = {2006},
+	keywords = {0.25 micron,1.1 MHz,15 mW,CMOS integrated circuits,CMOS technology,continuous-time delta-sigma modulator,delta-sigma modulation,integrated circuit design,loop filters,low power delta-sigma modulator,low-power electronics,passive networks},
+	pages = { 4 pp.}
+},
+
+@book{engelen_bandpass_1999,
+	edition = {1st},
+	title = {Bandpass Sigma Delta Modulators - Stability Analysis, Performance and Design Aspects},
+	isbn = {0792386981},
+	publisher = {Springer},
+	author = {Jurgen van Engelen and Rudy J. van de Plassche},
+	month = nov,
+	year = {1999},
+	pages = {208}
+},
+
+@article{nunzi_estimation_2006,
+	title = {Estimation of the In-Band Delta\&ndash;Sigma Noise Power Based on Windowed Data},
+	volume = {55},
+	issn = {0018-9456},
+	url = {http://ieeexplore.ieee.org/iel5/19/4014679/04014723.pdf},
+	abstract = {Spectral figures of merit of Delta-Sigma (DeltaSigma) converters are usually evaluated in the frequency domain by estimating the power of the narrow- and wide-band components from the power spectral density (PSD) of the modulator output. Because of the finite number of processed samples, both components are affected by a spectral leakage. Scientific literature has widely investigated the leakage of the fundamental and its higher harmonics, which can be prevented if the sampling and the input frequencies are synchronized accurately. Conversely, effect of the finite number of samples on the PSD of DeltaSigma-shaped wideband noise has not been treated in the technical literature yet. To date, windows commonly used for reducing leakage of the fundamental (i.e., the Hanning, Blackman-Harris, or flattop sequences) are also used for windowing the DeltaSigma-shaped quantization noise. By noticing that published PSDs of low-order DeltaSigma modulators are usually obtained by employing the Hanning window Norsworthy (Oversampling Delta-Sigma Data Converters: Theory, Design, and Simulation. Piscataway, NJ: IEEE Press, 1997), Markus and Temes (IEEE Trans. Circuits Syst. I, vol. 51, no. 1, p. 63, 2004), in this paper, the deviation in the estimate of the noise power induced by the use of the general class of the cosine windows-to which the Hanning one belongs-is investigated. This is employed for deriving an a priori criterion for the selection of the best cosine window that reduces the spectral leakage of the shaped wideband noise and for the choice of the minimum number of acquired samples needed to bound the relative error in the estimated in-band noise power below a given value},
+	journal = {Instrumentation and Measurement, IEEE Transactions on},
+	author = {E. Nunzi and P. Carbone and D. Petri},
+	year = {2006},
+	keywords = {circuit noise,delta-sigma modulation,delta sigma modulators,estimation theory,<formula formulatype="inline"><tex>\$DeltaSigma\$</tex></formula> modulators,frequency domain,noise power estimate,Noise-power estimate,power spectral density,spectral figures of merit,spectral leakage,wideband noise,window,windowed data},
+	pages = {2221-2226}
+},
+
+@article{agarwal_penalty_2005,
+	title = {Penalty function approach in heuristic algorithms for constrained redundancy reliability optimization},
+	volume = {54},
+	issn = {0018-9529},
+	abstract = { To solve the problem of constrained redundancy reliability optimization, several heuristic algorithms have been developed in the literature. Most of these algorithms search for the solutions remaining within the feasible boundary e.g. [15], [20]. Perhaps the most interesting \& efficient heuristic algorithm in terms of solution quality is that given by KYA, in which the search is made not only in the feasible region but also into the bounded infeasible region by making an excursion, which returns to the feasible region with a possibly improved solution. In this paper, a heuristic algorithm based on the penalty function approach is proposed to solve the constrained redundancy optimization problem for complex systems. An excursion is made into the infeasible region, but an adaptive penalty function helps the search not to go too far into the infeasible region. Thus, promising feasible \& infeasible regions of the search space are explored efficiently \& effectively to identify finally an optimal or near optimal solution. Computational experiments are conducted on 11 sets of problems (10 with linear constraints, and 1 with nonlinear constraints); each with 10 different randomly generated initial solutions. Comparison is made between the proposed algorithm P-Alg, N-N algorithm [15], Shi algorithm [20], and KYA [9] . It is observed that P-Alg performs consistently better than others, showing an overall improvement in various measures of performance. Besides, as P-Alg does not require any assumptions on the nature of the objective \& constraint functions, it can solve a wide variety of problems.},
+	journal = {Reliability, IEEE Transactions on},
+	author = {M. Agarwal and R. Gupta},
+	year = {2005},
+	keywords = {adaptive penalty function,Complex systems,complex systems,constrained redundancy,constrained redundancy optimization,heuristic algorithm,large-scale systems,optimisation,optimization,penalty function,penalty function approach,redundancy,reliability,reliability theory},
+	pages = { 549- 558}
+},
+
+@article{deczky_synthesis_1972,
+	title = {Synthesis of recursive digital filters using the minimum p-error criterion},
+	volume = {20},
+	issn = {0018-9278  },
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/8337/26093/01162392.pdf},
+	abstract = { The problem of designing a stable recursive digital filter to have an arbitrarily prescribed frequency response may be considered as an approximation problem. Using the minimum<tex>p</tex>- error criterion, a new problem of minimizing a function of<tex>n</tex>variables results, which is successfully solved using the Fletcher-Powell algorithm. An important theorem guaranteeing the existence of a stable optimum for a large class of synthesis problems is stated, and necessary modifications to the Fletcher-Powell algorithm to assure stability are considered. Finally a number of results of the application of this method are given.},
+	journal = {Audio and Electroacoustics, IEEE Transactions on},
+	author = {A. Deczky},
+	year = {1972},
+	pages = { 257- 263}
+},
+
+@inproceedings{singh_design_2001,
+	title = {Design considerations for band-pass sigma delta modulators},
+	volume = {1},
+	url = {http://ieeexplore.ieee.org/iel5/7344/19933/00921861.pdf},
+	abstract = {The transition from the system level to the transistor level design of sigma delta modulator involves degradation in performance due to circuit imperfections, the extent of which depends on the architecture. A systematic understanding of the sensitivity is essential to accomplish a robust design. Smart behavioral modeling allows us to compare architectures and to derive minimum specifications for op-amp and system design},
+	booktitle = {Circuits and Systems, 2001. ISCAS 2001. The 2001 IEEE International Symposium on},
+	journal = {Circuits and Systems, 2001. ISCAS 2001. The 2001 IEEE International Symposium on},
+	author = {P.K. Singh and F. Maloberti},
+	year = {2001},
+	keywords = {band-pass sigma-delta modulator,circuit architecture,opamp,sensitivity,sigma-delta modulation,smart behavioral model,system-level design,transistor-level design},
+	pages = {336-339 vol. 1}
+},
+
+@misc{gray_abcs_2003,
+	title = {ABCs of ADCs: Analog-to-Digital Converter Basics},
+	publisher = {National Semiconductor},
+	author = {Nicholas Gray},
+	month = nov,
+	year = {2003}
+},
+
+@article{schreier_empirical_1993,
+	title = {An empirical study of high-order single-bit delta-sigma modulators },
+	volume = {40},
+	issn = {1057-7130},
+	url = {http://ieeexplore.ieee.org/iel5/82/6230/00242348.pdf},
+	abstract = {Computer simulations are used to determine the stability limits of
+single-bit delta-sigma modulators up to order 8. It is found that none
+of the existing criteria for stability are adequate for design. Plots of
+the maximum signal-to-noise ratio (SNR) achievable with a given
+modulator order and oversampling ratio (OSR) are presented. These graphs
+can be used to determine the modulator order and OSR required to achieve
+a given SNR or to check the tightness of (as yet unavailable)
+theoretical bounds},
+	journal = {Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on [see also Circuits and Systems II: Express Briefs, IEEE Transactions on]},
+	author = {R. Schreier},
+	year = {1993},
+	keywords = {ADC,DAC,delta modulation,delta-sigma modulators,high-order,modulator order,modulators,noise,oversampling ratio,signal-to-noise ratio,simulation model,single-bit,SNR,stability criteria,stability limits},
+	pages = {461-466}
+},
+
+@article{wikipedia_contributors_norm_2007,
+	title = {Norm (mathematics)},
+	url = {http://en.wikipedia.org/w/index.php?title=Norm\_\%28mathematics\%29\&oldid=120296132},
+	journal = {Wikipedia, The Free Encyclopedia},
+	author = {Wikipedia contributors},
+	month = apr,
+	year = {2007}
+},
+
+@article{karaboga_digital_2005,
+	title = {Digital IIR Filter Design Using Differential Evolution Algorithm},
+	volume = {2005},
+	journal = {EURASIP Journal on Applied Signal Processing},
+	author = {N. Karaboga},
+	year = {2005},
+	pages = {1269-1276}
+},
+
+@book{kozak_oversampled_2003,
+	edition = {1},
+	title = {Oversampled Delta-Sigma Modulators: Analysis, Applications and Novel Topologies},
+	isbn = {1402074204},
+	publisher = {Springer},
+	author = {M{\"u}cahit Kozak and Izzet Kale},
+	month = jul,
+	year = {2003},
+	pages = {230}
+},
+
+@misc{_dspace_,
+	title = {DSpace at FCUniversity: Item 2377/3632},
+	url = {http://dspace.lib.fcu.edu.tw:8080/dspace/handle/2377/3632}
+},
+
+@book{oppenheim_signals_1996,
+	edition = {2},
+	title = {Signals and Systems},
+	isbn = {0138147574},
+	publisher = {Prentice Hall},
+	author = {Alan V. Oppenheim and Alan S. Willsky and with S. Hamid and S. Hamid Nawab},
+	month = aug,
+	year = {1996},
+	pages = {957}
+},
+
+@misc{_vector_,
+	title = {Vector Norm -- from Wolfram MathWorld},
+	url = {http://mathworld.wolfram.com/VectorNorm.html}
+},
+
+@article{ngai_wong_dc_2003,
+	title = {DC stability analysis of high-order, lowpass /spl Sigma//spl Delta/ modulators with distinct unit circle NTF zeros},
+	volume = {50},
+	issn = {1057-7130  },
+	abstract = { This paper presents an analytical approach to the investigation of the dc stability of high-order (order>2), lowpass (LP) /spl Sigma//spl Delta/ modulators with distinct noise transfer function (NTF) zeros on the unit circle. The techniques of state-space diagonalization and decomposition, continuous-time embedding and Poincare map analysis are combined and extended. It is revealed that high-order /spl Sigma//spl Delta/ modulators can be transformed and decomposed into second- and first-order subsystems. The investigation, coupled with efficient numerical methods, generalizes itself to different types of transition flow and provides theoretical insight into the state trajectory and limit cycle behavior. It is shown that estimation of dc input bounds based solely on the boundary transition flow is inadequate. A procedure utilizing the information from different transition flow assumptions and the discrete nature of a modulator is introduced for locating the stable dc input bounds of practical, discrete-time /spl Sigma//spl Delta/ modulators.},
+	journal = {Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on [see also Circuits and Systems II: Express Briefs, IEEE Transactions on]},
+	author = {Ngai Wong and Tung-Sang Ng},
+	year = {2003},
+	keywords = {circuit noise,circuit stability,continuous-time embedding,DC stability,delta-sigma modulation,high-order low-pass /spl Sigma//spl Delta/ modulator,limit cycle,limit cycles,noise transfer function,numerical method,Poincare map analysis,Poincare mapping,poles and zeros,state-space decomposition,state-space diagonalization,state-space methods,state trajectory,transfer functions,transition flow,unit circle zeros},
+	pages = { 12- 30}
+},
+
+@article{schreier_bandpass_1989,
+	title = {Bandpass sigma-delta modulation},
+	volume = {25},
+	issn = {0013-5194},
+	url = {http://ieeexplore.ieee.org/iel5/2220/3755/00138792.pdf},
+	abstract = {A bandpass version of sigma-delta modulation is presented, with
+simulation results for second- and fourth-order convertors. For the
+fourth-order convertor operating at 8 MHz, simulations demonstrate a
+resolution of 16 bits over an 8 kHz band centred at 1 MHz. Applications
+may include analogue/digital conversion for AM radio, and
+digital/analogue conversion for narrowband RF systems},
+	journal = {Electronics Letters},
+	author = {R. Schreier and M. Snelgrove},
+	year = {1989},
+	keywords = {8 kHz,8 MHz,AM radio,analogue-digital conversion,analogue/digital conversion,bandpass version,delta modulation,digital-analogue conversion,digital/analogue conversion,fourth-order convertors,narrowband RF systems,second-order convertors,sigma-delta modulation},
+	pages = {1560-1561}
+},
+
+@inproceedings{babu_differential_2003,
+	title = {Differential evolution for multi-objective optimization},
+	volume = {4},
+	isbn = {           },
+	abstract = { Two test problems on multiobjective optimization (one simple general problem and the second one on an engineering application of cantilever design problem) are solved using differential evolution (DE). DE is a population based search algorithm, which is an improved version of genetic algorithm (GA), Simulations carried out involved solving (1) both the problems using Penalty function method, and (2) first problem using Weighing factor method and finding Pareto optimum set for the chosen problem, DE found to be robust and faster in optimization. To consolidate the power of DE, the classical Himmelblau function, with bounds on variables, is also solved using both DE and GA. DE found to give the exact optimum value within less generations compared to simple GA.},
+	booktitle = {Evolutionary Computation, 2003. CEC '03. The 2003 Congress on},
+	journal = {Evolutionary Computation, 2003. CEC '03. The 2003 Congress on},
+	author = {B.V. Babu and M.M.L. Jehan},
+	year = {2003},
+	keywords = {cantilever design problem,differential evolution,genetic algorithm,genetic algorithms,Himmelblau function,multiobjective optimization,Pareto optimisation,Pareto optimum set,Penalty function method,search algorithm,search problems,Weighing factor method},
+	pages = { 2696- 2703 Vol.4}
+},
+
+@misc{maloberti_oversampling_2007,
+	title = {OVERSAMPLING AND LOW ORDER ?? MODULATORS},
+	url = {http://dx.doi.org/10.1007/978-0-387-32486-9\_6},
+	abstract = {Oversampling converters, initially used for audio-band and highresolution applications, are now widely used in systems requiring video-band and medium-resolution. The technique, as we shall study, benefits from both noise-shaping and oversampling to give an optimum trade-off between speed and resolution. This chapter recalls the basic principles of the oversampling method and discusses first and second order architectures providing the basis for the study, made in the next chapter, of high order sigma-delta architectures, continuous-time solutions and sigma-delta DAC. },
+	journal = {Data Converters},
+	author = {Maloberti},
+	year = {2007}
+},
+
+@article{zitzler_multiobjective_1999,
+	title = {Multiobjective evolutionary algorithms: a comparative case study and the strength Pareto approach},
+	volume = {3},
+	issn = {1089-778X},
+	abstract = {Evolutionary algorithms (EAs) are often well-suited for optimization problems involving several, often conflicting objectives. Since 1985, various evolutionary approaches to multiobjective optimization have been developed that are capable of searching for multiple solutions concurrently in a single run. However, the few comparative studies of different methods presented up to now remain mostly qualitative and are often restricted to a few approaches. In this paper, four multiobjective EAs are compared quantitatively where an extended 0/1 knapsack problem is taken as a basis. Furthermore, we introduce a new evolutionary approach to multicriteria optimization, the strength Pareto EA (SPEA), that combines several features of previous multiobjective EAs in a unique manner. It is characterized by (a) storing nondominated solutions externally in a second, continuously updated population, (b) evaluating an individual's fitness dependent on the number of external nondominated points that dominate it, (c) preserving population diversity using the Pareto dominance relationship, and (d) incorporating a clustering procedure in order to reduce the nondominated set without destroying its characteristics. The proof-of-principle results obtained on two artificial problems as well as a larger problem, the synthesis of a digital hardware-software multiprocessor system, suggest that SPEA can be very effective in sampling from along the entire Pareto-optimal front and distributing the generated solutions over the tradeoff surface. Moreover, SPEA clearly outperforms the other four multiobjective EAs on the 0/1 knapsack problem},
+	journal = {Evolutionary Computation, IEEE Transactions on},
+	author = {E. Zitzler and L. Thiele},
+	year = {1999},
+	keywords = {clustering procedure,conflicting objectives,continuously updated population,digital hardware-software multiprocessor system,evolutionary computation,extended 0/1 knapsack problem,knapsack problems,multiobjective evolutionary algorithms,multiobjective optimization,nondominated solutions,optimisation,Pareto dominance relationship,population diversity,strength Pareto approach},
+	pages = {257-271}
+},
+
+@misc{_ieeexplore#_,
+	title = {IEEEXplore\# A computationally efficient technique for designing frequency sampling filters},
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/search/srchabstract.jsp?arnumber=559368\&isnumber=12195\&punumber=82\&k2dockey=559368@ieeejrns\&query=\%28stubberud+p.+a.\%3Cin\%3Eau\%29\&pos=2}
+},
+
+@article{kalinli_artificial_2005,
+	title = {Artificial immune algorithm for IIR filter design},
+	volume = {18},
+	journal = {Engineering Applications of Artificial Intelligence},
+	author = {A. Kalinli and N. Karaboga},
+	year = {2005},
+	pages = {919-929}
+},
+
+@book{hein_sigma_1993,
+	edition = {1},
+	title = {Sigma Delta Modulators: Nonlinear Decoding Algorithms and Stability Analysis},
+	isbn = {0792393090},
+	publisher = {Springer},
+	author = {S{{\O}}ren Hein and Avideh Zakhor},
+	year = {1993},
+	pages = {268}
+},
+
+@book{norsworthy_delta-sigma_1996,
+	title = {Delta-Sigma Data Converters: Theory, Design, and Simulation},
+	isbn = {0780310454},
+	publisher = {Wiley-IEEE Press},
+	author = {Steven R. Norsworthy and Richard Schreier and Gabor C. Temes},
+	month = oct,
+	year = {1996},
+	pages = {512}
+},
+
+@misc{_2007-002pdf_,
+	title = {2007-002.pdf (application/pdf Object)},
+	url = {http://www.amp.i.kyoto-u.ac.jp/tecrep/ps\_file/2007/2007-002.pdf}
+},
+
+@article{deczky_equiripple_1974,
+	title = {Equiripple and minimax (Chebyshev) approximations for recursive digital filters},
+	volume = {22},
+	issn = {0096-3518  },
+	url = {http://ieeexplore.ieee.org/iel5/29/26103/01162556.pdf},
+	abstract = { The problem of designing recursive digital filters whose frequency response approximates an arbitrarily prescribed function in the Chebyshev sense on a single interval is considered. Certain degenerate cases where the best Chebyshev approximation is not equiripple are studied in detail, and an algorithm is given for determining the best Chebyshev as well as the best equiripple approximation. Finally, a number of examples illustrating applications of this algorithm are given.},
+	journal = {Acoustics, Speech, and Signal Processing [see also IEEE Transactions on Signal Processing], IEEE Transactions on},
+	author = {A. Deczky},
+	year = {1974},
+	pages = { 98- 111}
+},
+
+@article{cherry_excess_1999,
+	title = {Excess loop delay in continuous-time delta-sigma modulators},
+	volume = {46},
+	issn = {1057-7130},
+	abstract = {Continuous-time (CT) delta-sigma modulators (\&Delta;\&Sigma;M's)
+suffer from a problem not seen in discrete-time (DT) designs, that of
+excess loop delay: nonzero delay between the quantizer clock edge and
+the time when a change in output bit is seen at the feedback point in
+the modulator. This paper analytically shows how such delay affects the
+equivalence between the CT modulator loop filter and its DT counterpart.
+The effect of this delay on modulator dynamic range is studied through
+simulation for the standard double-integration (low pass) CT modulator
+and its equivalent fourth-order f<sub>s</sub>/4 band pass circuit. For
+the first time, the results are extended to higher order low-pass and
+bandpass designs, as well as multibit designs. Methods for alleviating
+the performance loss caused by excess loop delay are also
+discussed},
+	journal = {Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on [see also Circuits and Systems II: Express Briefs, IEEE Transactions on]},
+	author = {J.A. Cherry and W.M. Snelgrove},
+	year = {1999},
+	keywords = {continuous-time delta-sigma modulator,continuous time systems,CT loop filter,delays,delta-sigma modulation,double-integration modulator,dynamic range,excess loop delay,feedback,fourth-order band pass modulator,higher order modulator,multibit quantizer,simulation},
+	pages = {376-389}
+},
+
+@article{bajdechi_systematic_2004,
+	title = {Systematic design exploration of delta-sigma ADCs},
+	volume = {51},
+	issn = {1057-7122},
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/8919/28155/01259490.pdf},
+	abstract = {An algorithm for architecture-level exploration of the /spl Delta//spl Sigma/ A/D converter (ADC) design space is presented. Starting from the desired specification, the algorithm finds an optimal solution by exhaustively exploring both single-loop and cascaded architectures, with a single-bit or multibit quantizer, for a range of oversampling ratios. A fast filter-level step evaluates the performance of all loop-filter topologies and passes the accepted solutions to the architecture-level optimization step which maps the filters on feasible architectures and evaluates their performance. The power consumption of each accepted architecture is estimated and the best top-ten solutions in terms of the ratio of peak signal-to-noise+distortion ratio versus power consumption are further optimized for yield. Experimental results for two different design targets are presented. They show that previously published solutions are among the best architectures for a given target but that better solutions can be designed as well.},
+	journal = {Circuits and Systems I: Regular Papers, IEEE Transactions on [Circuits and Systems I: Fundamental Theory and Applications, IEEE Transactions on]},
+	author = {O. Bajdechi and G.E. Gielen and J.H. Huijsing},
+	year = {2004},
+	keywords = {A/D converter design space,analogue-digital conversion,architecture-level exploration,architecture-level optimization,CAD,cascaded architectures,cascade networks,circuit CAD,circuit optimisation,computer-aided design,delta-sigma ADC,delta-sigma modulation,design specification,design targets,filter architectures,filter-level step,integrated circuit design,integrated circuit noise,integrated circuit yield,loop-filter topologies,multibit quantizer,network topology,optimized yield,oversampling ratio,peak signal-to-noise+distortion ratio,power consumption,single-bit quantizer,single-loop architectures,systematic design exploration},
+	pages = {86-95}
+},
+
+@book{haykin_adaptive_2001,
+	edition = {4},
+	title = {Adaptive Filter Theory},
+	isbn = {0130901261},
+	publisher = {Prentice Hall},
+	author = {Simon Haykin},
+	month = sep,
+	year = {2001},
+	pages = {936}
+},
+
+@article{agarwal_penalty_2005-1,
+	title = {Penalty Function Approach in Heuristic Algorithms for Constrained Redundancy Reliability Optimization.},
+	volume = {54},
+	issn = {00189529},
+	url = {http://ezproxy.library.unlv.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true\&db=aph\&AN=18198729\&site=ehost-live},
+	doi = {Article},
+	abstract = {To solve the problem of constrained redundancy reliability optimization, several heuristic algorithms have been developed in the literature. Most of these algorithms search for the solutions remaining within the feasible boundary e.g [15], [20]. Perhaps the most interesting \& efficient heuristic algorithm in terms of solution quality is that given by KYA [9], in which the search is made not only in the feasible region but also into the bounded infeasible region by making an excursion, which returns to the feasible region with a possibly improved solution. In this paper, a heuristic algorithm based on the penalty function approach is proposed to solve the constrained redundancy optimization problem for complex systems. An excursion is made into the infeasible region, but an adaptive penalty function helps the search not to go too far into the infeasible region. Thus, promising feasible \& infeasible regions of the search space are explored efficiently \& effectively to identify finally an optimal or near optimal solution. Computational experiments are conducted on 11 sets of problems (10 with linear constraints, and 1 with nonlinear constraints); each with 10 different randomly generated initial solutions. Comparison is made between the proposed algorithm P-Alg, N-N algorithm [15], SM algorithm [20], and KYA [9]. It is observed that P-Alg performs consistently better than others, showing an overall improvement in various measures of performance. Besides, as P-Alg does not require any assumptions on the nature of the objective \& constraint functions, it can solve a wide variety of problems. ABSTRACT FROM AUTHOR Copyright of IEEE Transactions on Reliability is the property of IEEE and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts)},
+	journal = {IEEE Transactions on Reliability},
+	author = {Manju Agarwal and Rashika Gupta},
+	year = {2005},
+	note = {To solve the problem of constrained redundancy reliability optimization, several heuristic algorithms have been developed in the literature. Most of these algorithms search for the solutions remaining within the feasible boundary e.g [15], [20]. Perhaps the most interesting \& efficient heuristic algorithm in terms of solution quality is that given by KYA [9], in which the search is made not only in the feasible region but also into the bounded infeasible region by making an excursion, which returns to the feasible region with a possibly improved solution. In this paper, a heuristic algorithm based on the penalty function approach is proposed to solve the constrained redundancy optimization problem for complex systems. An excursion is made into the infeasible region, but an adaptive penalty function helps the search not to go too far into the infeasible region. Thus, promising feasible \& infeasible regions of the search space are explored efficiently \& effectively to identify finally an optimal or near optimal solution. Computational experiments are conducted on 11 sets of problems (10 with linear constraints, and 1 with nonlinear constraints); each with 10 different randomly generated initial solutions. Comparison is made between the proposed algorithm P-Alg, N-N algorithm [15], SM algorithm [20], and KYA [9]. It is observed that P-Alg performs consistently better than others, showing an overall improvement in various measures of performance. Besides, as P-Alg does not require any assumptions on the nature of the objective \& constraint functions, it can solve a wide variety of problems. ABSTRACT FROM AUTHOR Copyright of IEEE Transactions on Reliability is the property of IEEE and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts)},
+	keywords = {ALGORITHMS,Complex systems,COMPUTER systems,constrained redundancy optimization,heuristic algorithm,INDUSTRIAL engineering,MARKOV processes,MATHEMATICAL optimization,OPERATIONS research,penalty function},
+	pages = {549-558}
+},
+
+@misc{_genetic_,
+	title = {Genetic Algorithms Overview},
+	url = {http://geneticalgorithms.ai-depot.com/Tutorial/Overview.html}
+},
+
+@article{coit_adaptive_1996,
+	title = {Adaptive Penalty Methods for Genetic Optimization of Constrained Combinatorial Problems.},
+	volume = {8},
+	issn = {10919856},
+	url = {http://ezproxy.library.unlv.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true\&db=aph\&AN=4473443\&site=ehost-live},
+	doi = {Article},
+	abstract = {Presents a study that discussed approaches using genetic algorithm (GA) search for constrained optimization and introduced the general adaptive penalty approach.  Combinatorial applications where the effectiveness of the general adaptive method approach is illustrated;  Application of the adaptive penalty  function; Description of the proposed adaptive penalty method. },
+	journal = {INFORMS Journal on Computing},
+	author = {David W. Coit and Alice E. Smith and David M. Tate},
+	year = {1996},
+	note = {Presents a study that discussed approaches using genetic algorithm (GA) search for constrained optimization and introduced the general adaptive penalty approach.  Combinatorial applications where the effectiveness of the general adaptive method approach is illustrated;  Application of the adaptive penalty  function; Description of the proposed adaptive penalty method. },
+	keywords = {GENETIC algorithms,MATHEMATICAL optimization},
+	pages = {173}
+},
+
+@article{takahashi_multiobjective_1997,
+	title = {Multiobjective H2/H? guaranteed cost PID design},
+	volume = {17},
+	issn = {0272-1708},
+	abstract = {This article presents a methodology for sub-optimal design of PID compensators for systems subject to disturbance signals and to parametric uncertainties of polytope type. The adopted optimality criteria are the H2 and H? norms of the transfer matrices from the disturbance inputs and from the reference input to the controlled output error. Time constant constraints are also employed in the optimization procedure. The PID parameter selection combines the different optimization criteria through a multiobjective technique. True guaranteed cost values for optimization criteria are calculated. An example is presented, showing the uncertainty polytope construction from physical parameters tolerances and the PID synthesis procedure. A genetic algorithm and extensive simulations are employed in order to evaluate the proposed algorithm performance},
+	journal = {Control Systems Magazine, IEEE},
+	author = {R.H.C. Takahashi and P.L.D. Peres and P.A.V. Ferreira},
+	year = {1997},
+	keywords = {compensation, control,control system synthesis,disturbance signals,genetic algorithm,genetic algorithms,guaranteed cost,H?,H2 control,linear systems,linear time invariant systems,multiobjective optimisation,parametric uncertainty,PID compensators,three-term control,transfer function matrices,transfer matrix,uncertain systems,uncertainty polytope},
+	pages = {37-47}
+},
+
+@article{gera_relationship_1999,
+	title = {The relationship between the Z-transform and the discrete-time Fourier transform},
+	volume = {44},
+	issn = {0018-9286},
+	abstract = {In this paper, the relationship between the one-sided Z-transform
+and the one-sided discrete-time Fourier transform is considered. It
+serves as the counterpart to a previous one derived for continuous
+functions. The benefit is in its application to unit step and periodic
+functions},
+	journal = {Automatic Control, IEEE Transactions on},
+	author = {A.E. Gera},
+	year = {1999},
+	keywords = {discrete-time Fourier transform,Fourier transforms,one-sided transform,periodic functions,unit step functions,Z-transform,Z transforms},
+	pages = {370-371}
+},
+
+@misc{kester_analog_2006,
+	title = {Analog Devices: Analog to Digital Converters: Tutorial MT-022: ADC Architectures III: Sigma-Delta ADC Basics},
+	url = {http://www.analog.com/en/content/0,2886,760\%255F\%255F92393,00.html},
+	author = {Walt Kester},
+	month = feb,
+	year = {2006}
+},
+
+@article{shynk_adaptive_1989,
+	title = {Adaptive IIR filtering},
+	volume = {6},
+	issn = {0740-7467},
+	abstract = {An overview is presented of several methods, filter structures, and recursive algorithms used in adaptive infinite-impulse response (IIR) filtering. Both the equation-error and output-error formulations are described, although the focus is on the adaptive algorithms and properties of the output-error configuration. These parameter-update algorithms have the same generic form, and they are based on a prediction-error performance criterion. A direct-form implementation of the adaptive filters is emphasized, but alternative realizations such as the parallel and lattice forms are briefly discussed. Several important issues associated with adaptive IIR filtering, including stability monitoring, the SPR condition, and convergence, are addressed},
+	journal = {ASSP Magazine, IEEE [see also IEEE Signal Processing Magazine]},
+	author = {J.J. Shynk},
+	year = {1989},
+	keywords = {adaptive filters,adaptive IIR filtering,convergence,digital filters,equation error formulation,filtering and prediction theory,infinite-impulse response,lattice forms,output-error formulations,overview,parallel forms,parameter-update algorithms,prediction-error performance criterion,recursive algorithms,reviews,signal processing,SPR condition,stability,stability monitoring},
+	pages = {4-21}
+},
+
+@book{johns_analog_1996,
+	edition = {1},
+	title = {Analog Integrated Circuit Design},
+	isbn = {0471144487},
+	publisher = {Wiley},
+	author = {David Johns and Ken Martin},
+	month = nov,
+	year = {1996},
+	pages = {720}
+},
+
+@misc{_hybrid_,
+	title = {A hybrid optimization method of evolutionary and gradient search},
+	url = {http://www.informaworld.com.ezproxy.library.unlv.edu/smpp/content\~content=a768582398},
+	keywords = {Aerospace Engineering,Biomedical Engineering,Chemical Engineering,Civil Engineering \& Building,Electrical \& Computer Engineering,Engineering Economics,Engineering Management,Environmental Engineering,Evolutionary algorithms,Evolution strategies,Hybrid algorithms,Industry \& Industrial Studies,Mathematical Analysis,Mathematics \& Statistics for Engineers,Mechanical Engineering,Numerical Analysis,Operational Research,Operations Management,Operations Research,Optimization,Quasi-Newton method,Risk Management,SPC/Reliability/Quality Control,Stochastic Models \& Processes,Systems \& Control Engineering}
+},
+
+@inproceedings{karaboga_design_2004,
+	title = {Design of minimum phase digital IIR filters by using genetic algorithm},
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/9311/29611/01344515.pdf},
+	booktitle = {Signal Processing Symposium, 2004. NORSIG 2004. Proceedings of the 6th Nordic},
+	journal = {Signal Processing Symposium, 2004. NORSIG 2004. Proceedings of the 6th Nordic},
+	author = {N. Karaboga and B. Cetinkaya},
+	year = {2004},
+	pages = {29-32}
+},
+
+@book{hsu_schaums_1996,
+	edition = {1},
+	title = {Schaum's Outline of Probability, Random Variables, and Random Processes},
+	isbn = {0070306443},
+	url = {http://www.amazon.com/dp/0070306443},
+	publisher = {McGraw-Hill},
+	author = {Hwei Hsu},
+	month = oct,
+	year = {1996},
+	pages = {320}
+},
+
+@book{reeves_genetic_2002,
+	edition = {1},
+	title = {Genetic Algorithms - Principles and Perspectives: A Guide to GA Theory},
+	isbn = {1402072406},
+	publisher = {Springer},
+	author = {Colin R. Reeves and Jonathan E. Rowe},
+	month = dec,
+	year = {2002},
+	pages = {344}
+},
+
+@book{hsu_schaums_1995,
+	edition = {1},
+	title = {Schaum's Outline of Signals and Systems},
+	isbn = {0070306419},
+	publisher = {McGraw-Hill},
+	author = {Hwei Hsu},
+	month = mar,
+	year = {1995},
+	pages = {352}
+},
+
+@book{gerfers_continuous-time_2005,
+	edition = {1},
+	title = {Continuous-Time Sigma-Delta A/D Conversion: Fundamentals, Performance Limits and Robust Implementations},
+	isbn = {3540284060},
+	publisher = {Springer},
+	author = {F. Gerfers and M. Ortmanns},
+	month = dec,
+	year = {2005},
+	pages = {241}
+},
+
+@inproceedings{gao_efficient_1991,
+	title = {An efficient adaptive cascade IIR filter},
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/555/4470/00176369.pdf},
+	abstract = {Adaptive cascade IIR (infinite impulse response) filters which have an easy stability check and low parameter sensitivities are studied. A novel concept is proposed which suggests backpropagating the desired signal through the inverse all-pole second-order sections and producing intermediate errors to be minimized. This concept is applied to a cascade IIR structure, resulting in an efficient adaptive cascade IIR filter. It is shown that the equation-error formulation is just a special case of backpropagation of the desired signal},
+	booktitle = {Circuits and Systems, 1991., IEEE International Sympoisum on},
+	journal = {Circuits and Systems, 1991., IEEE International Sympoisum on},
+	author = {F.X.Y. Gao and W.M. Snelgrove},
+	year = {1991},
+	keywords = {adaptive cascade IIR filter,adaptive filters,backpropagation,cascade networks,digital filters,filtering and prediction theory,infinite impulse response,inverse all-pole second-order sections,low parameter sensitivities,stability,stability check},
+	pages = {444-447 vol.1}
+},
+
+@misc{_disseminate_,
+	title = {Disseminate (application/pdf Object)},
+	url = {http://projecteuclid.org/DPubS/Repository/1.0/Disseminate?view=body\&id=pdf\_1\&handle=euclid.aos/1176348908}
+},
+
+@book{papoulis_probability_1984,
+	edition = {2Rev Ed},
+	title = {Probability, Random Variables, and Stochastic Processes},
+	isbn = {0070484686},
+	publisher = {McGraw-Hill Companies},
+	author = {Athanasios Papoulis},
+	month = dec,
+	year = {1984},
+	pages = {576}
+},
+
+@misc{kester_analog_2006-1,
+	title = {Analog Devices: Analog to Digital Converters: Tutorial MT-023: ADC Architectures IV: Sigma-Delta ADC Advanced Concepts and Applications},
+	url = {http://www.analog.com/en/content/0,2886,760\%255F\%255F92394,00.html},
+	author = {Walt Kester},
+	month = feb,
+	year = {2006}
+},
+
+@book{philips_sigma_2006,
+	edition = {1},
+	title = {Sigma Delta A/D Conversion for Signal Conditioning},
+	isbn = {1402046790},
+	publisher = {Springer},
+	author = {Kathleen Philips and Arthur H.M. van Roermund},
+	month = may,
+	year = {2006},
+	pages = {227}
+},
+
+@article{laroche_optimal_2005,
+	title = {Optimal filter design for active noise canceling systems using linear programming in the cepstral domain},
+	journal = {Applications of Signal Processing to Audio and Acoustics, 2005. IEEE Workshop on},
+	author = {J. Laroche},
+	year = {2005},
+	pages = {174-177}
+},
+
+@article{yiu-wing_leung_orthogonal_2001,
+	title = {An orthogonal genetic algorithm with quantization for global numerical optimization},
+	volume = {5},
+	issn = {1089-778X},
+	abstract = {We design a genetic algorithm called the orthogonal genetic algorithm with quantization for global numerical optimization with continuous variables. Our objective is to apply methods of experimental design to enhance the genetic algorithm, so that the resulting algorithm can be more robust and statistically sound. A quantization technique is proposed to complement an experimental design method called orthogonal design. We apply the resulting methodology to generate an initial population of points that are scattered uniformly over the feasible solution space, so that the algorithm can evenly scan the feasible solution space once to locate good points for further exploration in subsequent iterations. In addition, we apply the quantization technique and orthogonal design to tailor a new crossover operator, such that this crossover operator can generate a small, but representative sample of points as the potential offspring. We execute the proposed algorithm to solve 15 benchmark problems with 30 or 100 dimensions and very large numbers of local minima. The results show that the proposed algorithm can find optimal or close-to-optimal solutions},
+	journal = {Evolutionary Computation, IEEE Transactions on},
+	author = {Yiu-Wing Leung and Yuping Wang},
+	year = {2001},
+	keywords = {close-to-optimal solutions,continuous variables,GA,genetic algorithms,global numerical optimization,iteration,numerical analysis,orthogonal genetic algorithm,quantization},
+	pages = {41-53}
+},
+
+@article{gharbiya_implementation_2006,
+	title = {On the implementation of input-feedforward delta-sigma modulators},
+	volume = {53},
+	issn = {1057-7130},
+	url = {http://ieeexplore.ieee.org/iel5/8920/34441/01643460.pdf},
+	abstract = { This brief addresses some practical issues on the implementation of the input-feedforward delta-sigma modulators. First, the timing constraint imposed by the input-feedforward path is identified and a possible method to relax the constraint is proposed. Second, the drawbacks of the analog adder needed before the quantizer are explained and a method to eliminate the adder is proposed.},
+	journal = {Circuits and Systems II: Express Briefs, IEEE Transactions on [see also Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on]},
+	author = {A. Gharbiya and D.A. Johns},
+	year = {2006},
+	keywords = {adders,analog adder,Analog-to-digital,analog-to-digital converters,analogue-digital conversion,delta\&\#8211,delta-sigma modulation,input-feedforward,input-feedforward delta-sigma modulators,oversampling,sigma(},
+	pages = { 453- 457}
+},
+
+@misc{_introduction_2005,
+	title = {Introduction},
+	url = {http://dx.doi.org/10.1007/0-387-24349-6\_1},
+	journal = {Practical Mathematical Optimization},
+	year = {2005}
+},
+
+@article{iu_study_2007,
+	title = {Study of stability of a bandpass sigma delta modulator with sinusoidal input},
+	volume = {33},
+	url = {http://www.sciencedirect.com.ezproxy.library.unlv.edu/science/article/B6TJ4-4JD0H07-2/2/e139cc262c6d77da8ddfdb3c89bb7bc4},
+	abstract = {Bandpass sigma delta modulators (SDMs) have applications in areas such as digital radio demodulation. Stability issues of bandpass SDMs have been widely studied. Usually, zero or step inputs are considered. In this paper, we study the stability and non-linear phenomena of a bandpass SDM with sinusoidal input. In particular, the effects of the amplitude and frequency of the sinusoidal input signal will be investigated.},
+	journal = {Chaos, Solitons \& Fractals},
+	author = {Herbert H.C. Iu},
+	month = jul,
+	year = {2007},
+	pages = {405-418}
+},
+
+@inproceedings{ren_pipelined_2006,
+	title = {Pipelined Delta Sigma Modulator Analog to Digital Converter},
+	volume = {1},
+	isbn = {1548-3746},
+	url = {http://ieeexplore.ieee.org/iel5/4267031/4267032/04267086.pdf},
+	abstract = {A two stage Pipelined Delta Sigma Modulator ADC is presented for broad band, high resolution applications. The unique architecture incorporates a first order delta sigma modulator in each stage and combines the most significant bits of the first stage with the second stage output to produce 11-13 bit resolution. The input bandwidth is 62.5 MHz and the sampling frequency of 1 GHz results in an over sampling ratio of 8 for the first order modulators. MATLAB simulations for the two stage ADC show 13-15 bit resolution. A transistor level design in 0.18um CMOS for the two stage ADC was captured and simulated with Cadence show 12 bit resolution with a 50 MHz input. The ADC was fabricated in 0.18um CMOS technology on a 10 square millimeter die.},
+	booktitle = {Circuits and Systems, 2006. MWSCAS '06. 49th IEEE International Midwest Symposium on},
+	journal = {Circuits and Systems, 2006. MWSCAS '06. 49th IEEE International Midwest Symposium on},
+	author = {Saiyu Ren and Ray Siferd and Robert Blumgold and Nima Emami and Robert Gillen},
+	year = {2006},
+	pages = {114-118}
+},
+
+@inproceedings{obrien_unified_2005,
+	title = {A unified procedure for discrete-time root locus and Bode design},
+	isbn = {0743-1619 },
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel4/9861/31519/01470777.pdf},
+	abstract = {As an alternative to the numerous distinct controller design algorithms in discrete-time textbooks, a simple, unified design approach is presented for all standard discrete-time, classical compensators independent of the form of the system information. This approach is based on a simple root locus design procedure for a proportional-derivative (PD) compensator. From this procedure, design procedures for discrete-time lead, proportional-integral (PI), lag, proportional-integral-derivative (PID), and PI-lead compensators are developed. With this proposed approach, students can concentrate on the larger control system design issues, such as compensator selection and closed-loop performance, rather than the intricacies of a particular design procedure. To demonstrate this approach, an example of a lead design from a digital control system laboratory is presented.},
+	booktitle = {American Control Conference, 2005. Proceedings of the 2005},
+	journal = {American Control Conference, 2005. Proceedings of the 2005},
+	author = {R.T. O'Brien and R.T. O'Brien and J.M. Watkins and J.M. Watkins},
+	year = {2005},
+	keywords = {Bode design,Bode diagrams,compensation,controller design algorithms,control system design,control system synthesis,discrete-time classical compensators,discrete-time lead compensator,discrete-time root locus,discrete time systems,lag compensator,PD control,PI-lead compensator,proportional-derivative compensator,proportional-integral compensator,proportional-integral-derivative compensator,root loci,root locus design,three-term control},
+	pages = {4935-4940 vol. 7}
+},
+
+@article{poli_schema_1998,
+	title = {Schema theory for genetic programming with one-point crossover and point mutation.},
+	volume = {6},
+	issn = {10636560},
+	url = {http://ezproxy.library.unlv.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true\&db=aph\&AN=1250985\&site=ehost-live},
+	doi = {Article},
+	abstract = {Reviews the main results obtained in the theory of schemata in genetic programming (GP). Genetic algorithm (GA) schemata; GA schemata to GP schemata; Koza's GP schemata; Whigham's GP schemata; Rosca's GP schemata; Definition of schema for GP; Point mutation and one-point crossover in GP; GP schema theorem. },
+	journal = {Evolutionary Computation},
+	author = {Riccardo Poli and William B. Langdon},
+	year = {1998},
+	note = {Reviews the main results obtained in the theory of schemata in genetic programming (GP). Genetic algorithm (GA) schemata; GA schemata to GP schemata; Koza's GP schemata; Whigham's GP schemata; Rosca's GP schemata; Definition of schema for GP; Point mutation and one-point crossover in GP; GP schema theorem. },
+	keywords = {GENETIC algorithms,GENETIC programming (Computer science)},
+	pages = {231}
+},
+
+@book{río_cmos_2006,
+	edition = {1},
+	title = {CMOS Cascade Sigma-Delta Modulators for Sensors and Telecom: Error Analysis and Practical Design},
+	isbn = {1402047754},
+	publisher = {Springer},
+	author = {R. del R{\'i}o and F. Medeiro and B. P{\'e}rez-Verd{\'u} and J.M. de la Rosa and {\'A}. Rodr{\'i}guez-V{\'a}zquez},
+	month = aug,
+	year = {2006},
+	pages = {299}
+},
+
+@inproceedings{ritoniemi_design_1990,
+	title = {Design of stable high order 1-bit sigma-delta modulators},
+	abstract = {A method for designing stable 1-b high-order (\&ges;3) sigma-delta
+modulators is presented. The stability analysis is based on the root
+locus and modeling the quantizer for each clock period at a time. The
+quantizer's gain in the modulator at the present clock period determines
+the modulator's stability for the next clock period. If the modulator is
+stable during each clock period, it is unconditionally stable and
+behaves as a linear analog/digital converter. Examples with third-,
+fourth-, fifth-, and sixth-order sigma-delta modulators are given to
+explore the use of the proposed method in practice. With the designed
+sixth-order modulator it is possible to achieve 23-b
+signal-to-quantization noise ratio at the oversampling ratio of 64},
+	booktitle = {Circuits and Systems, 1990., IEEE International Symposium on},
+	journal = {Circuits and Systems, 1990., IEEE International Symposium on},
+	author = {T. Ritoniemi and T. Karema and H. Tenhunen},
+	year = {1990},
+	keywords = {ADC,analogue-digital conversion,linear analog/digital converter,modulators,network synthesis,quantiser gain,sigma-delta modulators,sixth-order modulator,stability,stability analysis},
+	pages = {3267-3270 vol.4}
+},
+
+@inproceedings{alander_optimal_1992,
+	title = {On optimal population size of genetic algorithms},
+	url = {http://ieeexplore.ieee.org/iel4/405/5732/00218485.pdf},
+	abstract = {A description is given of the results of experiments to find the optimum population size for genetic algorithms as a function of problem complexity. It seems that for moderate problem complexity the optimal population size for problems coded as bitstrings is approximately the length of the string in bits for sequential machines. This result is also consistent with earlier experimentation. In parallel architectures the optimal population size is larger than in the corresponding sequential cases, but the exact figures seem to be sensitive to implementation details},
+	booktitle = {CompEuro '92 . 'Computer Systems and Software Engineering',Proceedings.},
+	journal = {CompEuro '92 . 'Computer Systems and Software Engineering',Proceedings.},
+	author = {J.T. Alander and J.T. Alander},
+	year = {1992},
+	keywords = {bitstrings,computational complexity,genetic algorithms,optimum population size,parallel architectures,problem complexity,sequential machines},
+	pages = {65-70}
+},
+
+@misc{_ilmenaups_,
+	title = {ilmenau.ps},
+	url = {file:///home/matthew/Documents/thesis\_misc/ilmenau.ps}
+},
+
+@book{schreier_understanding_2004,
+	title = {Understanding Delta-Sigma Data Converters},
+	isbn = {0471465852},
+	publisher = {Wiley-IEEE Press},
+	author = {Richard Schreier and Gabor C. Temes},
+	month = nov,
+	year = {2004},
+	pages = {464}
+},
+
+@article{ho_stability_2007,
+	title = {Stability of sinusoidal responses of interpolative sigma delta modulators},
+	volume = {32},
+	url = {http://www.sciencedirect.com.ezproxy.library.unlv.edu/science/article/B6TJ4-4KPX8RD-3/2/f796380cd766eb8da4a7ad17d8168b70},
+	abstract = {In this paper, stability of sinusoidal responses of interpolative sigma delta modulators (SDMs) is investigated. It is found that interpolative SDMs may switch from unstable to stable behaviors even though the magnitude or the frequency of the input sinusoidal signals increase. Hence, the input magnitude stability margin and the input frequency stability margin are redefined as the minimum input magnitude and the minimum input frequency of the input sinusoidal signals such that the output of the loop filter is bounded.},
+	journal = {Chaos, Solitons \& Fractals},
+	author = {Charlotte Yuk-Fan Ho and Bingo Wing-Kuen Ling},
+	month = apr,
+	year = {2007},
+	pages = {480-486}
+},
+
+@book{bajdechi_systematic_2004-1,
+	edition = {1},
+	title = {Systematic Design of Sigma-Delta Analog-to-Digital Converters},
+	isbn = {1402079451},
+	publisher = {Springer},
+	author = {Ovidiu Bajdechi and J.H. Huijsing},
+	month = apr,
+	year = {2004},
+	pages = {208}
+},
+
+@article{chao_higher_1990,
+	title = {A higher order topology for interpolative modulators for oversampling A/D converters},
+	volume = {37},
+	issn = {0098-4094},
+	url = {http://ieeexplore.ieee.org/iel5/31/1898/00052724.pdf},
+	abstract = {Oversampling interpolative coding has been demonstrated to be an effective technique for high-resolution analog-to-digital (A/D) conversion that is tolerant of process imperfections. A novel topology for constructing stable interpolative modulators of arbitrary order is described. Analysis of this topology shows that with proper design of the modulator coefficients, stability is not a limitation to higher order modulators. Furthermore, complete control over placement of the poles and zeros of the quantization noise response allows treatment of the modulation process as a high-pass filter for quantization noise. Higher order modulators are shown not only to greatly reduce oversampling requirements for high-resolution conversion applications, but also to randomize the quantization noise, avoiding the need for dithering. An experimental fourth-order modulator breadboard demonstrates stability and feasibility, achieving a 90-dB dynamic range over the 20-kHz audio bandwidth with a sampling rate of 2.1 MHz. A generalized simulation software package has been developed to mimic time-domain behavior for oversampling modulators. Circuit design specifications for integrated circuit implementation can be deduced from analysis of simulated data},
+	journal = {Circuits and Systems, IEEE Transactions on},
+	author = {K.C.-H. Chao and S. Nadeem and W.L. Lee and C.G. Sodini},
+	year = {1990},
+	keywords = {20 kHz,2.1 MHz,ADC,analogue-digital conversion,circuit analysis computing,delta-sigma modulators,generalized simulation software package,higher order topology,high-pass filter,high-resolution conversion,integrated circuit implementation,interpolation,interpolative modulators,modulator coefficients,modulators,network topology,oversampling A/D converters,oversampling interpolative coding,poles and zeros,quantization noise response,stability,time-domain analysis,time-domain behavior},
+	pages = {309-318}
+},
+
+@misc{storn_fiwiz_2005,
+	title = {FIWIZ ? A Versatile Program for the Design of Digital Filters Using Differential Evolution},
+	url = {http://dx.doi.org/10.1007/3-540-31306-0\_14},
+	abstract = {FIWIZ is a constraint-based design program for recursive (IIR) as well as transversal (FIR) digital filters which is geared toward features which are difficult, if at all, to find in other filter design programs. The main design tasks are elaborated, and the approach via differential evolution (DE) with emphasis on objective function design and achieving computational efficiency is explained. Some design examples are presented to show results that have been achieved with the current implementation of FIWIZ.},
+	journal = {Differential Evolution},
+	author = {Storn},
+	year = {2005}
+},
+
+@article{naumovi_interrelationships_2001,
+	title = {Interrelationships between the one-sided discrete-time Fourier transform and one-sided delta transform},
+	volume = {83},
+	url = {http://dx.doi.org/10.1007/s002020000063},
+	doi = {10.1007/s002020000063},
+	abstract = {Contents\&nbsp;\&nbsp;?This article is focused on the interrelationships between the transforms for continuous-time and discrete-time signals. Examples
+ confirm the presented relations.
+ },
+	journal = {Electrical Engineering (Archiv fur Elektrotechnik)},
+	author = {Naumovi?},
+	month = may,
+	year = {2001},
+	pages = {99-101}
+},
+
+@inproceedings{schaffer_-_1989,
+	address = {George Mason University},
+	title = {-},
+	booktitle = {Proceedings of the Third International Conference on Genetic Algorithms},
+	journal = {Proceedings of the Third International Conference on Genetic Algorithms},
+	publisher = {Morgan Kaufmann Publishers, Inc.},
+	author = {J. David Schaffer},
+	month = jun,
+	year = {1989},
+	pages = {4-7}
+},
+
+@book{darwin_origin_2001,
+	title = {The Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life},
+	isbn = {1402171935},
+	publisher = {Adamant Media Corporation},
+	author = {Charles Robert Darwin},
+	month = may,
+	year = {2001},
+	pages = {485}
+},
+
+@inproceedings{back_optimization_1991,
+	address = {Germany: Technische Universita Ilmenau},
+	title = {Optimization by Means of Genetic Algorithms},
+	booktitle = {Internationales Wissenschaftliches Kolloquium},
+	author = {Thomas Back},
+	year = {1991},
+	pages = {1-8}
+},
+
+@article{candy_use_1985,
+	title = {A Use of Double Integration in Sigma Delta Modulation},
+	volume = {33},
+	issn = {0096-2244  },
+	url = {http://ieeexplore.ieee.org/iel5/8159/23993/01096276.pdf},
+	abstract = { Sigma delta modulation is viewed as a technique that employs integration and feedback to move quantization noise out of baseband. This technique may be iterated by placing feedback loop around feedback loop, but when three or more loops are used the circuit can latch into undesirable overloading modes. In the desired mode, a simple linear theory gives a good description of the modulation even when the quantization has only two levels. A modulator that employs double integration and two-level quantization is easy to implement and is tolerant of parameter variation. At sampling rates of 1 MHz it provides resolution equivalent to 16 bit PCM for voiceband signals. Digital filters that are suitable for converting the modulation to PCM are also described.},
+	journal = {Communications, IEEE Transactions on [legacy, pre - 1988]},
+	author = {J. Candy},
+	year = {1985},
+	keywords = {Delta modulation,Pulse-code modulation,Quantization (signal),Signal quantization},
+	pages = { 249- 258}
+},
+
+@misc{_ebscohost_,
+	title = {EBSCOhost},
+	url = {http://web.ebscohost.com.ezproxy.library.unlv.edu/ehost/pdf?vid=2\&hid=16\&sid=81e5bc5f-caed-4667-a77a-5882acf4ede0\%40sessionmgr3}
+},
+
+@inproceedings{storn_differential_1996,
+	title = {Differential evolution design of an IIR-filter},
+	url = {http://ieeexplore.ieee.org/iel5/3838/11205/00542373.pdf},
+	abstract = {The task of designing an 18 parameter IIR-filter (IIR=infinite
+impulse response) which has to meet tight specifications for both
+magnitude response and group delay is investigated. This problem is
+usually tackled by specialized design methods and requires an expert in
+digital signal processing for its solution. The use of the general
+purpose minimization method differential evolution (DE), however, allows
+filter design with a minimum knowledge of digital filters},
+	booktitle = {Evolutionary Computation, 1996., Proceedings of IEEE International Conference on},
+	journal = {Evolutionary Computation, 1996., Proceedings of IEEE International Conference on},
+	author = {R. Storn},
+	year = {1996},
+	keywords = {circuit CAD,circuit optimisation,differential evolution design,digital filters,general purpose minimization method,group delay,IIR filter design,IIR filters,infinite impulse response filter design,magnitude response,minimisation},
+	pages = {268-273}
+},
+
+@book{geerts_design_2002,
+	edition = {1},
+	title = {Design of Multi-Bit Delta-Sigma A/D Converters (THE KLUWER INTERNATIONAL SERIES IN ENGINEERING AND},
+	isbn = {1402070780},
+	publisher = {Springer},
+	author = {Yves Geerts and Michiel Steyaert and Willy Sansen},
+	month = may,
+	year = {2002},
+	pages = {240}
+},
+
+@misc{blickle_comparison_1995,
+	address = {Gloriastrasse 35, 8092 Zurich, Switzerland},
+	title = {A Comparison of Selection Schemes Used in Genetic Algorithms},
+	url = {http://citeseer.ist.psu.edu/blickle95comparison.html},
+	author = {Tobias Blickle and Lothar Thiele},
+	year = {1995}
+},
+
+@article{fogel_what_2000,
+	title = {What is evolutionary computation?},
+	volume = {37},
+	issn = {0018-9235},
+	abstract = {Taking a page from Darwin's 'On the origin of the species', computer scientists have found ways to evolve solutions to complex problems. Harnessing the evolutionary process within a computer provides a means for addressing complex engineering problems-ones involving chaotic disturbances, randomness, and complex nonlinear dynamics-that traditional algorithms have been unable to conquer. Indeed, the field of evolutionary computation is one of the fastest growing areas of computer science and engineering for just this reason; it is addressing many problems that were previously beyond reach, such as rapid design of medicines, flexible solutions to supply-chain management problems, and rapid analysis of battlefield tactics for defense. Potentially, the field may fulfil the dream of artificial intelligence: a computer that can learn on its own and become an expert in any chosen area},
+	journal = {Spectrum, IEEE},
+	author = {D.B. Fogel and D.B. Fogel},
+	year = {2000},
+	keywords = {artificial intelligence,battlefield tactics,chaotic disturbances,complex engineering problems,complex nonlinear dynamics,complex problems solutions evolution,evolutionary computation,randomness,supply-chain management},
+	pages = {26, 28-32}
+},
+
+@article{yilmaz_stability_2007,
+	title = {Stability Analysis for Several Second-Order Sigma--Delta Methods of Coarse Quantization of Bandlimited Functions},
+	volume = {18},
+	url = {http://dx.doi.org/10.1007/s00365-002-0505-2 },
+	doi = {10.1007/s00365-002-0505-2 },
+	abstract = {We investigate the stability and robustness properties of a family of algorithms used to ``coarsely quantize'' bandlimited functions. The algorithms we will consider are one-bit second-order ? j -quantization schemes and some modified versions of these. We prove that there exists a bounded region that remains positively invariant under the two-dimensional piecewise-affine discrete dynamical system associated with each of these quantizers. Moreover, this bounded region can be constructed so that it is robust under small changes in the quantizer. We also show some interesting properties of the resulting binary sequences. },
+	journal = {Constructive Approximation},
+	author = {Yilmaz},
+	year = {2007},
+	pages = {599-623}
+},
+
+@inproceedings{shamsi_continuous_2006,
+	title = {Continuous Time Delta-Sigma Modulators with Arbitrary DAC Waveforms},
+	url = {http://ieeexplore.ieee.org/iel5/4145316/4118066/04145362.pdf},
+	abstract = {In this paper a straight-forward approach to extract the equivalent loop-gain of a continuous time delta-sigma modulator with an arbitrary DAC waveform in z-domain is presented. In this approach, the infinite number of rectangular pulse shapes approximates the arbitrary DAC waveform. Then simply using the transformations available in literature for a rectangular DAC pulse shape and applying superposition on each rectangular pulse shape, the loop-gain of the system is derived in z-domain},
+	booktitle = {Circuits and Systems, 2006. APCCAS 2006. IEEE Asia Pacific Conference on},
+	journal = {Circuits and Systems, 2006. APCCAS 2006. IEEE Asia Pacific Conference on},
+	author = {Hossein Shamsi and Omid Shoaei},
+	year = {2006},
+	keywords = {arbitrary DAC waveform,continuous time,continuous time delta-sigma modulators,DAC waveforms,delta-sigma modulation,Delta-Sigma modulator,equivalent loop-gain,rectangular pulse shapes,waveform analysis,z-domain},
+	pages = {187-190}
+},
+
+@misc{_constrained_1994,
+	title = {Constrained Optimization Via Genetic Algorithms},
+	url = {http://sim.sagepub.com.ezproxy.library.unlv.edu/cgi/reprint/62/4/242},
+	month = apr,
+	year = {1994}
+},
+
+@article{stubberud_design_1993,
+	title = {The design of frequency sampling filters by the method of Lagrange multipliers},
+	volume = {40},
+	issn = {1057-7130},
+	url = {http://ieeexplore.ieee.org/iel5/82/5628/00215360.pdf},
+	abstract = {A technique is developed for designing linear phase frequency
+sampling filters where the interpolation errors between frequency
+samples are controlled by minimizing the mean square error between the
+desired and actual frequency responses in the stopband subject to
+constraints on the passband frequency response. The frequency sampling
+filter design problem is defined as a constrained optimization problem,
+which is solved using the Lagrange multiplier optimization method. The
+Lagrange multiplier optimization method results in a set of linear
+equations, the solution of which determines the filter's coefficients
+},
+	journal = {Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on [see also Circuits and Systems II: Express Briefs, IEEE Transactions on]},
+	author = {P.A. Stubberud and C.T. Leondes},
+	year = {1993},
+	keywords = {constrained optimization problem,digital arithmetic,digital filters,filtering and prediction theory,frequency response,frequency responses,frequency sampling filters,interpolation,interpolation errors,Lagrange multipliers,linear equations,linear phase,mean square error,optimisation},
+	pages = {51-54}
+},
+
+@article{rodriguez_efficient_2007,
+	title = {Efficient generation of correlated random numbers using Chebyshev-optimal magnitude-only IIR filters},
+	journal = {Arxiv preprint physics/0703152},
+	author = {A. Rodriguez and S. G. Johnson},
+	year = {2007}
+},
+
+@misc{wikipedia_contributors_analog-to-digital_2007,
+	title = {Analog-to-digital converter},
+	url = {http://en.wikipedia.org/w/index.php?title=Analog-to-digital\_converter\&oldid=176772172},
+	journal = {Wikipedia, The Free Encyclopedia},
+	publisher = {Wikimedia Foundation},
+	author = {Wikipedia contributors},
+	month = dec,
+	year = {2007}
+},
+
+@book{medeiro_top-down_1998,
+	edition = {1st},
+	title = {Top-Down Design of High-Performance Sigma-Delta Modulators},
+	isbn = {0792383524},
+	publisher = {Springer},
+	author = {Fernando Medeiro and Bel{\'e}n P{\'e}rez-Verd{\'u} and Angel Rodr{\'i}guez-V{\'a}zquez},
+	month = nov,
+	year = {1998},
+	pages = {312}
+},
+
+@article{rabiner_linear_1974,
+	title = {Linear programming design of IIR digital filters with arbitrary magnitude function},
+	volume = {22},
+	issn = {0096-3518  },
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/29/26103/01162558.pdf},
+	abstract = { This paper discusses the use of linear programming techniques for the design of infinite impulse response (IIR) digital filters. In particular, it is shown that, in theory, a weighted equiripple approximation to an arbitrary magnitude function can be obtained in a predictable number of applications of the simplex algorithm of linear programming. When one implements the design algorithm, certain practical difficulties (e.g., coefficient sensitivity) limit the range of filters which can be designed using this technique. However, a fairly large number of IIR filters have been successfully designed and several examples will be presented to illustrate the range of problems for which we found this technique to be useful.},
+	journal = {Acoustics, Speech, and Signal Processing [see also IEEE Transactions on Signal Processing], IEEE Transactions on},
+	author = {L. Rabiner and N. Graham and H. Helms},
+	year = {1974},
+	pages = { 117- 123}
+},
+
+@article{widrow_thinking_2005,
+	title = {Thinking about thinking: the discovery of the LMS algorithm},
+	volume = {22},
+	issn = {1053-5888},
+	abstract = { Dr. Bernard Widrow presents a personal view on the discovery of the least mean squares algorithm.},
+	journal = {Signal Processing Magazine, IEEE},
+	author = {B. Widrow},
+	year = {2005},
+	keywords = {adaptive filters,digital filter,digital signal processing,Dr. Bernard Widrow,FIR filters,history,least mean squares methods,LMS algorithm,nonstandard filter design},
+	pages = { 100- 106}
+},
+
+@article{rabii_18-v_1997,
+	title = {A 1.8-V digital-audio sigma-delta modulator in 0.8-?m CMOS},
+	volume = {32},
+	issn = {0018-9200},
+	url = {http://ieeexplore.ieee.org/iel5/4/12677/00585245.pdf},
+	abstract = {Oversampling techniques based on sigma-delta (??) modulation offer numerous advantages for the realization of high-resolution analog-to-digital (A/D) converters in low-voltage environment. This paper examines the design and implementation of a CMOS ?? modulator for digital-audio A/D conversion that operates from a single 1.8-V power supply. A cascaded modulator that maintains a large full-scale input range while avoiding signal clipping at internal nodes is introduced. The experimental modulator has been designed with fully differential switched-capacitor integrators employing different input and output common-mode levels and boosted clock drivers in order to facilitate low voltage operation. Precise control of common-mode levels, high power supply noise rejection, and low power dissipation are obtained through the use of two-stage, class A/AB operational amplifiers. At a sampling rate of 4 MHz and an oversampling ratio of 80, an implementation of the modulator in a 0.8-?m CMOS technology with metal-to-polycide capacitors and NMOS and PMOS threshold voltages of +0.65 V and -0.75 V, respectively, achieves a dynamic range of 99 dB at a Nyquist conversion rate of 50 kHz. The modulator can operate from supply voltages ranging from 1.5-2.5 V, occupies an active area of 1.5 mm2, and dissipates 2.5 mW from a 1.8-V supply},
+	journal = {Solid-State Circuits, IEEE Journal of},
+	author = {S. Rabii and B.A. Wooley},
+	year = {1997},
+	keywords = {0.8 micron,1.5 to 2.5 V,2.5 mW,active area,audio equipment,boosted clock drivers,cascaded modulator,cascade networks,class A/AB operational amplifiers,CMOS,CMOS integrated circuits,common-mode levels,digital-audio sigma-delta modulator,dynamic range,full-scale input range,fully differential switched-capacitor integrators,high-resolution analog-to-digital converters,integrating circuits,low-voltage environment,Nyquist conversion rate,operational amplifiers,oversampling ratio,oversampling techniques,power dissipation,power supply noise rejection,sampled data circuits,sampling rate,sigma-delta modulation,switched capacitor networks,threshold voltages},
+	pages = {783-796}
+},
+
+@book{sarker_evolutionary_2002,
+	edition = {1},
+	title = {Evolutionary Optimization},
+	isbn = {0792376544},
+	publisher = {Springer},
+	author = {Ruhul Sarker and Masoud Mohammadian and Xin Yao},
+	year = {2002},
+	pages = {432}
+},
+
+@book{glover_handbook_2003,
+	edition = {1},
+	title = {Handbook of Metaheuristics},
+	isbn = {1402072635},
+	publisher = {Springer},
+	author = {Fred W. Glover and Gary A. Kochenberger},
+	year = {2003},
+	pages = {570}
+},
+
+@article{storn_designing_2005,
+	title = {Designing nonstandard filters with differential evolution},
+	volume = {22},
+	issn = {1053-5888},
+	abstract = { An alternative method for nonstandard filter design has been described. This method recasts the filter design problem as a minimization problem and solves the minimization via the DE minimizer, for which public domain software has been made available previously. The advantages of this method are its simplicity as well as the capability to design unconventional filter types. A great asset of this approach is that it can be applied with minimal knowledge of digital filter design theory.},
+	journal = {Signal Processing Magazine, IEEE},
+	author = {R. Storn},
+	year = {2005},
+	keywords = {differential evolution,digital filters,genetic algorithm,genetic algorithms,minimisation,minimization problem,nonstandard filter design},
+	pages = { 103- 106}
+},
+
+@article{stubberud_computationally_1997,
+	title = {A computationally efficient technique for designing frequency sampling filters},
+	volume = {44},
+	issn = {1057-7130},
+	url = {http://ieeexplore.ieee.org/iel5/82/12195/00559368.pdf},
+	abstract = {In a recent paper, a technique for designing linear phase
+frequency sampling filters was proposed that approximates a desired
+frequency response by minimizing the mean square error over the
+stopbands subject to constraints on the filters amplitude response. This
+technique results in a large number of simultaneous linear equations the
+solution of which determines the filter's impulse response. The filter's
+frequency samples which are used to implement the filter are then
+determined by computing the discrete Fourier transform of this impulse
+response. In this brief, a modification of this technique is developed.
+This modified technique also approximates a desired frequency response
+by minimizing the mean square error over the stopbands subject to
+constraints on the filter's amplitude response. Additionally, however,
+it allows passbands to be approximated by a weighted mean square error.
+This modified technique results in a set of simultaneous linear
+equations, the solution of which directly determines the filter's
+nonzero frequency samples. Because the number of nonzero frequency
+samples is typically much less than the number of impulse response
+elements, this technique requires a significantly smaller number of
+simultaneous linear equations than the other technique},
+	journal = {Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on [see also Circuits and Systems II: Express Briefs, IEEE Transactions on]},
+	author = {P.A. Stubberud},
+	year = {1997},
+	keywords = {amplitude response,computationally efficient technique,delay circuits,digital filters,discrete Fourier transform,discrete Fourier transforms,FIR filters,frequency response,frequency sampling filters,impulse response elements,linear phase filters,simultaneous linear equations,weighted mean square error},
+	pages = {45-50}
+},
+
+@book{oppenheim_discrete-time_1999,
+	edition = {2nd},
+	title = {Discrete-Time Signal Processing},
+	isbn = {0137549202},
+	url = {http://www.amazon.com/dp/0137549202},
+	publisher = {Prentice Hall},
+	author = {Alan V. Oppenheim and Ronald W. Schafer and John R. Buck},
+	month = feb,
+	year = {1999},
+	pages = {870}
+},
+
+@misc{_application_2003,
+	title = {Application Note 1870: Demystifying sigma-Delta ADCs},
+	url = {http://pdfserv.maxim-ic.com/en/an/AN1870.pdf},
+	year = {2003}
+},
+
+@article{storn_differential_1997,
+	title = {Differential Evolution ? A Simple and Efficient Heuristic for global Optimization over Continuous Spaces},
+	volume = {11},
+	url = {http://dx.doi.org/10.1023/A:1008202821328},
+	doi = {10.1023/A:1008202821328},
+	abstract = {A new heuristic approach for minimizing possiblynonlinear and non-differentiable continuous spacefunctions is presented. By means of an extensivetestbed it is demonstrated that the new methodconverges faster and with more certainty than manyother acclaimed global optimization methods. The newmethod requires few control variables, is robust, easyto use, and lends itself very well to parallelcomputation.},
+	journal = {Journal of Global Optimization},
+	author = {Storn and Price},
+	month = dec,
+	year = {1997},
+	pages = {341-359}
+},
+
+@book{foga_foundations_1991,
+	edition = {1},
+	title = {Foundations of Genetic Algorithms 1991},
+	isbn = {1558601708},
+	publisher = {Morgan Kaufmann},
+	author = {FOGA},
+	month = jul,
+	year = {1991},
+	pages = {341}
+},
+
+@inproceedings{zielinski_variants_2007,
+	title = {Variants of Differential Evolution for Multi-Objective Optimization},
+	url = {http://ieeexplore.ieee.org/iel5/4222970/4222971/04222988.pdf},
+	abstract = {In multi-objective optimization not only fast convergence is important, but it is also necessary to keep enough diversity so that the whole Pareto-optimal front can be found. In this work four variants of differential evolution are examined that differ in the selection scheme and in the assignment of crowding distance. The assumption is checked that the variants differ in convergence speed and amount of diversity. The performance is shown for 1000 consecutive generations, so that different behavior over time can be detected},
+	booktitle = {Computational Intelligence in Multicriteria Decision Making, IEEE Symposium on},
+	journal = {Computational Intelligence in Multicriteria Decision Making, IEEE Symposium on},
+	author = {K. Zielinski and R. Laur},
+	year = {2007},
+	keywords = {convergence,convergence speed,crowding distance assignment,differential evolution,multiobjective optimization,operations research,Pareto-optimal front,Pareto optimisation},
+	pages = {91-98}
+},
+
+@misc{li_genetic_2006,
+	title = {Genetic Algorithm Based on the Orthogonal Design for Multidimensional Knapsack Problems},
+	url = {http://dx.doi.org/10.1007/11881070\_94},
+	abstract = {In this paper, a genetic algorithm based on the orthogonal design for solving the multidimensional knapsack problems is proposed. The orthogonal design with the factor analysis, an experimental design method, is applied to the genetic algorithm, to make the algorithm be more robust, statistically sound and quickly convergent. A crossover operator formed by the orthogonal array and the factor analysis is presented. First, this crossover operator can generate a small, but representative sample of points as offspring. After all of the better genes of these offspring are selected, an optimal offspring better than its parents is then generated in the end. Moreover, a check-and-repair operator is adopted to make the infeasible chromosomes generated by the crossover and mutation operators feasible, and make the feasible chromosomes better. The simulation results show that the proposed algorithm can find optimal or close-to-optimal solutions with less computation burden. },
+	journal = {Advances in Natural Computation},
+	author = {Li and Jiao and Zhang and Gu},
+	year = {2006}
+},
+
+@book{widrow_adaptive_1985,
+	edition = {1},
+	title = {Adaptive Signal Processing},
+	isbn = {0130040290},
+	publisher = {Prentice Hall},
+	author = {Bernard Widrow and Samuel Stearns},
+	month = mar,
+	year = {1985},
+	pages = {528}
+},
+
+@article{storn_system_1999,
+	title = {System design by constraint adaptation and differential evolution },
+	volume = {3},
+	issn = {1089-778X},
+	abstract = {A simple optimization procedure for constraint-based problems is
+described which works with a simplified cost function or even without
+one. The simplification of the problem formulation makes this method
+particularly attractive. The new method lends itself to parallel
+computation and is well suited for constraint satisfaction, constrained
+optimization, and design centering problems. A further asset is its
+self-steering property which makes the new method easy to use},
+	journal = {Evolutionary Computation, IEEE Transactions on},
+	author = {R. Storn},
+	year = {1999},
+	keywords = {CAD,constrained optimization,constraint adaptation,constraint-based problems,constraint satisfaction,constraint theory,design centering problems,differential evolution,evolutionary computation,operations research,parallel computation,self-steering property,statistics,system design},
+	pages = {22-34}
+},
+
+@article{jinn-tsong_tsai_optimal_2006,
+	title = {Optimal design of digital IIR filters by using hybrid taguchi genetic algorithm},
+	volume = {53},
+	issn = {0278-0046},
+	abstract = { A hybrid Taguchi genetic algorithm (HTGA) is applied in this paper to solve the problem of designing optimal digital infinite-impulse response (IIR) filters. The HTGA approach is a method of combining the traditional GA (TGA), which has a powerful global exploration capability, with the Taguchi method, which can exploit the optimum offspring. The Taguchi method is inserted between crossover and mutation operations of a TGA. Based on minimizing the L/sub p/-norm approximation error and minimizing the ripple magnitudes of both passband and stopband, a multicriterion combination is employed as the design criterion to obtain the optimal IIR filter that can fit different performance requirements. The proposed HTGA approach is effectively applied to solve the multiparameter and multicriterion optimization problems of designing the digital low-pass (LP), high-pass (HP), bandpass (BP), and bandstop (BS) filters. In these studied problems, there are many parameters and numerous local optima so that these studied problems are challenging enough for evaluating the performances of any proposed GA-based approaches. The computational experiments show that the proposed HTGA approach can obtain better digital IIR filters than the existing GA-based method reported recently in the literature.},
+	journal = {Industrial Electronics, IEEE Transactions on},
+	author = {Jinn-Tsong Tsai and Jyh-Horng Chou and Tung-Kuan Liu},
+	year = {2006},
+	keywords = {bandpass filter,bandstop filter,design criterion,digital filter,digital IIR filter design,Digital infinite-impulse response (IIR) filters,genetic algorithms,genetic algorithms (GAs),high-pass filter,hybrid Taguchi genetic algorithm,IIR filters,low-pass filter,multicriterion optimization,multiparameter optimization,multiple criteria,optimal digital infinite-impulse response filters,Taguchi method,Taguchi methods},
+	pages = { 867- 879}
+},
+
+@article{_sp_designer101pdf_,
+	title = {sp\_designer101.pdf (application/pdf Object)},
+	url = {http://www.national.com/signalpath/files/sp\_designer101.pdf}
+},
+
+@article{brandenburg_iso-mpeg-1_1994,
+	title = {ISO-MPEG-1 audio: a generic standard for coding of high-quality digital audio},
+	volume = {42},
+	journal = {Journal of the Audio Engineering Society},
+	author = {K. BRANDENBURG and G. STOLL},
+	year = {1994},
+	pages = {780-792}
+},
+
+@article{gray_quantization_1990,
+	title = {Quantization noise spectra},
+	volume = {36},
+	issn = {0018-9448},
+	url = {http://ieeexplore.ieee.org/iel5/18/2182/00059924.pdf},
+	abstract = {Several results describing the behavior of quantization noise in a unified and simplified manner are discussed. Exact formulas for quantizer noise spectra are developed. They are applied to a variety of systems and inputs, including scalar quantization (PCM), dithered PCM, sigma-delta modulation, dithered sigma-delta modulation, two-stage sigma-delta modulation, and second-order sigma-delta modulation},
+	journal = {Information Theory, IEEE Transactions on},
+	author = {R.M. Gray},
+	year = {1990},
+	keywords = {analogue-digital conversion,delta modulation,dithered PCM,dithered sigma-delta modulation,interference (signal),noise spectra,PCM,pulse-code modulation,quantization noise,scalar quantization,second-order sigma-delta modulation,sigma-delta modulation,two-stage sigma-delta modulation},
+	pages = {1220-1244}
+},
+
+@article{jinn-tsong_tsai_hybrid_2004,
+	title = {Hybrid Taguchi-genetic algorithm for global numerical optimization},
+	volume = {8},
+	issn = {1089-778X},
+	url = {http://ieeexplore.ieee.org/iel5/4235/29322/01324697.pdf},
+	abstract = {In this paper, a hybrid Taguchi-genetic algorithm (HTGA) is proposed to solve global numerical optimization problems with continuous variables. The HTGA combines the traditional genetic algorithm (TGA), which has a powerful global exploration capability, with the Taguchi method, which can exploit the optimum offspring. The Taguchi method is inserted between crossover and mutation operations of a TGA. Then, the systematic reasoning ability of the Taguchi method is incorporated in the crossover operations to select the better genes to achieve crossover, and consequently, enhance the genetic algorithm. Therefore, the HTGA can be more robust, statistically sound, and quickly convergent. The proposed HTGA is effectively applied to solve 15 benchmark problems of global optimization with 30 or 100 dimensions and very large numbers of local minima. The computational experiments show that the proposed HTGA not only can find optimal or close-to-optimal solutions but also can obtain both better and more robust results than the existing algorithm reported recently in the literature.},
+	journal = {Evolutionary Computation, IEEE Transactions on},
+	author = {Jinn-Tsong Tsai and Tung-Kuan Liu and Jyh-Horng Chou},
+	year = {2004},
+	keywords = {arithmetical operators,crossover operators,GA,Genetic algorithm,genetic algorithms,global numerical optimization,hybrid Taguchi-genetic algorithm,mutation operator,numerical optimization,SNR,Taguchi method,Taguchi methods,two-level orthogonal array},
+	pages = {365-377}
+},
+
+@book{lathi_modern_1998,
+	edition = {3},
+	title = {Modern Digital and Analog Communication Systems},
+	isbn = {0195110099},
+	url = {http://www.amazon.com/dp/0195110099},
+	publisher = {Oxford University Press, USA},
+	author = {B. P. Lathi},
+	month = mar,
+	year = {1998},
+	pages = {800}
+},
+
+@inbook{stubberud_chapter_,
+	title = {Chapter 7. Signal Expansion and the Generalized Fourier Series},
+	journal = {Deterministic and Stochastic Signals and Linear Systems},
+	author = {Peter Stubberud},
+	pages = {19-26}
+},
+
+@article{aziz_overview_1996,
+	title = {An overview of sigma-delta converters},
+	volume = {13},
+	issn = {1053-5888},
+	abstract = {Using sigma-delta A/D methods, high resolution can be obtained for only low to medium signal bandwidths. This article describes conventional A/D conversion, as well as its performance modeling. We then look at the technique of oversampling, which can be used to improve the resolution of classical A/D methods. We discuss how sigma-delta converters use the technique of noise shaping in addition to oversampling to allow high resolution conversion of relatively low bandwidth signals. We examine the use of sigma-delta converters to convert narrowband bandpass signals with high resolution. Several parallel sigma-delta converters, which offer the potential of extending high resolution conversion to signals with higher bandwidths, are also described},
+	journal = {Signal Processing Magazine, IEEE},
+	author = {P.M. Aziz and H.V. Sorensen and J. vn der Spiegel},
+	year = {1996},
+	keywords = {A/D conversion,high resolution,high resolution conversion,low bandwidth signals,narrowband bandpass signals,noise,noise shaping,oversampling,parallel sigma-delta converters,performance modeling,sigma-delta A/D methods,sigma-delta modulation,signal bandwidth,signal resolution,signal sampling},
+	pages = {61-84}
+},
+
+@article{srinivas_genetic_1994,
+	title = {Genetic algorithms: a survey},
+	volume = {27},
+	issn = {0018-9162},
+	abstract = {Genetic algorithms provide an alternative to traditional optimization techniques by using directed random searches to locate optimal solutions in complex landscapes. We introduce the art and science of genetic algorithms and survey current issues in GA theory and practice. We do not present a detailed study, instead, we offer a quick guide into the labyrinth of GA research. First, we draw the analogy between genetic algorithms and the search processes in nature. Then we describe the genetic algorithm that Holland introduced in 1975 and the workings of GAs. After a survey of techniques proposed as improvements to Holland's GA and of some radically different approaches, we survey the advances in GA theory related to modeling, dynamics, and deception },
+	journal = {Computer},
+	author = {M. Srinivas and L.M. Patnaik},
+	year = {1994},
+	keywords = {deception,directed random searches,dynamics,genetic algorithms,modeling,optimization techniques,reviews,search problems,search processes},
+	pages = {17-26}
+},
+
+@article{schreier_375-mw_2006,
+	title = {A 375-mW Quadrature Bandpass <formula formulatype="inline"> <tex>\$DeltaSigma\$</tex></formula> ADC With 8.5-MHz BW and 90-dB DR at 44 MHz},
+	volume = {41},
+	issn = {0018-9200},
+	url = {http://ieeexplore.ieee.org/iel5/4/4014593/04014634.pdf},
+	abstract = {A quadrature bandpass DeltaSigma ADC for a multistandard TV tuner achieves a total dynamic range of 90 dB over an 8.5-MHz passband centered on 44 MHz while consuming 375 mW. The fourth-order continuous-time ADC uses active-RC resonators configured in a modified feedforward architecture},
+	journal = {Solid-State Circuits, IEEE Journal of},
+	author = {R. Schreier and N. Abaskharoun and H. Shibata and D. Paterson and S. Rose and I. Mehr and Q. Luu},
+	year = {2006},
+	keywords = {375 mW,44 MHz,8.5 MHz,active networks,active-RC resonators,ADC,analogue-digital conversion,bandpass,delta-sigma,delta-sigma ADC,feedforward,modified feedforward architecture,multistandard TV tuner,quadrature,quadrature bandpass ADC,RC circuits,resonators,television equipment},
+	pages = {2632-2640}
+},
+
+@misc{_disseminate_-1,
+	title = {Disseminate (application/pdf Object)},
+	url = {http://projecteuclid.org/DPubS/Repository/1.0/Disseminate?view=body\&id=pdf\_1\&handle=euclid.aos/1176348908}
+},
+
+@article{yang_optimal_2007,
+	title = {Optimal wavelet filter design for remote sensing image compression},
+	volume = {24},
+	journal = {Journal of Electronics (China)},
+	author = {G. Yang and N. Zheng and S. Guo},
+	year = {2007},
+	pages = {276-284}
+},
+
+@article{schreier_delta-sigma_1996,
+	title = {Delta-sigma modulators employing continuous-time circuitry},
+	volume = {43},
+	issn = {1057-7122},
+	url = {http://ieeexplore.ieee.org/iel5/81/10533/00488811.pdf},
+	abstract = {Delta-sigma (\&Delta;\&Sigma;) modulators employing continuous-time
+elements can be transformed to equivalent discrete-time systems. The
+paper derives this equivalence relation and applies it to the design of
+a third-order low-pass modulator and a sixth-order band-pass modulator
+},
+	journal = {Circuits and Systems I: Fundamental Theory and Applications, IEEE Transactions on [see also Circuits and Systems I: Regular Papers, IEEE Transactions on]},
+	author = {R. Schreier and B. Zhang},
+	year = {1996},
+	keywords = {continuous-time circuitry,continuous time systems,delta-sigma modulators,equivalence relation,equivalent circuits,equivalent discrete-time systems,oversampled data convertors,quantisation (signal),sigma-delta modulation,single-bit quantisation,sixth-order band-pass modulator,third-order low-pass modulator},
+	pages = {324-332}
+},
+
+@article{baird_stability_1994,
+	title = {Stability analysis of high-order delta-sigma modulation for ADC's },
+	volume = {41},
+	issn = {1057-7130},
+	abstract = {A model for \&Delta;\&Sigma; A/D modulators that allows stability
+analysis using linear methods is described. This model draws out the
+dependence of stability on system parameters such as integrator gains
+and delays as well as the dependence on dynamic characteristics such as
+input amplitude, transients, and initial conditions. In addition,
+high-order systems are found to be prone to a previously unrecognized
+source of instability, saturation limit cycles. Stabilizing high-order
+systems requires controlling the saturation limit cycles, minimizing the
+integrator delays, and the proper choice of integrator gains. The
+dominant means of stabilizing high-order systems, however, is identified
+to be the use of multi-bit quantization since this transforms the nature
+of the system rather than just restricting the region of operation},
+	journal = {Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on [see also Circuits and Systems II: Express Briefs, IEEE Transactions on]},
+	author = {R.T. Baird and T.S. Fiez},
+	year = {1994},
+	keywords = {A/D modulators,analogue-digital conversion,\&Delta,delta modulation,delta-sigma modulation,dynamic characteristics,initial conditions,input amplitude,integrator delays,integrator gains,limit cycles,linear methods,modulators,multi-bit quantization,nonlinear network analysis,saturation limit cycles,\&Sigma,stability analysis,stabilization,transients},
+	pages = {59-62}
+},
+
+@article{chen_design_1990,
+	title = {Design of IIR filters in the complex domain},
+	volume = {38},
+	issn = {0096-3518},
+	abstract = {The problem of IIR (infinite impulse response) digital filter design in the complex domain is formulated in a way such that the existence of the best approximation is guaranteed. An efficient algorithm based on the Ellacott-Williams method is proposed to solve the problem. The algorithm separately designs the numerator and denominator, and uses a linear programming method to solve the linear complex approximation problem. For each iteration, it requires only half the computations of the Ellacott-Williams algorithm. The locally best approximation is usually found in five iterations and has an exactly equiripple error. Two ways to establish good initial points are presented. IIR filters are designed which have nearly linear phase in the passbands. Degenerate design can be detected and is shown by an example. Comparisons among several kinds of the optimal digital filters are given},
+	journal = {Acoustics, Speech, and Signal Processing [see also IEEE Transactions on Signal Processing], IEEE Transactions on},
+	author = {X. Chen and T.W. Parks},
+	year = {1990},
+	keywords = {complex domain,denominator,digital filter design,digital filters,Ellacott-Williams method,equiripple error,filtering and prediction theory,IIR filters,infinite impulse response,iterative methods,linear complex approximation problem,linear programming,numerator},
+	pages = {910-920}
+},
+
+@article{boser_design_1988,
+	title = {The design of sigma-delta modulation analog-to-digital converters },
+	volume = {23},
+	issn = {0018-9200},
+	abstract = {The author examines the practical design criteria for implementing
+oversampled analog/digital converters based on second-order sigma-delta
+(\&Sigma;\&Delta;) modulation. Behavioral models that include
+representation of various circuit impairments are established for each
+of the functional building blocks comprising a second-order \&Sigma;2gD
+modulator. Extensive simulations based on these models are then used to
+establish the major design criteria for each of the building blocks. As
+an example, these criteria are applied to the design of a modulator that
+has been integrated in a 3-\&mu;m CMOS technology. An experimental
+prototype operates from a single 5-V supply, dissipates 12 mW, occupies
+an area of 0.77 mm<sup>2</sup>, and has achieved a measured dynamic
+range of 89 dB},
+	journal = {Solid-State Circuits, IEEE Journal of},
+	author = {B.E. Boser and B.A. Wooley},
+	year = {1988},
+	keywords = {12 mW,2gD modulator,3 micron,5 V,analogue-digital conversion,behavioral models,CMOS integrated circuits,CMOS technology,delta modulation,measured dynamic range,oversampled analog/digital converters,second-order \&Sigma,second order sigma delta modulation,sigma-delta modulation analog-to-digital converters},
+	pages = {1298-1308}
+},
+
+@misc{wikipedia_contributors_delta-sigma_2007,
+	title = {Delta-sigma modulation},
+	url = {http://en.wikipedia.org/w/index.php?title=Delta-sigma\_modulation\&oldid=173291934},
+	journal = {Wikipedia, The Free Encyclopedia},
+	publisher = {Wikimedia Foundation},
+	author = {Wikipedia contributors},
+	month = nov,
+	year = {2007}
+},
+
+@article{jensen_design_2005,
+	title = {Design method and implementation of optimal linear IIR equalizers for RF transceivers},
+	author = {H. T. Jensen},
+	year = {2005}
+},
+
+@article{norsworthy_14-bit_1989,
+	title = {A 14-bit 80-kHz sigma-delta A/D converter: modeling, design and performance evaluation},
+	volume = {24},
+	issn = {0018-9200},
+	abstract = {The development is described of a sigma-delta A/D (analog-to-digital) converter. Included is a brief overview of sigma-delta conversion. The A/D converter achieves an 88.5-dB dynamic range and a maximum signal-to-noise ratio of 81.5 dB. The harmonic distortion is negligible. This level of performance is about 10 dB higher than previously reported results for oversampled A/D converters in this frequency range. The analog modulator uses a double-integration switched-capacitor architecture with an oversampling rate of 10.24 MHz. Transconductance amplifiers having a 160-MHz ft were developed for the integrators. The circuit is implemented in a 1.75-?m 5-V CMOS process. The analog circuitry occupies 2 mm2  of silicon area and consumes 75 mW of power. Some of the difficult problems associated with evaluating the performance of sigma-delta converters are described. The design of a sigma-delta development and performance evaluation system is presented. This system includes a custom interface board linking the chip to a Sun workstation, and extensive digital signal processing and analysis software},
+	journal = {Solid-State Circuits, IEEE Journal of},
+	author = {S.R. Norsworthy and S.R. Norsworthy and I.G. Post and I.G. Post and H.S. Fetterman},
+	year = {1989},
+	keywords = {10.24 MHz,1.75 micron,5 V,75 mW,80 kHz,81.5 dB,analog circuitry,analog modulator,analogue-digital conversion,CMOS,CMOS integrated circuits,custom interface board,design,digital signal processing,double-integration switched-capacitor architecture,dynamic range,harmonic distortion,modeling,oversampled A/D converters,oversampling rate,performance evaluation,performance evaluation system,sigma delta ADC,sigma-delta conversion,sigma-delta converters,signal-to-noise ratio,Sun workstation,transconductance amplifiers},
+	pages = {256-266}
+},
+
+@article{hwi-ming_wang_design_2004,
+	title = {The design of high-order bandpass sigma-delta modulators using low-spread single-stage structure},
+	volume = {51},
+	issn = {1057-7130},
+	url = {http://ieeexplore.ieee.org/iel5/8920/28725/01288426.pdf},
+	abstract = {A structure for single-stage high-order bandpass sigma-delta modulators (BPSDMs) is presented. The proposed structure introduces an additional internal path in each resonator, thus, adding one degree of freedom in coefficient determination. Coefficient spread can therefore be reduced, resulting in significantly reduced capacitance area in switched-capacitor BPSDM circuits. High-order BPSDMs with different quality factors (Q) are demonstrated. It shows that coefficient spread is significantly reduced, especially for high-Q applications. For comparable eighth-order 3-bit BPSDMs, the maximum coefficient spread are respectively 15369 and 7693 for conventional cascade-of-resonator-with-feedback (CRFB) and cascade-of-resonator-with-feedforward (CRFF) designs, and 114 for the proposed structure. For an eighth-order 1-bit example, these respective values are 8994, 2638, and 74. With coefficient mismatch, peak signal-to-noise ratio (PSNR) degradation of the proposed structure is less than those of the CRFB and CRFF structures, demonstrating reduced sensitivity to component mismatch. Hence, the proposed structure can reduce chip area and ease circuit implementation of BPSDMs.},
+	journal = {Circuits and Systems II: Express Briefs, IEEE Transactions on [see also Circuits and Systems II: Analog and Digital Signal Processing, IEEE Transactions on]},
+	author = {Hwi-Ming Wang and Tai-Haur Kuo},
+	year = {2004},
+	keywords = {additional internal path,band-pass filters,bandpass sigma-delta modulator,bandpass sigma-delta modulators,cascade-of-resonator structure,cascade-of-resonator-with-feedback,cascade-of-resonator-with-feedforward,coefficient determination,coefficient spread,component mismatch,CRFB design,CRFB structures,CRFF design,CRFF structures,eighth-order 1-bit example,eighth-order 3-bit BPSDM,high-Q applications,low-coefficient spread,low-spread single-stage structure,modulator design,modulators,peak signal-to-noise ratio,PSNR degradation,Q-factor,quality factors,resonator,sigma-delta modulation,single-stage high-order BPSDMs,switched-capacitor BPSDM circuits,switched capacitor networks},
+	pages = {202-208}
+},
+
+@misc{_construction_,
+	title = {On the Construction of Asymmetrical Orthogonal Arrays},
+	url = {http://projecteuclid.org/DPubS?service=UI\&version=1.0\&verb=Display\&handle=euclid.aos/1176348908}
+},
+
+@article{deb_multi-objective_1999,
+	title = {Multi-objective Genetic Algorithms: Problem Difficulties and Construction of Test Problems.},
+	volume = {7},
+	issn = {10636560},
+	url = {http://ezproxy.library.unlv.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true\&db=aph\&AN=2267390\&site=ehost-live},
+	doi = {Article},
+	abstract = { In this paper, we study the problem features that may cause a multi-objective genetic algorithm (GA) difficulty in converging to the true Pareto-optimal front. Identification of such features helps us develop difficult test problems for multi-objective optimization. Multi-objective test problems are constructed from single-objective optimization problems, thereby allowing known difficult features of single-objective problems (such as multi-modality, isolation, or deception) to be directly transferred to the corresponding multi-objective problem. In addition, test problems having features specific to multi-objective optimization are also constructed. More importantly, these difficult test problems will enable researchers to test their algorithms for specific aspects of multi-objective optimization. ABSTRACT FROM AUTHOR Copyright of Evolutionary Computation is the property of MIT Press and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts)},
+	journal = {Evolutionary Computation},
+	author = {Kalyanmony Deb},
+	year = {1999},
+	note = { In this paper, we study the problem features that may cause a multi-objective genetic algorithm (GA) difficulty in converging to the true Pareto-optimal front. Identification of such features helps us develop difficult test problems for multi-objective optimization. Multi-objective test problems are constructed from single-objective optimization problems, thereby allowing known difficult features of single-objective problems (such as multi-modality, isolation, or deception) to be directly transferred to the corresponding multi-objective problem. In addition, test problems having features specific to multi-objective optimization are also constructed. More importantly, these difficult test problems will enable researchers to test their algorithms for specific aspects of multi-objective optimization. ABSTRACT FROM AUTHOR Copyright of Evolutionary Computation is the property of MIT Press and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts)},
+	keywords = {GENETIC algorithms,MATHEMATICAL optimization},
+	pages = {205}
+},
+
+@article{francken_high-level_2003,
+	title = {A high-level simulation and synthesis environment for /spl Delta//spl Sigma/ modulators},
+	volume = {22},
+	issn = {0278-0070},
+	abstract = {An approach is presented for the high-level simulation and synthesis of discrete-time /spl Delta//spl Sigma/ modulators based on a simulation-based optimization strategy. The high-level synthesis approach determines both the optimum modulator topology and the required building block specifications, such that the system specifications-mainly accuracy (dynamic range) and signal bandwidth-are satisfied at the lowest possible power consumption. A genetic-based differential evolution algorithm is used in combination with a fast dedicated behavioral simulator to realistically analyze and optimize the modulator performance. The approach has been implemented in a tool called Daisy (Delta-Sigma Analysis and Synthesis). Experimental results are shown for both the analysis and synthesis capabilities, illustrating the effectiveness of the approach. The selected range of optimized /spl Delta//spl Sigma/ modulator topologies as a function of the modulator specifications for a wide range of values indicate the capabilities of and the performance range covered by the tool.},
+	journal = {Computer-Aided Design of Integrated Circuits and Systems, IEEE Transactions on},
+	author = {K. Francken and G.G.E. Gielen},
+	year = {2003},
+	keywords = {building block specifications,circuit CAD,circuit optimisation,circuit simulation,Daisy tool,delta-sigma modulation,discrete-time /spl Delta//spl Sigma/ modulators,discrete time systems,fast dedicated behavioral simulator,genetic algorithm,genetic algorithms,genetic-based differential evolution algorithm,high-level simulation environment,high level synthesis,high-level synthesis environment,integrated circuit design,modulators,optimum modulator topology,simulation-based optimization strategy},
+	pages = {1049-1061}
+},
+
+@inproceedings{chakraborty_analysis_1997,
+	title = {An analysis of linear ranking and binary tournament selection in genetic algorithms},
+	volume = {1},
+	url = {http://ieeexplore.ieee.org/iel5/5224/14121/00647128.pdf},
+	abstract = {The present paper extends the branching process model proposed by Chakraborty (1995) to cover linear ranking selection and binary tournament selection in genetic algorithms. Simulation results are presented},
+	booktitle = {Information, Communications and Signal Processing, 1997. ICICS., Proceedings of 1997 International Conference on},
+	journal = {Information, Communications and Signal Processing, 1997. ICICS., Proceedings of 1997 International Conference on},
+	author = {M. Chakraborty and U.K. Chakraborty},
+	year = {1997},
+	keywords = {binary tournament selection,branching process model,Chakraborty model,genetic algorithms,linear ranking selection},
+	pages = {407-411 vol.1}
+},
+
+@book{hayes_schaums_1998,
+	edition = {1},
+	title = {Schaum's Outline of Digital Signal Processing},
+	isbn = {0070273898},
+	url = {http://www.amazon.com/dp/0070273898},
+	publisher = {McGraw-Hill},
+	author = {Monson H. Hayes},
+	month = aug,
+	year = {1998},
+	pages = {432}
+},
+
+@article{comani_optimal_2005,
+	title = {Optimal filter design for shielded and unshielded ambient noise reduction in fetal magnetocardiography},
+	volume = {50},
+	journal = {Phys. Med. Biol},
+	author = {S. Comani and D. Mantini and G. Alleva and S. Di Luzio and G. L. Romani},
+	year = {2005},
+	pages = {5509?21}
+},
+
+@misc{maloberti_high-order_2007,
+	title = {HIGH-ORDER, CT ?? CONVERTERS AND ?? DAC},
+	url = {http://dx.doi.org/10.1007/978-0-387-32486-9\_7},
+	abstract = {After studying the basic principles of the oversampling and low order sigma-delta architectures this chapter analyzes high-order modulators employing either single bit or multi-bit quantizers. In addition to single stage architectures we shall study cascaded solutions normally named as MASH. Then we shall consider the continuous-time counterpart of the already studied sampled-data ?? modulators before discussing band-pass implementations and, briefly ?? DAC. },
+	journal = {Data Converters},
+	author = {Maloberti},
+	year = {2007}
+},
+
+@article{singor_switched-capacitor_1995,
+	title = {Switched-capacitor bandpass delta-sigma A/D modulation at 10.7 MHz },
+	volume = {30},
+	issn = {0018-9200},
+	abstract = {Two second-order bandpass delta-sigma A/D modulators have been implemented in a 0.8 ? BiCMOS process to demonstrate the feasibility of converting a 10.7 MHz radio IF signal to digital form. The circuits, based on switched-capacitor biquads, demonstrated 57 dB SNR in a 200 kHz bandwidth when clocked at 42.8 MHz, dissipating 60 mW from a 5 V supply. The two modulators use different clocking strategies to allow evaluation of a tradeoff between active and passive sensitivities},
+	journal = {Solid-State Circuits, IEEE Journal of},
+	author = {F.W. Singor and F.W. Singor and W.M. Snelgrove and W.M. Snelgrove},
+	year = {1995},
+	keywords = {0.8 micron,10.7 MHz,200 kHz,42.8 MHz,57 dB,5 V,60 mW,BiCMOS integrated circuits,BiCMOS process,biquadratic filters,clocking strategies,delta-sigma A/D modulation,mixed analogue-digital integrated circuits,modulators,radio IF signal,radiotelephony,SC biquads,second-order type,sigma-delta modulation,switched-capacitor biquads,switched capacitor networks},
+	pages = {184-192}
+},
+
+@article{fogel_introduction_1994,
+	title = {An introduction to simulated evolutionary optimization},
+	volume = {5},
+	issn = {1045-9227},
+	abstract = {Natural evolution is a population-based optimization process. Simulating this process on a computer results in stochastic optimization techniques that can often outperform classical methods of optimization when applied to difficult real-world problems. There are currently three main avenues of research in simulated evolution: genetic algorithms, evolution strategies, and evolutionary programming. Each method emphasizes a different facet of natural evolution. Genetic algorithms stress chromosomal operators. Evolution strategies emphasize behavioral changes at the level of the individual. Evolutionary programming stresses behavioral change at the level of the species. The development of each of these procedures over the past 35 years is described. Some recent efforts in these areas are reviewed},
+	journal = {Neural Networks, IEEE Transactions on},
+	author = {D.B. Fogel},
+	year = {1994},
+	keywords = {behavioral change,chromosomal operators,evolutionary programming,evolution strategies,genetic algorithms,optimisation,population-based optimization,simulated evolutionary optimization},
+	pages = {3-14}
+},
+
+@book{price_differential_2005,
+	edition = {1},
+	title = {Differential Evolution: A Practical Approach to Global Optimization},
+	isbn = {3540209506},
+	publisher = {Springer},
+	author = {Kenneth V. Price and Rainer M. Storn and Jouni A. Lampinen},
+	month = dec,
+	year = {2005},
+	pages = {538}
+},
+
+@article{schreier_empirical_1993-1,
+	title = {Empirical study of high-order single-bit delta-sigma modulators.},
+	volume = {40},
+	journal = {IEEE Transactions on Circuits and Systems II: Analog and Digital Signal Processing},
+	author = {R Schreier},
+	year = {1993},
+	pages = {461-466}
+},
+
+@article{kit-sang_tang_design_1998,
+	title = {Design and optimization of IIR filter structure using hierarchical genetic algorithms},
+	volume = {45},
+	issn = {0278-0046},
+	url = {http://ieeexplore.ieee.org/iel5/41/14939/00679006.pdf},
+	abstract = {A new genetic algorithm (GA) is proposed for digital filter
+design. This scheme utilizes a new hierarchical multilayer gene
+structure for the chromosome formulation. This is a unique structure,
+which retains the conventional genetic operations, while the genes may
+take various forms to represent the system characteristics. As a result,
+both the system structure and the parametric variables can be optimized
+in a simultaneous manner, without extra computational cost and effort.
+It has been demonstrated that this technique not only fulfils all types
+of filter performance requirements, but that the lowest order of the
+filter can also be found},
+	journal = {Industrial Electronics, IEEE Transactions on},
+	author = {Kit-Sang Tang and Kim-Fung Man and Sam Kwong and Zhi-Feng Liu},
+	year = {1998},
+	keywords = {chromosome formulation,digital filter design,digital filters,genetic algorithms,hierarchical genetic algorithms,hierarchical multilayer gene structure,IIR filters,IIR filter structure,optimization,parametric variables,performance requirements,system structure},
+	pages = {481-487}
+},
+
+@book{candy_oversampling_1991,
+	title = {Oversampling Delta-Sigma Data Converters: Theory, Design, and Simulation},
+	isbn = {0879422858},
+	publisher = {Wiley-IEEE Press},
+	author = {James C. Candy and Gabor C. Temes},
+	month = aug,
+	year = {1991},
+	pages = {512}
+},
+
+@article{cortelazzo_simultaneous_1984,
+	title = {Simultaneous design in both magnitude and group-delay of IIR and FIR filters based on multiple criterion optimization},
+	volume = {32},
+	issn = {0096-3518 },
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/29/26186/01164426.pdf},
+	abstract = {This work considers the simultaneous design in both magnitude and group-delay of digital transfer functions on the basis of multiple criterion optimization. Both causal IIR filters and nonlinear phase FIR filters are studied. Examples of the optimal tradeoff filters, both FIR filters and IIR filters, are presented and their characteristics are analyzed.},
+	journal = {Acoustics, Speech, and Signal Processing [see also IEEE Transactions on Signal Processing], IEEE Transactions on},
+	author = {G. Cortelazzo and M. Lightner},
+	year = {1984},
+	pages = {949-967}
+},
+
+@book{snyman_practical_2005,
+	edition = {1},
+	title = {Practical Mathematical Optimization: An Introduction to Basic Optimization Theory and Classical and New Gradient-Based Algorithms},
+	isbn = {0387243488},
+	publisher = {Springer},
+	author = {Jan A. Snyman},
+	month = mar,
+	year = {2005},
+	pages = {257}
+},
+
+@book{yao_low-power_2006,
+	edition = {1},
+	title = {Low-Power Low-Voltage Sigma-Delta Modulators in Nanometer CMOS},
+	isbn = {140204139X},
+	publisher = {Springer},
+	author = {Libin Yao and Michiel Steyaert and Willy Sansen},
+	month = mar,
+	year = {2006},
+	pages = {158}
+},
+
+@article{blickle_comparison_1996,
+	title = {A comparison of selection schemes used in evolutionary algorithms.},
+	volume = {4},
+	issn = {10636560},
+	url = {http://ezproxy.library.unlv.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true\&db=aph\&AN=9706011083\&site=ehost-live},
+	doi = {Article},
+	abstract = {Presents a description of selection schemes based on fitness distributions for evolutionary algorithms or evolutionary computation. Properties of selection schemes; Use of selection intensity to obtain a convergence prediction of the simple genetic algorithm with uniform crossover optimizing the OneMax function. },
+	journal = {Evolutionary Computation},
+	author = {Tobias Blickle and Lothar Thiele},
+	year = {1996},
+	keywords = {EVOLUTIONARY computation,GENETIC algorithms},
+	pages = {361}
+},
+
+@book{lutovac_filter_2002,
+	title = {Filter Design for Signal Processing},
+	publisher = {Prentice Hall, New Jersey},
+	author = {M. D. Lutovac and D. V. Tosic and B. L. Evans},
+	year = {2002}
+},
+
+@misc{_ilmenaups_-1,
+	title = {ilmenau.ps},
+	url = {file:///home/matthew/Documents/thesis\_misc/ilmenau.ps}
+},
+
+@article{dumitrescu_multistage_2004,
+	title = {Multistage IIR filter design using convex stability domains defined by positive realness},
+	volume = {52},
+	journal = {Signal Processing, IEEE Transactions on [see also Acoustics, Speech, and Signal Processing, IEEE Transactions on]},
+	author = {B. Dumitrescu and R. Niemisto},
+	year = {2004},
+	pages = {962-974}
+},
+
+@misc{_l2-norm_,
+	title = {L2-Norm -- from Wolfram MathWorld},
+	url = {http://mathworld.wolfram.com/L2-Norm.html}
+},
+
+@misc{_a2n27pdf_,
+	title = {A2n27.pdf (application/pdf Object)},
+	url = {http://www3.stat.sinica.edu.tw/statistica/oldpdf/A2n27.pdf}
+},
+
+@book{chen_digital_,
+	title = {Digital IIR Filter Design Using Adaptive Simulated Annealing},
+	url = {http://citeseer.ist.psu.edu/323754.html},
+	author = {S. Chen and R. Istepanian and B.L. Luk}
+},
+
+@book{golub_matrix_1996,
+	address = {Baltimore},
+	title = {Matrix Computations - Third Edition},
+	publisher = {The Johns Hopkins University Press},
+	author = {Gene Golub},
+	year = {1996},
+	pages = {53}
+},
+
+@misc{maloberti_nyquist_2007,
+	title = {NYQUIST RATE ANALOG TO DIGITAL CONVERTERS},
+	url = {http://dx.doi.org/10.1007/978-0-387-32486-9\_4},
+	abstract = {This chapter deals with the architecture, features and limits of Nyquist-rate analog/digital converters. We shall start with a full-flash architecture capable of obtaining the conversion in only one clock period. Following this, we shall study the two-step solution whose algorithm requires at least two clock periods. Next, we shall discuss the folding and the interpolation methods. The interleaved technique permits the designer to take advantage of the cooperative action of many converters working in parallel. We shall consider the benefits and the limit of this approach. Then, we shall analyze the successive-approximation algorithm before studying a widely used sequential scheme: the pipeline architecture. Finally, we shall consider some techniques that are useful for special needs. },
+	journal = {Data Converters},
+	author = {Maloberti},
+	year = {2007}
+},
+
+@book{breems_continuous_2001,
+	edition = {1st},
+	title = {Continuous Time Sigma Delta Modulation for A/d Conversion in Radio Receivers Volume 634},
+	isbn = {0792374924},
+	publisher = {Springer},
+	author = {Lucien Breems and Johan H. Huijsing},
+	month = aug,
+	year = {2001},
+	pages = {172}
+},
+
+@book{jeffrey_table_2000,
+	edition = {Sixth},
+	title = {Table of Integrals, Series, and Products, Sixth Edition},
+	isbn = {0122947576},
+	publisher = {Academic Press},
+	author = {Alan Jeffrey and Daniel Zwillinger},
+	month = jul,
+	year = {2000},
+	pages = {1216}
+},
+
+@article{singor_switched-capacitor_1995-1,
+	title = {Switched-capacitor bandpass delta-sigma A/D modulation at 10.7 MHz },
+	volume = {30},
+	issn = {0018-9200},
+	abstract = {Two second-order bandpass delta-sigma A/D modulators have been implemented in a 0.8 ? BiCMOS process to demonstrate the feasibility of converting a 10.7 MHz radio IF signal to digital form. The circuits, based on switched-capacitor biquads, demonstrated 57 dB SNR in a 200 kHz bandwidth when clocked at 42.8 MHz, dissipating 60 mW from a 5 V supply. The two modulators use different clocking strategies to allow evaluation of a tradeoff between active and passive sensitivities},
+	journal = {Solid-State Circuits, IEEE Journal of},
+	author = {F.W. Singor and F.W. Singor and W.M. Snelgrove and W.M. Snelgrove},
+	year = {1995},
+	keywords = {0.8 micron,10.7 MHz,200 kHz,42.8 MHz,57 dB,5 V,60 mW,BiCMOS integrated circuits,BiCMOS process,biquadratic filters,clocking strategies,delta-sigma A/D modulation,mixed analogue-digital integrated circuits,modulators,radio IF signal,radiotelephony,SC biquads,second-order type,sigma-delta modulation,switched-capacitor biquads,switched capacitor networks},
+	pages = {184-192}
+},
+
+@article{friedman_structure_1988,
+	title = {The structure of the limit cycles in sigma delta modulation},
+	volume = {36},
+	issn = {0090-6778},
+	abstract = {It is shown that when the input to a sigma-delta modulator is a DC level that can be expressed as a rational number b/a, when normalized with respect to the quantizer step, the output bit string is periodic with a period that is multiple of the denominator a. On the basis of number theory, the structure of these cycles for single-loop modulators is determined and the noise contribution is computed. Around such levels the noise has two peaks, for which the maximum value and the width are proportional to the relative signal bandwidth and to the inverse of the period of the cycle, respectively. The effect of the limit cycles on the performance of the A/D and D/A converters using sigma-delta modulation is discussed. A comparison between single-loop and double-loop modulators from the point of view of this phenomena is made},
+	journal = {Communications, IEEE Transactions on},
+	author = {V. Friedman and V. Friedman},
+	year = {1988},
+	keywords = {A/D converters,D/A converters,delta modulation,double-loop modulators,limit cycles,noise contribution,number theory,sigma delta modulation,single-loop modulators},
+	pages = {972-979}
+},
+
+@article{deb_computationally_2002,
+	title = {A Computationally Efficient Evolutionary Algorithm for Real-Parameter Optimization.},
+	volume = {10},
+	issn = {10636560},
+	url = {http://ezproxy.library.unlv.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true\&db=aph\&AN=8526362\&site=ehost-live},
+	doi = {Article},
+	abstract = {Due to increasing interest in solving real-world optimization problems using evolutionary algorithms (EAs), researchers have recently developed a number of real-parameter genetic algorithms (GAs). In these studies, the main research effort is spent on developing an efficient recombination operator. Such recombination operators use probability distributions around the parent solutions to create an offspring. Some operators emphasize solutions at the center of mass of parents and some around the parents. In this paper, we propose a generic parent-centric recombination operator (PCX) and a steady-state, elite-preserving, scalable, and computationally fast population-alteration model (we call the G3 model). The performance of the G3 model with the PCX operator is investigated on three commonly used test problems and is compared with a number of evolutionary and classical optimization algorithms including other real-parameter GAs with the unimodal normal distribution crossover (UNDX) and the simplex crossover (SPX) operators, the correlated self-adaptive evolution strategy, the covariance matrix adaptation evolution strategy (CMA-ES), the differential evolution technique, and the quasi-Newton method. The proposed approach is found to consistently and reliably perform better than all other methods used in the study. A scale-up study with problem sizes up to 500 variables shows a polynomial computational complexity of the proposed approach. This extensive study clearly demonstrates the power of the proposed technique in tackling real-parameter optimization problems. ABSTRACT FROM AUTHOR Copyright of Evolutionary Computation is the property of MIT Press and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts)},
+	journal = {Evolutionary Computation},
+	author = {Kalyanmoy Deb and Ashish Anand and Dhiraj Joshi},
+	year = {2002},
+	note = {Due to increasing interest in solving real-world optimization problems using evolutionary algorithms (EAs), researchers have recently developed a number of real-parameter genetic algorithms (GAs). In these studies, the main research effort is spent on developing an efficient recombination operator. Such recombination operators use probability distributions around the parent solutions to create an offspring. Some operators emphasize solutions at the center of mass of parents and some around the parents. In this paper, we propose a generic parent-centric recombination operator (PCX) and a steady-state, elite-preserving, scalable, and computationally fast population-alteration model (we call the G3 model). The performance of the G3 model with the PCX operator is investigated on three commonly used test problems and is compared with a number of evolutionary and classical optimization algorithms including other real-parameter GAs with the unimodal normal distribution crossover (UNDX) and the simplex crossover (SPX) operators, the correlated self-adaptive evolution strategy, the covariance matrix adaptation evolution strategy (CMA-ES), the differential evolution technique, and the quasi-Newton method. The proposed approach is found to consistently and reliably perform better than all other methods used in the study. A scale-up study with problem sizes up to 500 variables shows a polynomial computational complexity of the proposed approach. This extensive study clearly demonstrates the power of the proposed technique in tackling real-parameter optimization problems. ABSTRACT FROM AUTHOR Copyright of Evolutionary Computation is the property of MIT Press and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts)},
+	keywords = {COVARIANCE MATRIX ADAPTATION,Differential evolution,FUNCTIONAL analysis,OPERATOR theory,PARENT-CENTRIC RECOMBINATION,Quasi-Newton method,REAL-PARAMETER OPTIMIZATION,SCALABLE EVOLUTIONARY ALGORITHMS,SELF-ADAPTIVE EVOLUTION,SIMULATED BINARY CROSSOVER,Strategy},
+	pages = {371-395}
+},
+
+@article{storn_differential_,
+	title = {Differential Evolution Design of an IIR-Filter with Requirements for Magnitude and Group Delay},
+	author = {R. Storn}
+},
+
+@article{shinn-ying_ho_intelligent_2004,
+	title = {Intelligent evolutionary algorithms for large parameter optimization problems},
+	volume = {8},
+	issn = {1089-778X},
+	abstract = {This work proposes two intelligent evolutionary algorithms IEA and IMOEA using a novel intelligent gene collector (IGC) to solve single and multiobjective large parameter optimization problems, respectively. IGC is the main phase in an intelligent recombination operator of IEA and IMOEA. Based on orthogonal experimental design, IGC uses a divide-and-conquer approach, which consists of adaptively dividing two individuals of parents into N pairs of gene segments, economically identifying the potentially better one of two gene segments of each pair, and systematically obtaining a potentially good approximation to the best one of all combinations using at most 2N fitness evaluations. IMOEA utilizes a novel generalized Pareto-based scale-independent fitness function for efficiently finding a set of Pareto-optimal solutions to a multiobjective optimization problem. The advantages of IEA and IMOEA are their simplicity, efficiency, and flexibility. It is shown empirically that IEA and IMOEA have high performance in solving benchmark functions comprising many parameters, as compared with some existing EAs.},
+	journal = {Evolutionary Computation, IEEE Transactions on},
+	author = {Shinn-Ying Ho and Li-Sun Shu and Jian-Hung Chen},
+	year = {2004},
+	keywords = {2N fitness evaluations,divide-and-conquer approach,divide and conquer methods,economical identification,evolutionary computation,gene segments,intelligent evolutionary algorithms,intelligent gene collector,intelligent recombination operator,large parameter optimization problem,multiobjective optimization problem,Pareto-based scale-independent fitness function,Pareto-optimal solution},
+	pages = {522-541}
+},
+
+@article{lim_weighted_1992,
+	title = {A weighted least squares algorithm for quasi-equiripple FIR and IIR digital filter design},
+	volume = {40},
+	issn = {1053-587X},
+	abstract = {It has been demonstrated by several authors that if a suitable
+frequency response weighting function is used in the design of a finite
+impulse response (FIR) filter, the weighted least squares solution is
+equiripple. The crux of the problem lies in the determination of the
+necessary least squares frequency response weighting function. A novel
+iterative algorithm for deriving the least squares frequency response
+weighting function which will produce a quasi-equiripple design is
+presented. The algorithm converges very rapidly. It typically produces a
+design which is only about 1 dB away from the minimax optimum solution
+in two iterations and converges to within 0.1 dB in six iterations.
+Convergence speed is independent of the order of the filter. It can be
+used to design filters with arbitrarily prescribed phase and amplitude
+response},
+	journal = {Signal Processing, IEEE Transactions on [see also Acoustics, Speech, and Signal Processing, IEEE Transactions on]},
+	author = {Y.-C. Lim and J.-H. Lee and C.K. Chen and R.-H. Yang},
+	year = {1992},
+	keywords = {amplitude response,convergence speed,digital filters,filter design,finite impulse response,FIR filter,frequency response,IIR digital filter,iterative algorithm,least squares approximations,phase response,quasiequiripple filters,weighted least squares algorithm,weighting function},
+	pages = {551-558}
+},
+
+@book{lampinen_mixed_,
+	title = {Mixed Variable Non-Linear Optimization By Differential Evolution},
+	url = {http://citeseer.ist.psu.edu/315812.html},
+	author = {Jouni Lampinen}
+},
+
+@misc{_welcome_,
+	title = {Welcome to IEEE Xplore 2.0: The relationship between the Z-transform and the discrete-timeFourier transform},
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/xpls/abs\_all.jsp?isnumber=16122\&arnumber=746268\&count=33\&index=18}
+},
+
+@inproceedings{williamson_gradient-descent_1993,
+	title = {Gradient-descent adaptation of cascade-form adaptive filters},
+	url = {http://ieeexplore.ieee.org.ezproxy.library.unlv.edu/iel5/922/8008/00342351.pdf},
+	abstract = {The behavior of gradient descent algorithms for cascade-form adaptive filters is examined via the geometry of the filter error surface. Relationships are formulated between direct-form filter error surfaces and cascade-form error surfaces by considering properties of the nonlinear transformation between these two parametrizations. Different choices of model set for the cascade-form are discussed together with their implications for gradient-descent behavior. It is demonstrated that in the most practical case, unbounded filter coefficients can result in the adaptive cascade-form filter, even in situations in which the direct-form filter is well-behaved},
+	booktitle = {Signals, Systems and Computers, 1993. 1993 Conference Record of The Twenty-Seventh Asilomar Conference on},
+	journal = {Signals, Systems and Computers, 1993. 1993 Conference Record of The Twenty-Seventh Asilomar Conference on},
+	author = {G.A. Williamson},
+	year = {1993},
+	keywords = {adaptive filters,cascade-form adaptive filters,cascade-form error surfaces,cascade networks,digital filters,direct-form filter error surfaces,filter error surface,filter geometry,gradient-descent adaptation,gradient descent algorithms,network parameters,nonlinear transformation,numerical analysis,parameter transformations,unbounded filter coefficients},
+	pages = {1559-1563 vol.2}
+},
+
+@misc{_evolutionary_,
+	title = {Evolutionary Algorithms 3 Selection},
+	url = {http://www.geatbx.com/docu/algindex-02.html}
+},
+
+@book{cherry_continuous-time_1999,
+	edition = {1st},
+	title = {Continuous-Time Delta-Sigma Modulators for High-Speed A/D Conversion: Theory, Practice and Fundamental Performance Limits},
+	isbn = {0792386256},
+	publisher = {Springer},
+	author = {James A. Cherry and W. Martin Snelgrove},
+	month = sep,
+	year = {1999},
+	pages = {280}
+}

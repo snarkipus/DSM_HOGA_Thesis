@@ -1,0 +1,29 @@
+% XCircuit output "CRFB_simple.tex" for LaTeX input from CRFB_simple.ps
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+\def\rightbox#1{\makebox[0in][r]{#1}}
+\def\centbox#1{\makebox[0in]{#1}}
+\def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\begin{flushleft}
+\epsfig{file=CRFB_simple.ps}\\
+% translate x=1556 y=655 scale 0.23
+\putbox{0.62in}{0.53in}{\centbox{\midbox{\begin{small}$-a_0$\end{small}}}}%
+\putbox{0.62in}{1.10in}{\centbox{\midbox{\begin{LARGE}$\Sigma$\end{LARGE}}}}%
+\putbox{1.72in}{1.15in}{\centbox{\midbox{\begin{small}$c_0$\end{small}}}}%
+\putbox{3.37in}{1.15in}{\centbox{\midbox{\begin{small}$c_1$\end{small}}}}%
+\putbox{3.92in}{1.10in}{\centbox{\midbox{\begin{LARGE}$\Sigma$\end{LARGE}}}}%
+\putbox{2.27in}{0.53in}{\centbox{\midbox{\begin{small}$-a_1$\end{small}}}}%
+\putbox{3.92in}{1.74in}{\centbox{\midbox{\begin{small}$b_2$\end{small}}}}%
+\putbox{2.27in}{1.74in}{\centbox{\midbox{\begin{small}$b_1$\end{small}}}}%
+\putbox{0.62in}{1.74in}{\centbox{\midbox{\begin{small}$b_0$\end{small}}}}%
+\putbox{2.27in}{1.10in}{\centbox{\midbox{\begin{LARGE}$\Sigma$\end{LARGE}}}}%
+\putbox{2.87in}{0.22in}{\centbox{\midbox{\begin{large}$z^{-1}$\end{large}}}}%
+\putbox{4.36in}{1.13in}{\centbox{\midbox{\begin{small}$k$\end{small}}}}%
+\putbox{5.57in}{1.25in}{\centbox{\midbox{\begin{small}$V(n)$\end{small}}}}%
+\putbox{0.39in}{2.15in}{\centbox{\midbox{\begin{small}$U(n)$\end{small}}}}%
+\putbox{2.02in}{1.05in}{\centbox{\midbox{\begin{tiny}$1$\end{tiny}}}}%
+\putbox{3.67in}{1.05in}{\centbox{\midbox{\begin{tiny}$2$\end{tiny}}}}%
+\putbox{4.67in}{1.05in}{\centbox{\midbox{\begin{tiny}$3$\end{tiny}}}}%
+\putbox{2.79in}{1.14in}{\centbox{\midbox{\begin{small}$\frac{1}{1-z^{-1}}$\end{small}}}}%
+\putbox{1.14in}{1.14in}{\centbox{\midbox{\begin{small}$\frac{1}{1-z^{-1}}$\end{small}}}}%
+\end{flushleft}

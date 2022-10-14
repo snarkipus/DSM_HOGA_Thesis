@@ -1,0 +1,85 @@
+\subsection{Population Initialization}
+Recall that global optimization algorithms do not require \textit{a priori} knowledge of
+the performance surface shape. However, generalized constraints on the objective function
+solution space can greatly increase the speed of algorithm convergence. In fact, seeding
+the population with known solutions is often employed as a test for conversion latency. It
+has also been shown \cite{sarker_evolutionary_2002} that seeding the population with
+solutions which are known to be 'good' or 'approximate' can lead to hyper-accurate
+solutions.
+
+Recall that both contemporary and classical designs have zero locations which are 
+distributed over the operational region along the unit circle in the complex $z$-domain.
+It is therefore assumed that the optimal zero locations will be distributed in some
+fashion on or near the unit circle as well. The pole locations, being free to exist
+outside of the operational region, will assume a shape geometrically commensurate with the
+desired frequency response. Thus, we will assume that the pole and zero locations will be
+proximal to both the classical and contemporary results. As such, we will seed the initial
+population matrix with dithered chromosomes whose undithered coefficients are given by the
+classical Chebyshev polynomial based design approach. The added dither will be a zero mean
+standard normal random variable with a fixed variance of 10\% (normalized wrt the unit
+circle). The \ith\ dither element is expressed as given in the following equation.
+%---------------------
+\begin{equation}\label{eq:init_dither}
+\delta_{i}=\frac{1}{\sqrt{0.2\pi}}e^{-\frac{x^2}{0.2}}
+\end{equation}
+%---------------------
+Given \eqref{eq:init_dither}, we can express the \ith\ member of the initial population as
+a dithered chromosome given as follows.
+%---------------------
+\begin{equation}\label{eq:dithered_chromosome}
+\begin{split}
+\mathcal{C}_i&=\bigl[
+(c_{11}+\delta_{1}),(c_{12}+\delta_{2}),(d_{11}+\delta_{3}),(d_{12}+\delta_{4}),\dotsc, \\
+&\qquad(c_{M1}+\delta_{m-4}),(c_{M2}+\delta_{m-3}),
+       (d_{M1}+\delta_{m-2}),(d_{M2}+\delta_{m-1}),(k+\delta_{m}) \bigr]\\
+&=\bigl[
+\tilde{c}_{11},\tilde{c}_{12},\tilde{d}_{11},\tilde{d}_{12},\tilde{c}_{21},\tilde{c}_{22},
+\tilde{d}_{21},\tilde{d}_{22},\dotsc,\tilde{c}_{M1},\tilde{c}_{M2},\tilde{d}_{M1},
+\tilde{d}_{M2},\tilde{k}\bigr]
+\end{split}
+\end{equation}
+%---------------------
+The initial population is a $m\times n$ matrix whose $n$ columns are the dithered
+chromosomes as given in \eqref{eq:init_dither} and $m$ rows correspond to the elements of
+the chromosomes. This population matrix, denoted $\mathbb{G}$, is given by the following
+equation where $T$ indicates the transpose operation.
+\vspace{1mm}
+\begin{equation}
+\mathbb{G}_{\text{init}} =\bigl[\mathcal{C}_1^T \mathcal{C}_2^T \dotsb
+\mathcal{C}_n^T\bigr]=
+\begin{pmatrix}
+\tilde{a}_{11,1}&\tilde{a}_{11,2}&\hdotsfor{5}&\tilde{a}_{11,n-1}&\tilde{a}_{11,n} \\
+\tilde{b}_{12,1}&\tilde{b}_{12,2}&\hdotsfor{5}&\tilde{b}_{12,n-1}&\tilde{b}_{12,n} \\
+\tilde{c}_{11,1}&\tilde{c}_{11,2}&\hdotsfor{5}&\tilde{c}_{11,n-1}&\tilde{c}_{11,n} \\
+\tilde{c}_{12,1}&\tilde{c}_{12,2}&\hdotsfor{5}&\tilde{c}_{12,n-1}&\tilde{c}_{12,n} \\
+\tilde{d}_{11,1}&\tilde{d}_{11,2}&\hdotsfor{5}&\tilde{d}_{11,n-1}&\tilde{d}_{11,n} \\
+\tilde{d}_{12,1}&\tilde{d}_{12,2}&\hdotsfor{5}&\tilde{d}_{12,n-1}&\tilde{d}_{12,n} \\
+\vdots&\vdots&&&\ddots&&&\vdots&\vdots						   \\
+\tilde{c}_{M1,1}&\tilde{c}_{M1,2}&\hdotsfor{5}&\tilde{c}_{M1,n-1}&\tilde{c}_{M1,n} \\
+\tilde{c}_{M2,1}&\tilde{c}_{M2,2}&\hdotsfor{5}&\tilde{c}_{M2,n-1}&\tilde{c}_{M2,n} \\
+\tilde{d}_{M1,1}&\tilde{d}_{M1,2}&\hdotsfor{5}&\tilde{d}_{M1,n-1}&\tilde{d}_{M1,n} \\
+\tilde{d}_{M2,1}&\tilde{d}_{M2,2}&\hdotsfor{5}&\tilde{d}_{M2,n-1}&\tilde{d}_{M2,n} \\
+\tilde{k}_{1}&\tilde{k}_{2}&\hdotsfor{5}&\tilde{k}_{n-1}&\tilde{k}_{n} \\
+	
+\end{pmatrix}
+\end{equation}
+% \vspace{1mm}
+
+The appropriate sizing for a population is directly related to the complexity of the
+problem space. However, this relationship can be difficult, if not impossible, to
+adequately characterize \cite{alander_optimal_1992}. Additionally, the relative size of
+the population also dictates the nature of the results. For instance, a large
+unconstrained population will offer a broad evaluation of the performance surface at the
+expense of convergence speed and steady-state misadjustment. In contrast, a smaller
+constrained population will converge more quickly at the expense of increased result
+diversity.
+
+For generally contrained problem spaces, perhaps the most important concept is minimum
+population size. Because minimum population size is tightly coupled with the problem space
+complexity, parameters such as this are typically refined or 'tuned' \textit{a posteriori}
+\cite{schaffer_-_1989},\cite{alander_optimal_1992}. However, it is also plausible to use
+known design parameters applications with similar problem space complexity. Thus, the
+initial size of the population has been restricted to 200 for this application and has
+proven sufficient for all cases. Note that there are diminishing returns when the
+population size becomes prohibitively large. Greatly increasing the population size is
+computationally intensive making convergence times unacceptable for most applications.

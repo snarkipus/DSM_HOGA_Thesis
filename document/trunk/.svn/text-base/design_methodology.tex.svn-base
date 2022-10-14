@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 3: Design Methodology
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The design and optimization of \DSms through hybridized evolutionary strategies is the
+primary goal of this work. Specifically, a hybrid orthogonal genetic algorithm is proposed
+to optimize the double input, single output IIR filter design which characterizes \DSm
+functionality. This algorithm is shown to be robust with only minimal steady-state
+misadjustment. Further, this design methodology is shown to outperform established
+classical and contemporary design methods.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Design Methodology
+\section{Hybrid Orthogonal Evolutionary Strategy (HOES)}
+The Hybrid Orthogonal Evolutionary Strategy (HOES) is quite similar to traditional
+evolutionary strategies in that the operating principle of evolving the 'most fit'
+individual over successive generations remains unchanged. However, in contrast to
+traditional evolutionary strategies, the evolutionary process will not be restricted to
+pure stochastic transfer of genetic information between progenitors. The process will be
+'hybridized' by intelligently sharing genetic information during reproduction such that
+the progeny is optimal given the available genotype. Note that this optimality is defined
+by context of the fitness function used to evaluate the population. This hybridization of
+the evolutionary process is precisely what allows for faster, more accurate, and more
+robust filter designs to be evolved.
+
+Figure \ref{fig:HOES_flow_chart} illustrates the flow of the HOES. Each stage of the HOES
+will be addressed in the following sections.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=7.5in]{./working_figures/HOES_flow.eps}
+\caption{Hybrid Orthogonal Evolutionary Strategy (HOES) Flow Chart}
+\label{fig:HOES_flow_chart}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Chromosome Representation
+\input{chromosome_representation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Population Initialization
+\input{population_initialization}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Fitness Evaluation
+\subsection{Fitness Evaluation}
+Each member of a population is evaluated for relative fitness during each generation 
+(iteration). The result of this fitness evaluation is what drives the evolution of the
+greater population. Based on the relative fitness, 'more fit' individuals have an
+increased likelyhood of mating and producing offspring thereby preserving their genetic
+information in the population genotype. Conversely, 'less fit' individuals have a
+decreased likelyhood of mating thereby insuring the elimination of their genetic
+information from the population genotype. This process of natural selection according to
+relative fitness is central to evolutionary strategies \cite{darwin_origin_2001}.
+
+The algorithm itself is application agnostic and independent of the problem space.
+As such, the fitness function (objective function) fully characterizes the problem
+space. The objective function discussed here is analogous to the cost function for the
+optimization algorithms previously presented. It is the authors opinion that the
+evolutionary strategy and the objective function are mutually exclusive. The challenge of
+objectifying a particular problem space is wholly independent of the challenge of
+architecting an evolutionary strategy.
+
+The various objective functions implemented for the purpose of this work will be
+presented in the following sections. However, they are all alike in that they seek to
+minimize the result of objective function evaluation (or cost). As such, the HOES evolves
+a population whose most fit chromosome represents the global minimum for the respective
+objective function. Further, the problem space is generally constrained through the
+penalization of chromosomes which evolve outside of the established constraints. The
+constraints and respective penalties will also be addressed in the following sections.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Linear-Ranking Selection
+\input{linear_ranking_selection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Single-Point Crossover Operation
+\input{single_point_crossover}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Taguchi Method
+\input{taguchi_method}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Point-Swap Mutation
+\subsection{Point-Swap Mutation}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Convergence
+\subsection{Convergence}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DTDSM Design
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discrete-Time \DSM Design}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DTDSM Design: LPNTF
+\subsection{Low-Pass NTF Objective Function}'doc stub'
+\subsubsection{Initialization}'doc stub'
+\subsubsection{Constraints and Penalties}'doc stub'
+\subsubsection{Cost Function Characterization}'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DTDSM Design: LPSTF
+\subsection{Low-Pass STF Objective Function}'doc stub'
+\subsubsection{Initialization}'doc stub'
+\subsubsection{Constraints and Penalties}'doc stub'
+\subsubsection{Cost Function Characterization}'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DTDSM Design: VLIF (Bandpass)
+\subsection{VLIF Band-Pass Designs}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DTDSM Design: Output Decimation
+\subsection{Output Decimation}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DTDSM Design: Simulation
+\subsection{Simulation}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CTDSM Design
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Continuous-Time \DSM Design}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CTDSM Design: LPNTF
+\subsection{Low-Pass NTF Objective Function}'doc stub'
+\subsubsection{Initialization}'doc stub'
+\subsubsection{Constraints and Penalties}'doc stub'
+\subsubsection{Cost Function Characterization}'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CTDSM Design: LPSTF
+\subsection{Low-Pass STF Objective Function}'doc stub'
+\subsubsection{Initialization}'doc stub'
+\subsubsection{Constraints and Penalties}'doc stub'
+\subsubsection{Cost Function Characterization}'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CTDSM Design: VLIF (Bandpass)
+\subsection{VLIF Band-Pass Designs}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CTDSM Design: Output Decimation
+\subsection{Output Decimation}
+'doc stub'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CTDSM Design: Simulation
+\subsection{Simulation}
+'doc stub'
